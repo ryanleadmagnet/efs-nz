@@ -44,7 +44,7 @@ export default function Footer() {
                 <div className="footer-col">
                     <h4 className="footer-heading">Referral Program</h4>
                     <ul className="footer-links">
-                        <li><a href="#"><i className="fas fa-gift"></i> Make $250 for every friend or family member</a></li>
+                        <li><a href="#" className="quote-trigger" data-iframe-url="https://form-efs.vercel.app/referral"><i className="fas fa-gift"></i> Make $250 for every friend or family member</a></li>
                     </ul>
                     <p><br /></p>
                     <h4 className="footer-heading">Addresses</h4>
