@@ -14,7 +14,10 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
     // Close mobile menu on route change
     useEffect(() => {
         setIsMenuOpen(false);
-        setOpenDropdowns([]);
+        const initialDropdowns: string[] = [];
+        if (pathname.startsWith('/services')) initialDropdowns.push('services');
+        if (pathname.startsWith('/technology')) initialDropdowns.push('technology');
+        setOpenDropdowns(initialDropdowns);
     }, [pathname]);
 
     // Listen for global open quote modal event
@@ -180,11 +183,17 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
 
             {/* MOBILE NAVIGATION MENU */}
             <div className={`mobile-nav-menu ${isMenuOpen ? 'active' : ''}`} id="mobile-nav-menu">
-                <div className="mobile-nav-content">
+                <div className="mobile-nav-content" style={{ paddingBottom: '100px' }}>
                     <ul>
                         <li><Link href="/" className={pathname === '/' ? 'active' : ''}>Home</Link></li>
-                        <li className={`has-dropdown mobile-dropdown-toggle`}>
-                            <a href="#" onClick={(e) => toggleDropdown('services', e)} className={pathname.startsWith('/services') ? 'active' : ''}>Services <i className={`fas fa-caret-${openDropdowns.includes('services') ? 'up' : 'down'}`}></i></a>
+                        <li className={`has-dropdown mobile-dropdown-item`}>
+                            <a 
+                                href="#" 
+                                onClick={(e) => toggleDropdown('services', e)} 
+                                style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}
+                            >
+                                Services <i className={`fas fa-caret-${openDropdowns.includes('services') ? 'up' : 'down'}`}></i>
+                            </a>
                             <ul className={`mobile-dropdown ${openDropdowns.includes('services') ? 'open' : ''}`}>
                                 <li><Link href="/services/residential-solar" className={pathname === '/services/residential-solar' ? 'active' : ''}>Residential Solar</Link></li>
                                 <li><Link href="/services/commercial-solar" className={pathname === '/services/commercial-solar' ? 'active' : ''}>Commercial Solar</Link></li>
@@ -192,8 +201,14 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                                 <li><Link href="/services/air-conditioning" className={pathname === '/services/air-conditioning' ? 'active' : ''}>Air-Conditioning</Link></li>
                             </ul>
                         </li>
-                        <li className={`has-dropdown mobile-dropdown-toggle`}>
-                            <a href="#" onClick={(e) => toggleDropdown('technology', e)} className={pathname.startsWith('/technology') ? 'active' : ''}>Technology <i className={`fas fa-caret-${openDropdowns.includes('technology') ? 'up' : 'down'}`}></i></a>
+                        <li className={`has-dropdown mobile-dropdown-item`}>
+                            <a 
+                                href="#" 
+                                onClick={(e) => toggleDropdown('technology', e)} 
+                                style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}
+                            >
+                                Technology <i className={`fas fa-caret-${openDropdowns.includes('technology') ? 'up' : 'down'}`}></i>
+                            </a>
                             <ul className={`mobile-dropdown ${openDropdowns.includes('technology') ? 'open' : ''}`}>
                                 <li><Link href="/technology/canadian-solar" className={pathname === '/technology/canadian-solar' ? 'active' : ''}>Canadian Solar</Link></li>
                                 <li><Link href="/technology/energizer" className={pathname === '/technology/energizer' ? 'active' : ''}>Energizer</Link></li>

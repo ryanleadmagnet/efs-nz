@@ -386,7 +386,7 @@ p {
     height: 100vh;
     background-color: #202020;
     z-index: 200;
-    transition: right 0.3s ease;
+    transition: right 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
     overflow-y: auto;
     padding: 30px 20px;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
@@ -417,14 +417,18 @@ p {
     color: var(--secondary-color);
 }
 
-.mobile-dropdown {
-    display: none;
+.mobile-nav-menu .mobile-dropdown {
+    display: flex;
+    flex-direction: column;
     padding-left: 20px;
     background-color: #202020;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-dropdown.open {
-    display: block;
+.mobile-nav-menu .mobile-dropdown.open {
+    max-height: 400px;
 }
 
 /* Responsive adjustments */
