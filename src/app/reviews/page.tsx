@@ -57,10 +57,10 @@ export default function ReviewsPage() {
                                 <a href={story.href} className="block relative aspect-[4/5] rounded-[20px] overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-500 bg-black" style={{ marginBottom: '24px' }}>
                                     <img src={story.img} alt={story.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-90 group-hover:opacity-100" />
                                 </a>
-                                <div style={{ textAlign: 'left' }}>
-                                    <div className="text-sm font-bold text-[#47c7ea] uppercase tracking-wider" style={{ paddingTop: '8px', paddingBottom: '8px', textAlign: 'inherit' }}>{story.date}</div>
-                                    <h4 className="text-2xl font-heading font-bold text-[#082042] leading-snug group-hover:text-[#47c7ea] transition-colors" style={{ marginBottom: '12px', textAlign: 'inherit' }}>{story.title}</h4>
-                                    <p className="text-[#3f4f65] leading-relaxed line-clamp-3 text-[15px]" style={{ marginBottom: '20px', textAlign: 'inherit' }}>{story.text}</p>
+                                <div className="text-center md:text-left">
+                                    <div className="text-sm font-bold text-[#47c7ea] uppercase tracking-wider" style={{ paddingTop: '8px', paddingBottom: '8px' }}>{story.date}</div>
+                                    <h4 className="text-2xl font-heading font-bold text-[#082042] leading-snug group-hover:text-[#47c7ea] transition-colors" style={{ marginBottom: '12px' }}>{story.title}</h4>
+                                    <p className="text-[#3f4f65] leading-relaxed line-clamp-3 text-[15px]" style={{ marginBottom: '20px' }}>{story.text}</p>
                                     <a href={story.href} className="font-bold text-[#082042] hover:text-[#47c7ea] transition-colors uppercase tracking-wide text-sm inline-flex items-center gap-2">
                                         Read More
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -75,9 +75,11 @@ export default function ReviewsPage() {
             </section>
 
             {/* ── Reviews ───────────────────────────────────── */}
-            <section className="bg-white" style={{ paddingTop: '96px', paddingBottom: '96px', textAlign: 'left' }}>
+            <section className="section-reviews content-section bg-white">
                 <div className="container max-w-[1140px] mx-auto px-4">
-                    <h3 className="text-[32px] font-heading font-bold text-[#082042] max-w-[600px]" style={{ marginBottom: '40px', textAlign: 'inherit' }}>How customers rate their experience with us</h3>
+                    <AnimatedHeading tag="h3" className="section-title" style={{ marginBottom: '40px' }}>
+                        How customers rate their experience with us
+                    </AnimatedHeading>
                     <div className="animate-on-scroll">
                         <TrustIndexWidget />
                     </div>
