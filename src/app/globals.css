@@ -151,7 +151,7 @@ p {
 
 /* --- Header Top Bar --- */
 .header-top-bar {
-    background-color: var(--text-color);
+    background-color: black;
     padding: 0 20px;
     position: relative;
     z-index: 70;
@@ -473,6 +473,10 @@ p {
 
     .sticky-header .logo img {
         max-width: 119px;
+    }
+
+    .header-top-bar {
+        background-color: rgb(12, 26, 47);
     }
 
     .top-bar-content {
