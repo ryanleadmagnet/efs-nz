@@ -101,7 +101,7 @@ export default function RootLayout({
           referrerPolicy="no-referrer"
         />
         <link rel="icon" type="image/png" href="/icon.png" />
-        <meta name="theme-color" content="#082042" />
+        <meta name="theme-color" content="rgb(12, 26, 47)" />
       </head>
       <body className="antialiased">
         <ScrollObserver />
