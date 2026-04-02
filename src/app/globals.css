@@ -385,7 +385,8 @@ p {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 150; /* Above regular content but below menu */
+    z-index: 150;
+    /* Above regular content but below menu */
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
@@ -403,10 +404,12 @@ p {
     width: 300px;
     height: 100vh;
     background-color: #202020;
-    z-index: 200; /* Above overlay */
+    z-index: 200;
+    /* Above overlay */
     transition: right 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
     overflow-y: auto;
-    padding: 60px 20px 30px; /* More top padding for close button */
+    padding: 60px 20px 30px;
+    /* More top padding for close button */
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -419,7 +422,8 @@ p {
     color: #fff;
     font-size: 24px;
     cursor: pointer;
-    z-index: 201; /* Above mobile menu local content */
+    z-index: 201;
+    /* Above mobile menu local content */
 }
 
 .mobile-nav-menu.active {
@@ -477,7 +481,6 @@ p {
         gap: 8px;
         padding: 8px 0;
         white-space: nowrap;
-        overflow: hidden;
     }
 
     .top-bar-text,

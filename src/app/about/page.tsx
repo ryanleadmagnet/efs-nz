@@ -55,7 +55,7 @@ export default function AboutPage() {
                             {/* left – illustration */}
                             <div className="about-intro-image animate-on-scroll" style={{ textAlign: 'center' }}>
                                 <img
-                                    src="https://www.efssolar.com.au/wp-content/uploads/2023/06/Asset-22.svg"
+                                    src="/assets/Asset-22.svg"
                                     alt="EFS Solar illustration"
                                     style={{ width: '100%', maxWidth: 437 }}
                                 />

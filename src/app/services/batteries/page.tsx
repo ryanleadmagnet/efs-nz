@@ -105,21 +105,21 @@ export default function Batteries() {
                         <div className="switch-grid">
                             <div className="switch-item animate-on-scroll">
                                 <div className="switch-icon">
-                                    <img src="https://www.efssolar.com.au/wp-content/uploads/2023/07/Asset-29-1.svg" alt="Site Assessment" />
+                                    <img src="/assets/Asset-29-1.svg" alt="Site Assessment" />
                                 </div>
                                 <h4>SITE ASSESSMENT</h4>
                                 <p>One of our reps will conduct an on-site assessment of your home before designing a battery system to suit your household needs.</p>
                             </div>
                             <div className="switch-item animate-on-scroll delay-1">
                                 <div className="switch-icon">
-                                    <img src="https://www.efssolar.com.au/wp-content/uploads/2023/07/Asset-34.svg" alt="Install" />
+                                    <img src="/assets/Asset-34.svg" alt="Install" />
                                 </div>
                                 <h4>INSTALL</h4>
                                 <p>Our fully licensed electricians will come out and install your new battery system and educate you on how to get the most out of it.</p>
                             </div>
                             <div className="switch-item animate-on-scroll delay-2">
                                 <div className="switch-icon">
-                                    <img src="https://www.efssolar.com.au/wp-content/uploads/2023/07/Asset-33.svg" alt="Enjoy the Saving" />
+                                    <img src="/assets/Asset-33.svg" alt="Enjoy the Saving" />
                                 </div>
                                 <h4>ENJOY THE SAVING</h4>
                                 <p>As soon as your battery system has been installed and connected, you can start enjoying your savings from day 1.</p>

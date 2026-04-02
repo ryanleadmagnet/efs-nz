@@ -92,7 +92,7 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                 <div className="container">
                     <div className="top-bar-content">
                         <span className="top-bar-text">Save up to 30% on a home battery</span>
-                        <img src="https://www.efssolar.com.au/wp-content/uploads/2023/06/Asset-43.svg" alt="Battery Icon"
+                        <img src="/assets/Asset-43.svg" alt="Battery Icon"
                             className="top-bar-icon" />
                         <a href="#" className="top-bar-link quote-trigger" onClick={toggleModal}>Check eligibility &gt;</a>
                     </div>

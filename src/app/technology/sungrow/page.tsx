@@ -33,7 +33,7 @@ export default function SungrowPage() {
                 <ServicePageHero
                     subtitle="Technology"
                     title="Sungrow"
-                    bgImage="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-64-1024x873.webp"
+                    bgImage="/assets/Asset-64-1024x873.webp"
                 />
 
                 {/* Intro */}
@@ -49,7 +49,7 @@ export default function SungrowPage() {
                             <QuoteBtn />
                         </div>
                         <div className="section-peace-image animate-on-scroll">
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-64-1024x873.webp" alt="Sungrow Inverter" />
+                            <img src="/assets/Asset-64-1024x873.webp" alt="Sungrow Inverter" />
                         </div>
                     </div>
                 </section>
@@ -89,21 +89,21 @@ export default function SungrowPage() {
                         <div className="switch-grid">
                             <div className="switch-item animate-on-scroll">
                                 <div className="switch-icon">
-                                    <img src="https://www.efssolar.com.au/wp-content/uploads/2023/07/Asset-30-1.svg" alt="Performance" />
+                                    <img src="/assets/Asset-30-1.svg" alt="Performance" />
                                 </div>
                                 <h4>HIGH PERFORMANCE</h4>
                                 <p>Sungrow inverters consistently deliver industry-leading efficiency ratings, ensuring your solar system generates maximum power output.</p>
                             </div>
                             <div className="switch-item animate-on-scroll delay-1">
                                 <div className="switch-icon">
-                                    <img src="https://www.efssolar.com.au/wp-content/uploads/2023/07/Asset-29-1.svg" alt="Market Leader" />
+                                    <img src="/assets/Asset-29-1.svg" alt="Market Leader" />
                                 </div>
                                 <h4>MARKET LEADERSHIP</h4>
                                 <p>With dominant market shares across multiple continents, Sungrow is trusted by homeowners, businesses, and utilities worldwide.</p>
                             </div>
                             <div className="switch-item animate-on-scroll delay-2">
                                 <div className="switch-icon">
-                                    <img src="https://www.efssolar.com.au/wp-content/uploads/2023/07/Asset-28-1.svg" alt="Reliability" />
+                                    <img src="/assets/Asset-28-1.svg" alt="Reliability" />
                                 </div>
                                 <h4>PROVEN RELIABILITY</h4>
                                 <p>26+ GW deployed across 50+ countries is a testament to Sungrow&apos;s engineering quality and durability in all climates and conditions.</p>
@@ -118,7 +118,7 @@ export default function SungrowPage() {
                     <section className="section-tier1 content-section">
                         <div className="container section-container">
                             <div className="section-image animate-on-scroll">
-                                <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-64-1024x873.webp" alt="Sungrow System" />
+                                <img src="/assets/Asset-64-1024x873.webp" alt="Sungrow System" />
                             </div>
                             <div className="section-text animate-on-scroll delay-1">
                                 <AnimatedHeading tag="h2" className="section-subtitle">TRUSTED BY EFS SOLAR</AnimatedHeading>

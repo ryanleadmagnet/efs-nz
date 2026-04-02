@@ -25,7 +25,7 @@ export default function Home() {
                 <section className="hero-section">
                     <div className="hero-video-container">
                         <video autoPlay muted playsInline loop>
-                            <source src="https://www.efssolar.com.au/wp-content/uploads/2023/06/Sequence-01.mp4"
+                            <source src="/assets/Sequence-01.mp4"
                                 type="video/mp4" />
                         </video>
                         <div className="hero-overlay"></div>
@@ -46,7 +46,7 @@ export default function Home() {
                         </a>
 
                         <div className="hero-trust-image">
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2024/02/header-ico.svg"
+                            <img src="/assets/header-ico.svg"
                                 alt="Google Reviews 5 Stars" />
                         </div>
 
@@ -74,7 +74,7 @@ export default function Home() {
                     <section className="section-tier1 content-section">
                         <div className="container section-container">
                             <div className="section-image animate-on-scroll">
-                                <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-64-1024x873.webp"
+                                <img src="/assets/Asset-64-1024x873.webp"
                                     alt="Solar Installation" />
                             </div>
                             <div className="section-text animate-on-scroll delay-1">
@@ -110,7 +110,7 @@ export default function Home() {
                                 </Link>
                             </div>
                             <div className="section-image animate-on-scroll delay-1">
-                                <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-62-1024x612.webp"
+                                <img src="/assets/Asset-62-1024x612.webp"
                                     alt="Solar Battery" />
                             </div>
                         </div>
@@ -121,21 +121,21 @@ export default function Home() {
                 <section className="brand-carousel-section">
                     <div className="brand-carousel">
                         <div className="carousel-track">
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-80.svg" alt="Brand 1" />
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-79.svg" alt="Brand 2" />
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-78.svg" alt="Brand 3" />
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-77.svg" alt="Brand 4" />
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-76.svg" alt="Brand 5" />
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-75.svg" alt="Brand 6" />
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-74.svg" alt="Brand 7" />
+                            <img src="/assets/Asset-80.svg" alt="Brand 1" />
+                            <img src="/assets/Asset-79.svg" alt="Brand 2" />
+                            <img src="/assets/Asset-78.svg" alt="Brand 3" />
+                            <img src="/assets/Asset-77.svg" alt="Brand 4" />
+                            <img src="/assets/Asset-76.svg" alt="Brand 5" />
+                            <img src="/assets/Asset-75.svg" alt="Brand 6" />
+                            <img src="/assets/Asset-74.svg" alt="Brand 7" />
                             {/* Duplicate for infinite scroll loop */}
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-80.svg" alt="Brand 1" />
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-79.svg" alt="Brand 2" />
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-78.svg" alt="Brand 3" />
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-77.svg" alt="Brand 4" />
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-76.svg" alt="Brand 5" />
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-75.svg" alt="Brand 6" />
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-74.svg" alt="Brand 7" />
+                            <img src="/assets/Asset-80.svg" alt="Brand 1" />
+                            <img src="/assets/Asset-79.svg" alt="Brand 2" />
+                            <img src="/assets/Asset-78.svg" alt="Brand 3" />
+                            <img src="/assets/Asset-77.svg" alt="Brand 4" />
+                            <img src="/assets/Asset-76.svg" alt="Brand 5" />
+                            <img src="/assets/Asset-75.svg" alt="Brand 6" />
+                            <img src="/assets/Asset-74.svg" alt="Brand 7" />
                         </div>
                     </div>
                 </section>
@@ -195,7 +195,7 @@ export default function Home() {
                         <div className="switch-grid">
                             <div className="switch-item animate-on-scroll">
                                 <div className="switch-icon">
-                                    <img src="https://www.efssolar.com.au/wp-content/uploads/2023/07/Asset-30-1.svg"
+                                    <img src="/assets/Asset-30-1.svg"
                                         alt="Site Assessment" />
                                 </div>
                                 <h4>SITE ASSESSMENT</h4>
@@ -204,7 +204,7 @@ export default function Home() {
                             </div>
                             <div className="switch-item animate-on-scroll delay-1">
                                 <div className="switch-icon">
-                                    <img src="https://www.efssolar.com.au/wp-content/uploads/2023/07/Asset-29-1.svg"
+                                    <img src="/assets/Asset-29-1.svg"
                                         alt="Install" />
                                 </div>
                                 <h4>INSTALL</h4>
@@ -213,7 +213,7 @@ export default function Home() {
                             </div>
                             <div className="switch-item animate-on-scroll delay-2">
                                 <div className="switch-icon">
-                                    <img src="https://www.efssolar.com.au/wp-content/uploads/2023/07/Asset-28-1.svg"
+                                    <img src="/assets/Asset-28-1.svg"
                                         alt="Enjoy the Saving" />
                                 </div>
                                 <h4>ENJOY THE SAVING</h4>
@@ -230,7 +230,7 @@ export default function Home() {
                         <div className="section-text animate-on-scroll">
                             <AnimatedHeading tag="h2" className="section-subtitle">Finance Support</AnimatedHeading>
                             <AnimatedHeading tag="h3" className="section-title">Stress-Free Payments <br />for Quick Installation</AnimatedHeading>
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2023/06/Asset-4.svg" alt="Finance Partners"
+                            <img src="/assets/Asset-4.svg" alt="Finance Partners"
                                 className="finance-logos" />
                             <p className="section-desc">We offer hassle-free financing options, ensuring swift installations and
                                 stress-free payments for our clients. Experience the benefits of solar energy without the
@@ -246,7 +246,7 @@ export default function Home() {
                             </a>
                         </div>
                         <div className="section-image animate-on-scroll delay-1">
-                            <img src="https://www.efssolar.com.au/wp-content/uploads/2023/06/Asset-13@2x-1024x689.png"
+                            <img src="/assets/Asset-13@2x-1024x689.png"
                                 alt="Solar House Finance" />
                         </div>
                     </div>

@@ -3,7 +3,7 @@ export default function Footer() {
         <footer className="main-footer bg-[#222]">
             <div className="container footer-container">
                 <div className="footer-col">
-                    <img src="https://www.efssolar.com.au/wp-content/uploads/2021/08/logo-white.svg"
+                    <img src="/assets/logo-white.svg"
                         alt="EFS Solar Logo White" className="footer-logo" />
                     <div className="footer-contact">
                         <p><a href="mailto:support@efssolar.com.au"><i className="fas fa-paper-plane text-sm"></i>

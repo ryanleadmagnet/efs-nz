@@ -88,21 +88,21 @@ export default function CommercialSolar() {
                         <div className="switch-grid">
                             <div className="switch-item animate-on-scroll">
                                 <div className="switch-icon">
-                                    <img src="https://www.efssolar.com.au/wp-content/uploads/2023/07/Asset-30-1.svg" alt="Site Assessment" />
+                                    <img src="/assets/Asset-30-1.svg" alt="Site Assessment" />
                                 </div>
                                 <h4>SITE ASSESSMENT</h4>
                                 <p>One of our reps will conduct an on-site assessment of your business before designing a system to suit your commercial energy needs.</p>
                             </div>
                             <div className="switch-item animate-on-scroll delay-1">
                                 <div className="switch-icon">
-                                    <img src="https://www.efssolar.com.au/wp-content/uploads/2023/07/Asset-29-1.svg" alt="Install" />
+                                    <img src="/assets/Asset-29-1.svg" alt="Install" />
                                 </div>
                                 <h4>INSTALL</h4>
                                 <p>Our fully licenced solar technicians will come out and install your new system on your roof and educate you on how to get the most out of it.</p>
                             </div>
                             <div className="switch-item animate-on-scroll delay-2">
                                 <div className="switch-icon">
-                                    <img src="https://www.efssolar.com.au/wp-content/uploads/2023/07/Asset-32.svg" alt="Enjoy the Saving" />
+                                    <img src="/assets/Asset-32.svg" alt="Enjoy the Saving" />
                                 </div>
                                 <h4>ENJOY THE SAVING</h4>
                                 <p>As soon as your solar system has been installed and connected, you can start enjoying your savings from day 1.</p>
@@ -125,7 +125,7 @@ export default function CommercialSolar() {
                                 </div>
                             </div>
                             <div className="section-stop-paying-image animate-on-scroll delay-1">
-                                <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-64-1024x873.webp" alt="Solar Installation Tier 1" style={{ width: '73%', borderRadius: '12px' }} />
+                                <img src="/assets/Asset-64-1024x873.webp" alt="Solar Installation Tier 1" style={{ width: '73%', borderRadius: '12px' }} />
                             </div>
                         </div>
                     </section>
