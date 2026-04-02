@@ -31,14 +31,14 @@ export default function CareerPage() {
                                 <img
                                     src="/careers-sales.jpg"
                                     alt="Sales and Appointment Setting"
-                                    className="career-card-img"
+                                    className="career-card-img w-full md:w-[80%] mx-auto block"
                                     style={{
-                                        width: '80%', height: 'auto', objectFit: 'contain'
+                                        height: 'auto', objectFit: 'contain'
                                     }}
                                 />
                                 <div className="career-card-content" style={{ padding: '40px' }}>
-                                    <div style={{ color: '#47c7ea', fontFamily: "'Rajdhani', sans-serif", fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '12px' }}>We&apos;re Hiring</div>
-                                    <h3 style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: '28px', fontWeight: 700, color: '#082042', marginBottom: '16px', lineHeight: 1.2 }}>Sales &amp; Appointment Setter</h3>
+                                    <div className="text-center md:text-left" style={{ color: '#47c7ea', fontFamily: "'Rajdhani', sans-serif", fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '12px' }}>We&apos;re Hiring</div>
+                                    <h3 className="text-center md:text-left" style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: '28px', fontWeight: 700, color: '#082042', marginBottom: '16px', lineHeight: 1.2 }}>Sales &amp; Appointment Setter</h3>
                                     <p style={{ color: '#3f4f65', lineHeight: 1.7, marginBottom: '28px' }}>
                                         Join our dynamic sales team, focused on client outreach and initial consultations. You&apos;ll be the first point of contact for thousands of Australians looking to make the switch to solar. No experience required — full training provided.
                                     </p>
@@ -50,22 +50,24 @@ export default function CareerPage() {
                                             </li>
                                         ))}
                                     </ul>
-                                    <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="https://form-efs.vercel.app/sales" style={{ marginBottom: '16px' }}>
-                                        <span className="btn-text">Apply for Sales</span>
-                                        <span className="btn-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
-                                                <path fill="none" stroke="currentColor" strokeWidth="2" d="m.71.71l6.03,6.03c1.35,1.35,1.35,3.55,0,4.9L.71,17.67"></path>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                    <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="https://form-efs.vercel.app/aptm_setter">
-                                        <span className="btn-text">Apply for Appointment Setter</span>
-                                        <span className="btn-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
-                                                <path fill="none" stroke="currentColor" strokeWidth="2" d="m.71.71l6.03,6.03c1.35,1.35,1.35,3.55,0,4.9L.71,17.67"></path>
-                                            </svg>
-                                        </span>
-                                    </a>
+                                    <div className="flex flex-col items-center md:items-start">
+                                        <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="https://form-efs.vercel.app/sales" style={{ marginBottom: '16px' }}>
+                                            <span className="btn-text">Apply for Sales</span>
+                                            <span className="btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
+                                                    <path fill="none" stroke="currentColor" strokeWidth="2" d="m.71.71l6.03,6.03c1.35,1.35,1.35,3.55,0,4.9L.71,17.67"></path>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="https://form-efs.vercel.app/aptm_setter">
+                                            <span className="btn-text">Apply for Appointment Setter</span>
+                                            <span className="btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
+                                                    <path fill="none" stroke="currentColor" strokeWidth="2" d="m.71.71l6.03,6.03c1.35,1.35,1.35,3.55,0,4.9L.71,17.67"></path>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -74,12 +76,12 @@ export default function CareerPage() {
                                 <img
                                     src="/careers-installer.jpg"
                                     alt="Electrical and Installation"
-                                    className="career-card-img"
-                                    style={{ width: '80%', height: 'auto', objectFit: 'contain' }}
+                                    className="career-card-img w-full md:w-[80%] mx-auto block"
+                                    style={{ height: 'auto', objectFit: 'contain' }}
                                 />
                                 <div className="career-card-content" style={{ padding: '40px' }}>
-                                    <div style={{ color: '#47c7ea', fontFamily: "'Rajdhani', sans-serif", fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '12px' }}>We&apos;re Hiring</div>
-                                    <h3 style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: '28px', fontWeight: 700, color: '#082042', marginBottom: '16px', lineHeight: 1.2 }}>Electrical &amp; Installation</h3>
+                                    <div className="text-center md:text-left" style={{ color: '#47c7ea', fontFamily: "'Rajdhani', sans-serif", fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '12px' }}>We&apos;re Hiring</div>
+                                    <h3 className="text-center md:text-left" style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: '28px', fontWeight: 700, color: '#082042', marginBottom: '16px', lineHeight: 1.2 }}>Electrical &amp; Installation</h3>
                                     <p style={{ color: '#3f4f65', lineHeight: 1.7, marginBottom: '28px' }}>
                                         Be part of our dedicated field team installing solar and battery systems across Australia. Our in-house installation team is the backbone of EFS Solar — if you&apos;re a qualified electrician or solar installer, we want to hear from you.
                                     </p>
@@ -91,14 +93,16 @@ export default function CareerPage() {
                                             </li>
                                         ))}
                                     </ul>
-                                    <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="https://form-efs.vercel.app/electrician">
-                                        <span className="btn-text">Apply for electrician</span>
-                                        <span className="btn-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
-                                                <path fill="none" stroke="currentColor" strokeWidth="2" d="m.71.71l6.03,6.03c1.35,1.35,1.35,3.55,0,4.9L.71,17.67"></path>
-                                            </svg>
-                                        </span>
-                                    </a>
+                                    <div className="flex flex-col items-center md:items-start">
+                                        <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="https://form-efs.vercel.app/electrician">
+                                            <span className="btn-text">Apply for electrician</span>
+                                            <span className="btn-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
+                                                    <path fill="none" stroke="currentColor" strokeWidth="2" d="m.71.71l6.03,6.03c1.35,1.35,1.35,3.55,0,4.9L.71,17.67"></path>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

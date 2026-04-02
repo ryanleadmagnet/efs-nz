@@ -46,6 +46,7 @@ export default function Footer() {
                     <ul className="footer-links">
                         <li><a href="#"><i className="fas fa-gift"></i> Make $250 for every friend or family member</a></li>
                     </ul>
+                    <p><br /></p>
                     <h4 className="footer-heading">Addresses</h4>
 
                     <ul className="footer-links text-[14px]">
