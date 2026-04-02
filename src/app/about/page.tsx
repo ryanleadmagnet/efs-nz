@@ -25,7 +25,7 @@ export default function AboutPage() {
                         backgroundImage: 'url(/modern-office.jpg)',
                         backgroundPosition: 'center center',
                         backgroundSize: 'cover',
-                        padding: '180px 20px 150px',
+                        padding: '160px 20px 150px',
                         position: 'relative',
                     }}
                 >

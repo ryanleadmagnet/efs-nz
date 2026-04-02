@@ -36,7 +36,7 @@ const ServicePageHero: React.FC<ServicePageHeroProps> = ({ title, subtitle, bgIm
             className="relative w-full overflow-hidden flex flex-col justify-center text-white"
             style={{ 
                 height: '500px',
-                padding: '180px 20px 150px' 
+                padding: '160px 20px 150px' 
             }}
         >
             {/* Moving Background Image */}

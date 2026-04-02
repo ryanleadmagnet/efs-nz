@@ -36,7 +36,7 @@ export default function CareerPage() {
                                         height: 'auto', objectFit: 'contain'
                                     }}
                                 />
-                                <div className="career-card-content" style={{ padding: '40px' }}>
+                                <div className="career-card-content" style={{ padding: '40px 0px' }}>
                                     <div className="text-center md:text-left" style={{ color: '#47c7ea', fontFamily: "'Rajdhani', sans-serif", fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '12px' }}>We&apos;re Hiring</div>
                                     <h3 className="text-center md:text-left" style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: '28px', fontWeight: 700, color: '#082042', marginBottom: '16px', lineHeight: 1.2 }}>Sales &amp; Appointment Setter</h3>
                                     <p style={{ color: '#3f4f65', lineHeight: 1.7, marginBottom: '28px' }}>
@@ -79,7 +79,7 @@ export default function CareerPage() {
                                     className="career-card-img w-full md:w-[80%] mx-auto block"
                                     style={{ height: 'auto', objectFit: 'contain' }}
                                 />
-                                <div className="career-card-content" style={{ padding: '40px' }}>
+                                <div className="career-card-content" style={{ padding: '40px 0px' }}>
                                     <div className="text-center md:text-left" style={{ color: '#47c7ea', fontFamily: "'Rajdhani', sans-serif", fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '12px' }}>We&apos;re Hiring</div>
                                     <h3 className="text-center md:text-left" style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: '28px', fontWeight: 700, color: '#082042', marginBottom: '16px', lineHeight: 1.2 }}>Electrical &amp; Installation</h3>
                                     <p style={{ color: '#3f4f65', lineHeight: 1.7, marginBottom: '28px' }}>

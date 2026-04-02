@@ -846,8 +846,8 @@ p {
 
 .section-desc {
     color: var(--text-color);
-    font-size: 18px;
-    line-height: 1.8em;
+    font-size: 16px;
+    line-height: 1.5em;
     margin-bottom: 35px;
 }
 
