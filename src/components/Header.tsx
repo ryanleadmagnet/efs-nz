@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolean }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modalUrl, setModalUrl] = useState('https://form-efs.vercel.app');
     const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
     const pathname = usePathname();
 
@@ -24,8 +25,15 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
         // Also listen for clicks on any element with .quote-trigger
         const handleGlobalClick = (e: MouseEvent) => {
             const target = e.target as HTMLElement;
-            if (target.closest('.quote-trigger')) {
+            const trigger = target.closest('.quote-trigger') as HTMLElement;
+            if (trigger) {
                 e.preventDefault();
+                const customUrl = trigger.getAttribute('data-iframe-url');
+                if (customUrl) {
+                    setModalUrl(customUrl);
+                } else {
+                    setModalUrl('https://form-efs.vercel.app');
+                }
                 setIsModalOpen(true);
             }
         };
@@ -74,7 +82,7 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
             <div id="quote-modal" className={`modal-overlay ${isModalOpen ? 'active' : ''}`} onClick={(e) => e.target === e.currentTarget && setIsModalOpen(false)}>
                 <div className="modal-content">
                     <button className="modal-close" onClick={() => setIsModalOpen(false)}><i className="fas fa-times"></i></button>
-                    <iframe src="https://form-efs.vercel.app/enquiry" title="Get a Quote" frameBorder="0"></iframe>
+                    <iframe src={modalUrl} title="Get a Quote" frameBorder="0"></iframe>
                 </div>
             </div>
 
@@ -85,7 +93,7 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                         <span className="top-bar-text">Save up to 30% on a home battery</span>
                         <img src="https://www.efssolar.com.au/wp-content/uploads/2023/06/Asset-43.svg" alt="Battery Icon"
                             className="top-bar-icon" />
-                        <a href="#" className="top-bar-link" onClick={toggleModal}>Check eligibility &gt;</a>
+                        <a href="#" className="top-bar-link quote-trigger" onClick={toggleModal}>Check eligibility &gt;</a>
                     </div>
                 </div>
             </div>

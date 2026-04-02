@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import AnimatedHeading from '@/components/AnimatedHeading';
@@ -98,7 +99,7 @@ export default function Home() {
                                     power at night and keeps your essential appliances running during outages — and now you can
                                     get
                                     one at a fraction of the cost.</p>
-                                <a href="#" className="btn btn-primary">
+                                <Link href="/services/batteries" className="btn btn-primary">
                                     <span className="btn-text">Learn more</span>
                                     <span className="btn-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
@@ -106,7 +107,7 @@ export default function Home() {
                                                 d="m.71.71l6.03,6.03c1.35,1.35,1.35,3.55,0,4.9L.71,17.67"></path>
                                         </svg>
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                             <div className="section-image animate-on-scroll delay-1">
                                 <img src="https://www.efssolar.com.au/wp-content/uploads/2025/08/Asset-62-1024x612.webp"

@@ -49,7 +49,7 @@ export default function CareerPage() {
                                             </li>
                                         ))}
                                     </ul>
-                                    <a href="mailto:support@efssolar.com.au?subject=Sales%20Role%20Application" className="btn btn-primary" style={{ marginBottom: '16px', }} >
+                                    <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="https://form-efs.vercel.app/sales" style={{ marginBottom: '16px' }}>
                                         <span className="btn-text">Apply for Sales</span>
                                         <span className="btn-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
@@ -57,7 +57,7 @@ export default function CareerPage() {
                                             </svg>
                                         </span>
                                     </a>
-                                    <a href="mailto:support@efssolar.com.au?subject=Sales%20Role%20Application" className="btn btn-primary">
+                                    <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="https://form-efs.vercel.app/aptm_setter">
                                         <span className="btn-text">Apply for Appointment Setter</span>
                                         <span className="btn-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
@@ -89,7 +89,7 @@ export default function CareerPage() {
                                             </li>
                                         ))}
                                     </ul>
-                                    <a href="mailto:support@efssolar.com.au?subject=Installation%20Role%20Application" className="btn btn-primary">
+                                    <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="https://form-efs.vercel.app/electrician">
                                         <span className="btn-text">Apply Now</span>
                                         <span className="btn-icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
