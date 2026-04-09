@@ -52,7 +52,7 @@ export default function AirConditioning() {
                             </div>
                         </div>
                         <div className="section-stop-paying-image animate-on-scroll delay-1">
-                            <img src="/assets/EFS-Solar-Website-Aircon-Image-01.jpg" alt="Beat the heat with a new Air Conditioning system" style={{ borderRadius: '12px', width: '100%' }} />
+                            <img src="/assets/aircon_system.webp" alt="Beat the heat with a new Air Conditioning system" style={{ borderRadius: '12px', width: '100%' }} />
                         </div>
                     </div>
                 </section>
@@ -61,7 +61,7 @@ export default function AirConditioning() {
                 <section className="section-peace section-stop-paying" style={{ backgroundColor: "#ffffff" }}>
                     <div className="section-stop-paying-inner">
                         <div className="section-stop-paying-image animate-on-scroll">
-                            <img src="/assets/EFS-Solar-Website-Aircon-Image-1024x1024-1.jpg" alt="$0 Deposit + Interest Free" style={{ borderRadius: '12px', width: '100%' }} />
+                            <img src="/assets/aircon.webp" alt="$0 Deposit + Interest Free" style={{ borderRadius: '12px', width: '100%' }} />
                         </div>
                         <div className="section-stop-paying-content text-right animate-on-scroll delay-1">
                             <div className="hero-content-center">

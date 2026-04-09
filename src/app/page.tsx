@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import AnimatedHeading from '@/components/AnimatedHeading';
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
+import HeroVideo from '@/components/HeroVideo';
 
 export const metadata: Metadata = {
     title: 'EFS Solar | Solar Panels Gold Coast & Sydney — 0% Upfront',
@@ -23,16 +24,14 @@ export default function Home() {
             <main>
                 {/* HERO SECTION */}
                 <section className="hero-section">
-                    <div className="hero-video-container">
-                        <video autoPlay muted playsInline loop>
-                            <source src="/assets/Sequence-01.mp4"
-                                type="video/mp4" />
-                        </video>
-                        <div className="hero-overlay"></div>
-                    </div>
+                    <HeroVideo />
 
-                    <div className="absolute top-[120px] left-1/2 -translate-x-1/2 md:left-auto md:-translate-x-0 md:transform-none md:right-16 z-20 w-max">
-                        <img src="/assets/logo2.png" alt="Logo 2" className="h-[60px] md:h-[80px] w-auto" />
+                    <div className="absolute top-[120px] left-0 w-full z-20 pointer-events-none">
+                        <div className="container flex justify-center md:justify-end">
+                            <div className="pointer-events-auto">
+                                <img src="/assets/logo2.png" alt="Logo 2" className="h-[60px] md:h-[80px] w-auto" />
+                            </div>
+                        </div>
                     </div>
 
                     <div className="container hero-content">

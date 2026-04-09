@@ -28,8 +28,11 @@ export default function ResidentialSolar() {
 
                 <section className="section-stop-paying" style={{ backgroundColor: "#ffffff" }}>
                     <div className="section-stop-paying-inner mobile-reverse">
-                        <div className="section-stop-paying-content">
-                            <div className="hero-content-center animate-on-scroll">
+                        <div className="section-stop-paying-image animate-on-scroll">
+                            <img src="/assets/iMac_Mockup_noise.gif" alt="A Smart Move for Your Home" />
+                        </div>
+                        <div className="section-stop-paying-content animate-on-scroll delay-1">
+                            <div className="hero-content-center">
                                 <AnimatedHeading tag="h2" className="section-subtitle">STOP PAYING FOR POWER</AnimatedHeading>
                                 <AnimatedHeading tag="h3" className="section-title" style={{ color: "var(--primary-color)" }}>A Smart Move<br />for Your Home</AnimatedHeading>
                                 <div className="section-desc" style={{ color: "var(--text-color)" }}>
@@ -48,20 +51,12 @@ export default function ResidentialSolar() {
                                 </a>
                             </div>
                         </div>
-                        <div className="section-stop-paying-image animate-on-scroll delay-1">
-                            <img src="/assets/placement-1024x1024.gif" alt="A Smart Move for Your Home" />
-                        </div>
                     </div>
                 </section>
 
                 <section className="section-peace section-stop-paying" style={{ backgroundColor: "#ffffff" }}>
-                    <div className="section-stop-paying-inner">
-                        <div className="section-stop-paying-image animate-on-scroll">
-                            <video autoPlay loop muted playsInline style={{ width: '100%', borderRadius: '12px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
-                                <source src="/assets/Commercial-Solar-Install.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                        <div className="section-stop-paying-content text-right animate-on-scroll delay-1">
+                    <div className="section-stop-paying-inner mobile-reverse">
+                        <div className="section-stop-paying-content animate-on-scroll">
                             <div className="hero-content-center">
                                 <AnimatedHeading tag="h2" className="section-subtitle" style={{ color: "var(--primary-color)" }}>PEACE OF MIND</AnimatedHeading>
                                 <AnimatedHeading tag="h3" className="section-title" style={{ color: "var(--primary-color)" }}>High Quality Service</AnimatedHeading>
@@ -81,6 +76,9 @@ export default function ResidentialSolar() {
                                     </a>
                                 </div>
                             </div>
+                        </div>
+                        <div className="section-stop-paying-image animate-on-scroll delay-1">
+                            <img src="/assets/electrician.webp" alt="EFS Solar Technician" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
                         </div>
                     </div>
                 </section>
@@ -123,7 +121,10 @@ export default function ResidentialSolar() {
                     <div className="sections-circle-overlay" id="sections-circle"></div>
                     <section className="section-tier1 section-stop-paying" style={{ background: "transparent" }}>
                         <div className="section-stop-paying-inner">
-                            <div className="section-stop-paying-content animate-on-scroll">
+                            <div className="section-stop-paying-image animate-on-scroll">
+                                <img src="/assets/Asset-64-1024x873.webp" alt="Solar Installation Tier 1" style={{ width: '73%', borderRadius: '12px' }} />
+                            </div>
+                            <div className="section-stop-paying-content text-right animate-on-scroll delay-1">
                                 <div className="hero-content-center">
                                     <AnimatedHeading tag="h2" className="section-subtitle">TIER 1 PRODUCTS</AnimatedHeading>
                                     <AnimatedHeading tag="h3" className="section-title" style={{ color: "#000000" }}>We Only Use the Best<br />of the Best</AnimatedHeading>
@@ -140,9 +141,6 @@ export default function ResidentialSolar() {
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="section-stop-paying-image animate-on-scroll delay-1">
-                                <img src="/assets/Asset-64-1024x873.webp" alt="Solar Installation Tier 1" style={{ width: '73%', borderRadius: '12px' }} />
                             </div>
                         </div>
                     </section>

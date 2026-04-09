@@ -61,9 +61,7 @@ export default function CommercialSolar() {
                 <section className="section-peace section-stop-paying" style={{ backgroundColor: "#ffffff" }}>
                     <div className="section-stop-paying-inner">
                         <div className="section-stop-paying-image animate-on-scroll">
-                            <video autoPlay loop muted playsInline style={{ width: '100%', borderRadius: '12px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
-                                <source src="/assets/Commercial-Solar-Install.mp4" type="video/mp4" />
-                            </video>
+                            <img src="/assets/commercial.webp" alt="Commercial Solar Installation" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
                         </div>
                         <div className="section-stop-paying-content text-right animate-on-scroll delay-1">
                             <div className="hero-content-center">

@@ -38,9 +38,9 @@ export default function ContactPage() {
                             Prefer to speak with us instead? Contact our friendly team and we will be able to assist you with your enquiry.
                         </p>
                         <div style={{ marginBottom: '20px' }}>
-                            <a href="tel:1300911735" className="contact-phone-number" style={{ fontSize: '36px', fontFamily: 'var(--font-heading)', fontWeight: 700, color: '#082042', textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
+                            <a href="tel:1300911736" className="contact-phone-number" style={{ fontSize: '36px', fontFamily: 'var(--font-heading)', fontWeight: 700, color: '#082042', textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
                                 <i className="fas fa-phone-alt" style={{ marginRight: '16px', fontSize: '24px', color: '#082042' }}></i>
-                                1300 911 735
+                                1300 911 736
                             </a>
                         </div>
                         <p style={{ color: '#3f4f65', fontSize: '18px', marginBottom: '32px' }}>
