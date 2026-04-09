@@ -622,6 +622,7 @@ p {
     align-items: center;
     color: var(--white);
     overflow: hidden;
+    background-color: #0a1628; /* dark navy fallback while video loads */
 }
 
 .hero-video-container {
