@@ -13,14 +13,15 @@ export default function HeroVideo() {
         setVideoSrc(`/assets/Sequence-0${randomIndex}.${extension}`);
     }, []);
 
-    // Manual loop: when the video ends, seek to 0 and restart immediately.
-    // This avoids the buffering pause caused by the native `loop` attribute,
-    // since the whole file is already in memory via preload="auto".
-    const handleEnded = () => {
+    // Seamless loop: intercept the video BEFORE it ends using timeupdate.
+    // When within 0.2s of the end, we seek back to 0 while still playing —
+    // the video never actually stops, eliminating any gap between loops.
+    const handleTimeUpdate = () => {
         const video = videoRef.current;
-        if (!video) return;
-        video.currentTime = 0;
-        video.play().catch(() => {});
+        if (!video || !video.duration) return;
+        if (video.duration - video.currentTime < 0.2) {
+            video.currentTime = 0;
+        }
     };
 
     return (
@@ -33,7 +34,7 @@ export default function HeroVideo() {
                     muted
                     playsInline
                     preload="auto"
-                    onEnded={handleEnded}
+                    onTimeUpdate={handleTimeUpdate}
                 >
                     <source src={videoSrc} type="video/mp4" />
                 </video>
