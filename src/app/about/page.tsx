@@ -55,7 +55,7 @@ export default function AboutPage() {
                             {/* left – illustration */}
                             <div className="about-intro-image animate-on-scroll" style={{ textAlign: 'center' }}>
                                 <img
-                                    src="/assets/Asset-22.svg"
+                                    src="/assets/Asset-22-2.svg"
                                     alt="EFS Solar illustration"
                                     style={{ width: '100%', maxWidth: 437 }}
                                 />
@@ -140,7 +140,7 @@ export default function AboutPage() {
                                         rel="noopener noreferrer"
                                         style={{ color: '#47c7ea', fontSize: '14px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                                     >
-                                        Google Map <span style={{fontSize: '16px'}}>&#8250;</span>
+                                        Google Map <span style={{ fontSize: '16px' }}>&#8250;</span>
                                     </a>
                                 </div>
                                 <div>
@@ -153,7 +153,7 @@ export default function AboutPage() {
                                         rel="noopener noreferrer"
                                         style={{ color: '#47c7ea', fontSize: '14px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
                                     >
-                                        Google Map <span style={{fontSize: '16px'}}>&#8250;</span>
+                                        Google Map <span style={{ fontSize: '16px' }}>&#8250;</span>
                                     </a>
                                 </div>
                             </div>
