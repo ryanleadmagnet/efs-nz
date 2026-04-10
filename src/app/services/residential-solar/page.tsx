@@ -6,15 +6,31 @@ import AnimatedHeading from '@/components/AnimatedHeading';
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
 
-export const metadata: Metadata = {
-    title: 'Residential Solar Panels Gold Coast & Sydney | EFS Solar',
-    description: 'EFS Solar installs premium residential solar panel systems on the Gold Coast and Sydney. Reduce your power bills with CEC-certified solar experts. Get a free quote.',
-    keywords: ['residential solar Gold Coast', 'home solar panels Sydney', 'solar installation Queensland', 'solar power home', 'solar rebate 2024'],
-    alternates: { canonical: 'https://www.efssolar.com.au/services/residential-solar' },
-    openGraph: { title: 'Residential Solar — EFS Solar', description: 'Premium home solar installations across Gold Coast & Sydney.', url: 'https://www.efssolar.com.au/services/residential-solar' },
-};
+export async function generateMetadata({ searchParams }: { searchParams: Promise<{ location?: string }> }): Promise<Metadata> {
+    const { location } = await searchParams;
+    const locationDisplay = location 
+        ? location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') 
+        : 'across QLD and NSW';
 
-export default function ResidentialSolar() {
+    return {
+        title: `Residential Solar Panels ${location === 'gold-coast-sydney' ? 'Gold Coast & Sydney' : locationDisplay} | EFS Solar`,
+        description: `EFS Solar installs premium residential solar panel systems ${locationDisplay === 'across QLD and NSW' ? 'across QLD and NSW' : 'in ' + locationDisplay}. Reduce your power bills with CEC-certified solar experts. Get a free quote.`,
+        keywords: [`residential solar ${locationDisplay}`, 'home solar panels', 'solar installation', 'solar power home', 'solar rebate 2024'],
+        alternates: { canonical: `https://www.efssolar.com.au/services/residential-solar${location ? '?location=' + location : ''}` },
+        openGraph: { 
+            title: `Residential Solar ${locationDisplay} — EFS Solar`, 
+            description: `Premium home solar installations ${locationDisplay}.`, 
+            url: `https://www.efssolar.com.au/services/residential-solar${location ? '?location=' + location : ''}` 
+        },
+    };
+}
+
+export default async function ResidentialSolar({ searchParams }: { searchParams: Promise<{ location?: string }> }) {
+    const { location } = await searchParams;
+    const locationDisplay = location 
+        ? location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') 
+        : 'across QLD and NSW';
+
     return (
         <>
             <Header />
@@ -22,21 +38,21 @@ export default function ResidentialSolar() {
             <main>
                 <ServicePageHero
                     subtitle="Services >"
-                    title="Residential Solar"
+                    title={`Residential Solar ${locationDisplay}`}
                     bgImage="/assets/solar-panels-2022-11-11-08-53-10-utc.jpg"
                 />
 
                 <section className="section-stop-paying" style={{ backgroundColor: "#ffffff" }}>
                     <div className="section-stop-paying-inner">
                         <div className="section-stop-paying-image animate-on-scroll">
-                            <img src="/assets/iMac_Mockup_noise.gif" alt="A Smart Move for Your Home" />
+                            <img src="/assets/iMac_Mockup_noise.gif" alt={`A Smart Move for Your Home ${locationDisplay}`} />
                         </div>
                         <div className="section-stop-paying-content animate-on-scroll delay-1">
                             <div className="hero-content-center">
                                 <AnimatedHeading tag="h2" className="section-subtitle">STOP PAYING FOR POWER</AnimatedHeading>
-                                <AnimatedHeading tag="h3" className="section-title" style={{ color: "var(--primary-color)" }}>A Smart Move<br />for Your Home</AnimatedHeading>
+                                <AnimatedHeading tag="h3" className="section-title" style={{ color: "var(--primary-color)" }}>A Smart Move<br />for Your Home in {locationDisplay === 'across QLD and NSW' ? 'QLD & NSW' : locationDisplay}</AnimatedHeading>
                                 <div className="section-desc" style={{ color: "var(--text-color)" }}>
-                                    <p>Making the decision to go solar for your electricity needs is one of the brightest you'll ever make. Solar power can reduce your home electricity bill, earn you money for extra electricity generated, and help reduce greenhouse gas emissions.</p>
+                                    <p>Making the decision to go solar for your electricity needs in {locationDisplay === 'across QLD and NSW' ? 'QLD and NSW' : locationDisplay} is one of the brightest you&apos;ll ever make. Solar power can reduce your home electricity bill, earn you money for extra electricity generated, and help reduce greenhouse gas emissions.</p>
                                     <br />
                                     <p>By choosing EFS as your solar energy system supplier, you also get the peace of mind that comes from using an experienced and fully licensed installer.</p>
                                 </div>
@@ -59,10 +75,10 @@ export default function ResidentialSolar() {
                         <div className="section-stop-paying-content animate-on-scroll">
                             <div className="hero-content-center">
                                 <AnimatedHeading tag="h2" className="section-subtitle" style={{ color: "var(--primary-color)" }}>PEACE OF MIND</AnimatedHeading>
-                                <AnimatedHeading tag="h3" className="section-title" style={{ color: "var(--primary-color)" }}>High Quality Service</AnimatedHeading>
+                                <AnimatedHeading tag="h3" className="section-title" style={{ color: "var(--primary-color)" }}>High Quality Service in {locationDisplay === 'across QLD and NSW' ? 'QLD & NSW' : locationDisplay}</AnimatedHeading>
                                 <div className="section-desc" style={{ color: "var(--text-color)" }}>
-                                    <p>Our range of home solar power systems are designed to power you, whatever your needs may be. With only the best quality products being used in our solar arrays, you can rest easy knowing that each system we install is also backed by a 25 year warranty.</p>
-                                    <p>Give us a call today and let's design a system to suit your individual needs, there has truly never been a better time to go solar!</p>
+                                    <p>Our range of home solar power systems are designed to power you in {locationDisplay === 'across QLD and NSW' ? 'QLD and NSW' : locationDisplay}, whatever your needs may be. With only the best quality products being used in our solar arrays, you can rest easy knowing that each system we install is also backed by a 25 year warranty.</p>
+                                    <p>Give us a call today and let&apos;s design a system to suit your individual needs, there has truly never been a better time to go solar!</p>
                                 </div>
                                 <div className="mt-8">
                                     <a href="#" className="btn btn-primary quote-trigger">
@@ -78,7 +94,7 @@ export default function ResidentialSolar() {
                             </div>
                         </div>
                         <div className="section-stop-paying-image animate-on-scroll delay-1">
-                            <img src="/assets/electrician.webp" alt="EFS Solar Technician" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
+                            <img src="/assets/electrician.webp" alt={`EFS Solar Technician in ${locationDisplay}`} style={{ width: '100%', borderRadius: '12px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
                         </div>
                     </div>
                 </section>
@@ -96,14 +112,14 @@ export default function ResidentialSolar() {
                                     <img src="/assets/Asset-30-1.svg" alt="Site Assessment" />
                                 </div>
                                 <h4>SITE ASSESSMENT</h4>
-                                <p>One of our reps will conduct an on-site assessment of your home before designing a system to suit your household needs.</p>
+                                <p>One of our reps will conduct an on-site assessment of your home in {locationDisplay === 'across QLD and NSW' ? 'QLD or NSW' : locationDisplay} before designing a system to suit your household needs.</p>
                             </div>
                             <div className="switch-item animate-on-scroll delay-1">
                                 <div className="switch-icon">
                                     <img src="/assets/Asset-29-1.svg" alt="Install" />
                                 </div>
                                 <h4>INSTALL</h4>
-                                <p>Our fully licenced solar technicians will come out and install your new system on your roof and educate you on how to get the most out of it.</p>
+                                <p>Our fully licenced solar technicians will come out and install your new system on your roof in {locationDisplay === 'across QLD and NSW' ? 'QLD or NSW' : locationDisplay} and educate you on how to get the most out of it.</p>
                             </div>
                             <div className="switch-item animate-on-scroll delay-2">
                                 <div className="switch-icon">
@@ -122,13 +138,13 @@ export default function ResidentialSolar() {
                     <section className="section-tier1 section-stop-paying" style={{ background: "transparent" }}>
                         <div className="section-stop-paying-inner">
                             <div className="section-stop-paying-image animate-on-scroll">
-                                <img src="/assets/Asset-64-1024x873.webp" alt="Solar Installation Tier 1" style={{ width: '73%', borderRadius: '12px' }} />
+                                <img src="/assets/Asset-64-1024x873.webp" alt={`Solar Installation Tier 1 products ${locationDisplay}`} style={{ width: '73%', borderRadius: '12px' }} />
                             </div>
                             <div className="section-stop-paying-content text-right animate-on-scroll delay-1">
                                 <div className="hero-content-center">
                                     <AnimatedHeading tag="h2" className="section-subtitle">TIER 1 PRODUCTS</AnimatedHeading>
                                     <AnimatedHeading tag="h3" className="section-title" style={{ color: "#000000" }}>We Only Use the Best<br />of the Best</AnimatedHeading>
-                                    <p className="section-desc" style={{ color: "#000000" }}>We don&apos;t settle for anything but the best when it comes to the solar products we sell &amp; install. With long manufacture warranties of up to 30 years, you can rest easy knowing your system will perform long into the future.</p>
+                                    <p className="section-desc" style={{ color: "#000000" }}>We don&apos;t settle for anything but the best when it comes to the solar products we sell &amp; install in {locationDisplay === 'across QLD and NSW' ? 'QLD and NSW' : locationDisplay}. With long manufacture warranties of up to 30 years, you can rest easy knowing your system will perform long into the future.</p>
                                     <div className="mt-8">
                                         <a href="#" className="btn btn-primary quote-trigger">
                                             <span className="btn-text">Get a Quote</span>

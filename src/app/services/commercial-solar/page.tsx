@@ -5,60 +5,43 @@ import ServicePageHero from '@/components/ServicePageHero';
 import AnimatedHeading from '@/components/AnimatedHeading';
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
-export const metadata: Metadata = {
-    title: 'Commercial Solar Panels Gold Coast & Sydney | EFS Solar',
-    description: 'Cut business energy costs with EFS Solar commercial solar systems. Trusted by businesses across Gold Coast and Sydney. CEC-certified commercial solar installers.',
-    keywords: ['commercial solar Gold Coast', 'business solar panels Sydney', 'commercial solar installation', 'solar for business Queensland'],
-    alternates: { canonical: 'https://www.efssolar.com.au/services/commercial-solar' },
-    openGraph: { title: 'Commercial Solar — EFS Solar', description: 'Commercial solar installations across Gold Coast & Sydney.', url: 'https://www.efssolar.com.au/services/commercial-solar' },
-};
+export async function generateMetadata({ searchParams }: { searchParams: Promise<{ location?: string }> }): Promise<Metadata> {
+    const { location } = await searchParams;
+    const locationDisplay = location 
+        ? location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') 
+        : 'across QLD and NSW';
 
-const QuoteBtn = () => (
-    <a href="#" className="btn btn-primary quote-trigger mt-6">
-        <span className="btn-text">Get a Quote</span>
-        <span className="btn-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
-                <path fill="none" stroke="currentColor" strokeWidth="2"
-                    d="m.71.71l6.03,6.03c1.35,1.35,1.35,3.55,0,4.9L.71,17.67"></path>
-            </svg>
-        </span>
-    </a>
-);
+    return {
+        title: `Commercial Solar Panels ${location === 'gold-coast-sydney' ? 'Gold Coast & Sydney' : locationDisplay} | EFS Solar`,
+        description: `EFS Solar installs premium commercial solar panel systems ${locationDisplay === 'across QLD and NSW' ? 'across QLD and NSW' : 'in ' + locationDisplay}. Empower your business with sustainable energy solutions. Get a free quote.`,
+        keywords: [`commercial solar ${locationDisplay}`, 'business solar panels', 'commercial solar installation', 'industrial solar power', 'solar for business'],
+        alternates: { canonical: `https://www.efssolar.com.au/services/commercial-solar${location ? '?location=' + location : ''}` },
+        openGraph: { 
+            title: `Commercial Solar ${locationDisplay} — EFS Solar`, 
+            description: `Premium commercial solar installations ${locationDisplay}.`, 
+            url: `https://www.efssolar.com.au/services/commercial-solar${location ? '?location=' + location : ''}` 
+        },
+    };
+}
 
-export default function CommercialSolar() {
+export default async function CommercialSolar({ searchParams }: { searchParams: Promise<{ location?: string }> }) {
+    const { location } = await searchParams;
+    const locationDisplay = location 
+        ? location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') 
+        : 'across QLD and NSW';
+
     return (
         <>
             <Header />
 
             <main>
-                {/* Hero */}
                 <ServicePageHero
                     subtitle="Services >"
-                    title="Commercial Solar"
-                    bgImage="/assets/solar-panels-in-city-2022-12-15-19-58-21-utc.jpg"
+                    title={`Commercial Solar ${locationDisplay}`}
+                    bgImage="/assets/solar-panels-commercial.jpg"
                 />
 
-                {/* Section 1 – Stop Paying For Power (dark photo bg) */}
                 <section className="section-stop-paying" style={{ backgroundColor: "#ffffff" }}>
-                    <div className="section-stop-paying-inner mobile-reverse">
-                        <div className="section-stop-paying-content">
-                            <div className="hero-content-center animate-on-scroll">
-                                <AnimatedHeading tag="h2" className="section-subtitle" style={{ color: "var(--primary-color)" }}>STOP PAYING FOR POWER</AnimatedHeading>
-                                <AnimatedHeading tag="h3" className="section-title" style={{ color: "var(--primary-color)" }}>Solar, a Smart Move<br />for Your Business</AnimatedHeading>
-                                <div className="section-desc" style={{ color: "var(--text-color)" }}>
-                                    <p>Switching to solar is one of the best decisions any business owner could make. Reduce your commercial electricity costs, and put money back into your business with our quality solar systems. Best of all you can get solar without paying anything upfront and never have to pay for power again!</p>
-                                </div>
-                                <QuoteBtn />
-                            </div>
-                        </div>
-                        <div className="section-stop-paying-image animate-on-scroll delay-1">
-                            <img src="/assets/EFS-Solar-Website-Stats-Second-01-01.jpg" alt="Commercial Solar Stats" style={{ borderRadius: '12px', width: '100%' }} />
-                        </div>
-                    </div>
-                </section>
-
-                {/* Section 2 – You've Got the Power (white bg, image right) */}
-                <section className="section-peace section-stop-paying" style={{ backgroundColor: "#ffffff" }}>
                     <div className="section-stop-paying-inner">
                         <div className="section-stop-paying-image animate-on-scroll">
                             <img src="/assets/commercial.webp" alt="Commercial Solar Installation" style={{ width: '100%', borderRadius: '12px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }} />
