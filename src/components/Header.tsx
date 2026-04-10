@@ -116,7 +116,6 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                                     <li><Link href="/services/residential-solar" className={pathname === '/services/residential-solar' ? 'active' : ''}>Residential Solar</Link></li>
                                     <li><Link href="/services/commercial-solar" className={pathname === '/services/commercial-solar' ? 'active' : ''}>Commercial Solar</Link></li>
                                     <li><Link href="/services/batteries" className={pathname === '/services/batteries' ? 'active' : ''}>Batteries</Link></li>
-                                    <li><Link href="/services/air-conditioning" className={pathname === '/services/air-conditioning' ? 'active' : ''}>Air-Conditioning</Link></li>
                                 </ul>
                             </li>
                             <li className="has-dropdown"><Link href="/technology/energizer" className={pathname.startsWith('/technology') ? 'active' : ''}>Technology <i className="fas fa-caret-down"></i></Link>
@@ -155,7 +154,6 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                                     <li><Link href="/services/residential-solar" className={pathname === '/services/residential-solar' ? 'active' : ''}>Residential Solar</Link></li>
                                     <li><Link href="/services/commercial-solar" className={pathname === '/services/commercial-solar' ? 'active' : ''}>Commercial Solar</Link></li>
                                     <li><Link href="/services/batteries" className={pathname === '/services/batteries' ? 'active' : ''}>Batteries</Link></li>
-                                    <li><Link href="/services/air-conditioning" className={pathname === '/services/air-conditioning' ? 'active' : ''}>Air-Conditioning</Link></li>
                                 </ul>
                             </li>
                             <li className="has-dropdown"><a href="#" className={pathname.startsWith('/technology') ? 'active' : ''}>Technology <i className="fas fa-caret-down"></i></a>
@@ -197,7 +195,6 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                                 <li><Link href="/services/residential-solar" className={pathname === '/services/residential-solar' ? 'active' : ''}>Residential Solar</Link></li>
                                 <li><Link href="/services/commercial-solar" className={pathname === '/services/commercial-solar' ? 'active' : ''}>Commercial Solar</Link></li>
                                 <li><Link href="/services/batteries" className={pathname === '/services/batteries' ? 'active' : ''}>Batteries</Link></li>
-                                <li><Link href="/services/air-conditioning" className={pathname === '/services/air-conditioning' ? 'active' : ''}>Air-Conditioning</Link></li>
                             </ul>
                         </li>
                         <li className={`has-dropdown mobile-dropdown-item`}>

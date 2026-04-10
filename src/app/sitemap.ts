@@ -68,7 +68,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${BASE_URL}/services/residential-solar`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${BASE_URL}/services/commercial-solar`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${BASE_URL}/services/batteries`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
-        { url: `${BASE_URL}/services/air-conditioning`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${BASE_URL}/technology/tesla-powerwall`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${BASE_URL}/technology/energizer`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${BASE_URL}/technology/goodwe`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },

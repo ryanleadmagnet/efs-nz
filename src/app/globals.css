@@ -16,7 +16,7 @@
     --text-color: #1a1a24;
     /* Softer, sleek black */
     --white: #ffffff;
-    --bg-light: #fafafa;
+    --bg-light: #ffffff;
     /* Clean off-white for some panels */
 
     --font-heading: var(--font-rajdhani-stack);
@@ -848,7 +848,7 @@ p {
 }
 
 .bg-light {
-    background-color: #f7faff;
+    background-color: #ffffff;
 }
 
 .text-center {
