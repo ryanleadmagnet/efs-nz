@@ -121,7 +121,7 @@ export default function Home() {
                                 </Link>
                             </div>
                             <div className="section-image animate-on-scroll delay-1">
-                                <img src="/assets/Asset-62-1024x612.webp"
+                                <img src="/assets/battery-copy.webp"
                                     alt="Solar Battery" />
                             </div>
                         </div>
