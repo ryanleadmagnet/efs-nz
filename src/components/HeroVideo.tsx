@@ -13,16 +13,20 @@ export default function HeroVideo() {
         setVideoSrc(`/assets/Sequence-0${randomIndex}.${extension}`);
     }, []);
 
-    // Seamless loop: intercept the video BEFORE it ends using timeupdate.
-    // When within 0.2s of the end, we seek back to 0 while still playing —
-    // the video never actually stops, eliminating any gap between loops.
-    const handleTimeUpdate = () => {
+    useEffect(() => {
         const video = videoRef.current;
-        if (!video || !video.duration) return;
-        if (video.duration - video.currentTime < 0.2) {
+        if (!video) return;
+
+        // 'ended' fires when the video genuinely stops — seek back and replay.
+        // This is the most reliable cross-browser looping fallback.
+        const handleEnded = () => {
             video.currentTime = 0;
-        }
-    };
+            video.play().catch(() => {});
+        };
+
+        video.addEventListener('ended', handleEnded);
+        return () => video.removeEventListener('ended', handleEnded);
+    }, [videoSrc]);
 
     return (
         <div className="hero-video-container">
@@ -31,10 +35,10 @@ export default function HeroVideo() {
                     ref={videoRef}
                     key={videoSrc}
                     autoPlay
+                    loop
                     muted
                     playsInline
                     preload="auto"
-                    onTimeUpdate={handleTimeUpdate}
                 >
                     <source src={videoSrc} type="video/mp4" />
                 </video>
