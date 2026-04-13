@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
 export const metadata: Metadata = {
-    title: 'Tesla Powerwall by EFS Solar: Certified Installers Available',
+    title: 'Tesla Powerwall — Certified Installers across QLD & NSW',
     description: 'Harness energy efficiency with the Tesla Powerwall. Contact EFS Solar for your certified installer and solar battery needs.',
 };
 
@@ -127,22 +127,6 @@ export default function TeslaPowerwallPage() {
                             </a>
                         </div>
 
-                        {/* Related Links */}
-                        <div className="cs-related-links animate-on-scroll">
-                            <h4>Related Links</h4>
-                            <ul>
-                                <li>
-                                    <a href="https://www.tesla.com/en_AU/powerwall" target="_blank" rel="noopener noreferrer">
-                                        Tesla PowerWall page
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.tesla.com/en_au/support/energy/powerwall/documents/documents" target="_blank" rel="noopener noreferrer">
-                                        PowerWall Owner Documents
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
 
                     </div>
                 </section>

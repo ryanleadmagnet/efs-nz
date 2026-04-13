@@ -60,7 +60,6 @@ export default function Footer() {
                     <ul className="footer-links text-white text-[14px] m-0">
                         <li className="mb-[10px]">QLD Electrical Licence No.: 87161</li>
                         <li className="mb-[10px]">NSW Electrical Licence No.: 372946C</li>
-                        <li className="mb-[10px]">NT Electrical Licence No.: C4246</li>
                     </ul>
                 </div>
 

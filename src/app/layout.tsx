@@ -28,11 +28,11 @@ const rubik = Rubik({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.efssolar.com.au"),
   title: {
-    default: "EFS Solar | Solar Panels Gold Coast & Sydney — Certified Installers",
-    template: "%s | EFS Solar",
+    default: "EFS Solar | Certified Solar Panels across QLD & NSW",
+    template: "EFS Solar | %s",
   },
   description:
-    "EFS Solar — Gold Coast and Sydney's trusted solar panel installers. Residential solar, commercial solar, battery storage & Tesla Powerwall. Get a free quote today.",
+    "EFS Solar — Trusted solar panel installers across QLD & NSW. Residential solar, commercial solar, battery storage & Tesla Powerwall. Get a free quote today.",
   keywords: [
     "solar panels Gold Coast",
     "solar installation Sydney",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: "https://www.efssolar.com.au",
     siteName: "EFS Solar",
-    title: "EFS Solar | Solar Panels Gold Coast & Sydney",
+    title: "EFS Solar | Solar Panels across QLD & NSW",
     description:
       "Certified solar installers serving Gold Coast and Sydney. Residential solar, battery storage, Tesla Powerwall & commercial solar solutions.",
     images: [
@@ -75,13 +75,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EFS Solar | Solar Panels Gold Coast & Sydney",
+    title: "EFS Solar | Solar Panels across QLD & NSW",
     description:
       "Certified solar installers serving Gold Coast and Sydney. Residential solar, batteries & commercial solar.",
     images: ["/assets/DJI_20250612122357_0110_D-copy-2.webp"],
   },
   alternates: {
     canonical: "https://www.efssolar.com.au",
+  },
+  icons: {
+    icon: "/icon.png",
   },
 };
 
@@ -93,15 +96,13 @@ export default function RootLayout({
   return (
     <html lang="en-AU" className={`${rajdhani.variable} ${saira.variable} ${rubik.variable}`}>
       <head>
+        <meta name="theme-color" content="rgb(12, 26, 47)" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
-        <link rel="icon" type="image/png" href="/icon.png" />
-        <meta name="theme-color" content="rgb(12, 26, 47)" />
       </head>
       <body className="antialiased">
         <ScrollObserver />

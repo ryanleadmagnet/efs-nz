@@ -46,7 +46,7 @@ const features = [
 ];
 
 export const metadata = {
-    title: '7 Innovative Canadian Solar Solutions with EFS Solar',
+    title: '7 Innovative Canadian Solar Solutions',
     description: "Contact EFS Solar for inquiries on Canadian Solar products. We're here to assist you through phone or social media.",
 };
 

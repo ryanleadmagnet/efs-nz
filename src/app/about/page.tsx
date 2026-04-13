@@ -3,12 +3,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import AnimatedHeading from '@/components/AnimatedHeading';
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
+import ServicePageHero from '@/components/ServicePageHero';
 
 export const metadata: Metadata = {
-    title: 'About EFS Solar — Certified Solar Installers Gold Coast & Sydney',
-    description: 'Learn about EFS Solar, a trusted CEC-certified solar installer serving Gold Coast and Sydney. Our expert team delivers premium solar and battery solutions.',
+    title: 'About — Certified Solar Installers across QLD & NSW',
+    description: 'Learn about EFS Solar, a trusted CEC-certified solar installer serving QLD and NSW. Our expert team delivers premium solar and battery solutions.',
     alternates: { canonical: 'https://www.efssolar.com.au/about' },
-    openGraph: { title: 'About EFS Solar', description: 'Certified solar installers on the Gold Coast and Sydney.', url: 'https://www.efssolar.com.au/about' },
+    openGraph: { title: 'About EFS Solar', description: 'Certified solar installers across QLD and NSW.', url: 'https://www.efssolar.com.au/about' },
 };
 
 export default function AboutPage() {
@@ -18,35 +19,11 @@ export default function AboutPage() {
             <Header />
             <main>
 
-                {/* ── Hero ─────────────────────────────────────────────── */}
-                <section
-                    className="about-hero"
-                    style={{
-                        backgroundImage: 'url(/modern-office.jpg)',
-                        backgroundPosition: 'center center',
-                        backgroundSize: 'cover',
-                        padding: '160px 20px 150px',
-                        position: 'relative',
-                    }}
-                >
-                    <div style={{
-                        position: 'absolute', inset: 0,
-                        background: 'rgba(0,0,0,0.55)',
-                    }} />
-                    <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-                        <h1 style={{
-                            fontFamily: "'Rajdhani', sans-serif",
-                            fontSize: 'clamp(52px, 8vw, 85px)',
-                            fontWeight: 700,
-                            color: '#fff',
-                            textTransform: 'uppercase',
-                            lineHeight: 1.05,
-                            letterSpacing: '-1px',
-                        }}>
-                            Who We Are
-                        </h1>
-                    </div>
-                </section>
+                <ServicePageHero
+                    subtitle=""
+                    title="Who We Are"
+                    bgImage="/assets/iStock-1313265074-s-1.jpg"
+                />
 
                 {/* ── EFS Solar intro (light grey bg) ──────────────────── */}
                 <section style={{ backgroundColor: '#f5f5f5', padding: '50px 20px' }}>

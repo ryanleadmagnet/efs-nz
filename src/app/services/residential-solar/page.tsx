@@ -13,7 +13,7 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
         : 'across QLD and NSW';
 
     return {
-        title: `Residential Solar Panels ${location === 'gold-coast-sydney' ? 'Gold Coast & Sydney' : locationDisplay} | EFS Solar`,
+        title: `Residential Solar Panels ${location === 'gold-coast-sydney' ? 'Gold Coast & Sydney' : locationDisplay}`,
         description: `EFS Solar installs premium residential solar panel systems ${locationDisplay === 'across QLD and NSW' ? 'across QLD and NSW' : 'in ' + locationDisplay}. Reduce your power bills with CEC-certified solar experts. Get a free quote.`,
         keywords: [`residential solar ${locationDisplay}`, 'home solar panels', 'solar installation', 'solar power home', 'solar rebate 2024'],
         alternates: { canonical: `https://www.efssolar.com.au/services/residential-solar${location ? '?location=' + location : ''}` },

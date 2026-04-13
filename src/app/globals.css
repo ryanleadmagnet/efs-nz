@@ -103,10 +103,11 @@ p {
 
 .modal-content {
     background: transparent;
-    width: 100%;
-    max-width: none;
-    height: 100vh;
-    border-radius: 0;
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+    max-height: 800px;
+    border-radius: 10px;
     position: relative;
     box-shadow: none;
     display: flex;
@@ -622,7 +623,8 @@ p {
     align-items: center;
     color: var(--white);
     overflow: hidden;
-    background-color: #0a1628; /* dark navy fallback while video loads */
+    background-color: #0a1628;
+    /* dark navy fallback while video loads */
 }
 
 .hero-video-container {
@@ -658,6 +660,7 @@ p {
     z-index: 30;
     width: 100%;
     padding-top: 30px;
+
     /* offset for top headers */
 }
 
@@ -679,6 +682,7 @@ p {
     letter-spacing: -1px;
     text-transform: uppercase;
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    max-width: 700px;
 }
 
 .hero-content .btn {
@@ -749,13 +753,17 @@ p {
 
     .hero-section {
         min-height: 560px !important;
-        align-items: center;
+        align-items: flex-start;
         padding-bottom: 32px;
     }
 
     .hero-content {
-        padding-top: 100px;
+        padding-top: 40px;
         /* push content below centered logo2 */
+    }
+
+    .hero-home {
+        padding-top: 190px !important;
     }
 
     .hero-subtitle {
@@ -1192,7 +1200,7 @@ p {
 
 @media (max-width: 991px) {
     .section-stop-paying-inner {
-        padding: 0;
+        padding: 60px 20px;
     }
 
     .section-stop-paying-content {
@@ -1697,7 +1705,7 @@ p {
     border-radius: 12px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .section-stop-paying-inner {
         flex-direction: column !important;
         justify-content: center !important;
@@ -1710,7 +1718,7 @@ p {
 
     .section-stop-paying-content,
     .section-stop-paying-image {
-        width: 100% !important;
+        width: 80% !important;
         padding: 60px 20px !important;
     }
 }
@@ -2531,6 +2539,11 @@ p {
     z-index: 10;
 }
 
+.ez-spotlight-battery {
+    margin: 80px -40px !important;
+}
+
+
 /* ── Responsive: tablet (max 1024px) ───────────────────── */
 @media (min-width: 768px) and (max-width: 1024px) {
     .ez-hero-right {
@@ -2656,6 +2669,10 @@ p {
         margin: 0 -15px;
     }
 
+    .ez-spotlight-battery {
+        margin: 80px -15px;
+    }
+
     .ez-spotlight-bg {
         background-position: bottom right;
         min-height: 665px;
@@ -2759,7 +2776,7 @@ p {
     }
 
     .ez-inverter-desc-section {
-        margin: 0 -15px -30px;
+        margin: 0 -15px 0px;
         padding: 80px 15px 30px;
     }
 
@@ -2790,6 +2807,45 @@ p {
     }
 }
 
+/* --- Energizer Battery Section Customizations --- */
+.ez-spotlight-battery .ez-spotlight-text h2 {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.ez-spotlight-battery .ez-spotlight-text h3 {
+    color: #fff !important;
+}
+
+.ez-spotlight-battery .ez-spotlight-text p {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+@media (min-width: 1024px) {
+    .ez-spotlight-battery .ez-spotlight-inner {
+        gap: 60px;
+    }
+
+    .ez-spotlight-battery .ez-spotlight-img {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .ez-spotlight-battery .ez-spotlight-text {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .ez-spotlight-battery .ez-spotlight-img img {
+        width: 100%;
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ez-spotlight-battery .ez-spotlight-img {
+        margin-bottom: 0px !important;
+    }
+}
 
 /* ============================================================
    GET STARTED PAGE
@@ -2833,6 +2889,7 @@ p {
     align-items: flex-start;
     justify-content: center;
     padding-top: 10px;
+    max-width: 300px;
 }
 
 .gs-faq-col {
@@ -3033,7 +3090,7 @@ p {
     }
 
     .gs-faq-image {
-        display: none;
+        margin: 0px auto;
     }
 
     .gs-cta-btns {

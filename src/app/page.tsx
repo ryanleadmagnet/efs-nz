@@ -7,11 +7,11 @@ import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 import HeroVideo from '@/components/HeroVideo';
 
 export const metadata: Metadata = {
-    title: 'EFS Solar | Solar Panels Gold Coast & Sydney — 0% Upfront',
-    description: 'EFS Solar — Gold Coast and Sydney\'s trusted solar installers. Get premium solar panels, battery storage & Tesla Powerwall with 0% upfront. 13,000+ installations. Free quote.',
+    title: 'Solar Panels across QLD & NSW — 0% Upfront',
+    description: 'EFS Solar — trusted solar installers across QLD & NSW. Get premium solar panels, battery storage & Tesla Powerwall with 0% upfront. 13,000+ installations. Free quote.',
     keywords: ['solar panels Gold Coast', 'solar installation Sydney', '0% upfront solar', 'solar battery storage', 'Tesla Powerwall', 'residential solar Queensland', 'solar quote Gold Coast'],
     alternates: { canonical: 'https://www.efssolar.com.au' },
-    openGraph: { title: 'EFS Solar | Solar & Batteries 0% Upfront | Gold Coast & Sydney', description: 'Trusted solar installers with 13,000+ installations. Solar panels, batteries & Tesla Powerwall.', url: 'https://www.efssolar.com.au' },
+    openGraph: { title: 'EFS Solar | Solar & Batteries 0% Upfront | across QLD & NSW', description: 'Trusted solar installers with 13,000+ installations. Solar panels, batteries & Tesla Powerwall.', url: 'https://www.efssolar.com.au' },
 };
 
 export default function Home() {
@@ -34,7 +34,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="container hero-content">
+                    <div className="container hero-content hero-home">
                         <h1 className="hero-subtitle">Solar Made Simple</h1>
                         <AnimatedHeading tag="h2" className="hero-title">Solar &amp; Batteries<br />0% Upfront</AnimatedHeading>
 

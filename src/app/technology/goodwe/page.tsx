@@ -4,11 +4,11 @@ import Footer from '@/components/Footer';
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
 export const metadata: Metadata = {
-    title: 'GoodWe Solar Inverters Gold Coast & Sydney | EFS Solar',
-    description: 'EFS Solar supplies and installs GoodWe solar inverters across Gold Coast and Sydney. Reliable, smart, and affordable solar inverter solutions for homes and businesses.',
-    keywords: ['GoodWe inverter Gold Coast', 'GoodWe solar Sydney', 'solar inverter installation Queensland', 'GoodWe installer Australia'],
+    title: 'GoodWe Solar Inverters across QLD & NSW',
+    description: 'EFS Solar supplies and installs GoodWe solar inverters across QLD & NSW. Reliable, smart, and affordable solar inverter solutions for homes and businesses.',
+    keywords: ['GoodWe inverter QLD', 'GoodWe solar NSW', 'solar inverter installation Queensland', 'GoodWe installer Australia'],
     alternates: { canonical: 'https://www.efssolar.com.au/technology/goodwe' },
-    openGraph: { title: 'GoodWe Solar Inverters — EFS Solar', description: 'EFS Solar installs GoodWe inverters across Gold Coast & Sydney.', url: 'https://www.efssolar.com.au/technology/goodwe' },
+    openGraph: { title: 'EFS Solar | GoodWe Solar Inverters across QLD & NSW', description: 'EFS Solar installs GoodWe inverters across QLD & NSW.', url: 'https://www.efssolar.com.au/technology/goodwe' },
 };
 
 export default function GoodwePage() {
@@ -207,27 +207,6 @@ export default function GoodwePage() {
                             </a>
                         </div>
 
-                        {/* Related Links */}
-                        <div className="cs-related-links animate-on-scroll">
-                            <h4>Related Links</h4>
-                            <ul>
-                                <li>
-                                    <a href="#">DNS Series Specifications</a>
-                                </li>
-                                <li>
-                                    <a href="#">MS Series Specifications</a>
-                                </li>
-                                <li>
-                                    <a href="#">Independent Review with Efficiency Data</a>
-                                </li>
-                                <li>
-                                    <a href="#">Operating Temperature Range (-25°C to +60°C)</a>
-                                </li>
-                                <li>
-                                    <a href="#">Customer Reviews and Warranty Information</a>
-                                </li>
-                            </ul>
-                        </div>
 
                     </div>
                 </section>

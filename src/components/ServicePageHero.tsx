@@ -53,7 +53,7 @@ const ServicePageHero: React.FC<ServicePageHeroProps> = ({ title, subtitle, bgIm
             {/* Background Overlay */}
             <div className="absolute inset-0 bg-black/40 z-[1]"></div>
 
-            <div className="container hero-content relative z-10 flex flex-col md:items-start md:text-left items-center text-center">
+            <div className="container hero-content relative z-10 flex flex-col items-start text-left">
                 <span className="text-white font-heading font-semibold text-[18px] uppercase tracking-wide block mb-2">
                     {subtitle}
                 </span>
@@ -64,6 +64,7 @@ const ServicePageHero: React.FC<ServicePageHeroProps> = ({ title, subtitle, bgIm
                         lineHeight: '1.2em',
                         letterSpacing: '0.5px',
                         textShadow: '0px 0px 10px rgba(0,0,0,0.36)',
+                        maxWidth: '650px',
                     }}
                 >
                     {title}

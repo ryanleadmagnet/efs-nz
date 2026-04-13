@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ReviewStoryTemplate from '@/components/ReviewStoryTemplate';
 
 export const metadata: Metadata = {
-    title: 'Solar Battery Addition at Nerang, Gold Coast | EFS Solar',
+    title: 'Solar Battery Addition at Nerang, Gold Coast',
     description: 'How EFS Solar installed an Energizer 11.6kWh battery system for a Nerang homeowner, achieving near-total energy independence. Read the full story.',
     keywords: ['solar battery Nerang', 'Energizer battery Gold Coast', 'battery storage Queensland', 'home battery storage Nerang'],
     alternates: { canonical: 'https://www.efssolar.com.au/reviews/solar-system-battery-replacement-at-nerang' },

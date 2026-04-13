@@ -6,11 +6,11 @@ import AnimatedHeading from '@/components/AnimatedHeading';
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
 export const metadata: Metadata = {
-    title: 'Air Conditioning Installation Gold Coast & Sydney | EFS Solar',
-    description: 'EFS Solar installs energy-efficient air conditioning systems across Gold Coast and Sydney. Pair with solar for maximum savings. Get a free quote today.',
+    title: 'Air Conditioning Installation across QLD & NSW',
+    description: 'EFS Solar installs energy-efficient air conditioning systems across QLD & NSW. Pair with solar for maximum savings. Get a free quote today.',
     keywords: ['air conditioning Gold Coast', 'solar air conditioning Sydney', 'ducted air con Queensland', 'split system installation', 'energy efficient air conditioning'],
     alternates: { canonical: 'https://www.efssolar.com.au/services/air-conditioning' },
-    openGraph: { title: 'Air Conditioning — EFS Solar', description: 'Energy-efficient air conditioning across Gold Coast & Sydney.', url: 'https://www.efssolar.com.au/services/air-conditioning' },
+    openGraph: { title: 'EFS Solar | Air Conditioning across QLD & NSW', description: 'Energy-efficient air conditioning across QLD & NSW.', url: 'https://www.efssolar.com.au/services/air-conditioning' },
 };
 
 const QuoteBtn = () => (

@@ -7,10 +7,10 @@ import ServicePageHero from '@/components/ServicePageHero';
 
 
 export const metadata: Metadata = {
-    title: 'Contact EFS Solar — Get a Free Solar Quote Today',
-    description: 'Contact EFS Solar for a free quote on solar panels, battery storage or commercial solar. Serving Gold Coast, Sydney and surrounding areas.',
+    title: 'Contact Us — Get a Free Solar Quote Today',
+    description: 'Contact EFS Solar for a free quote on solar panels, battery storage or commercial solar. Serving areas across QLD & NSW.',
     alternates: { canonical: 'https://www.efssolar.com.au/contact' },
-    openGraph: { title: 'Contact EFS Solar', description: 'Get a free solar quote from Gold Coast & Sydney certified installers.', url: 'https://www.efssolar.com.au/contact' },
+    openGraph: { title: 'Contact EFS Solar', description: 'Get a free solar quote from certified installers across QLD & NSW.', url: 'https://www.efssolar.com.au/contact' },
 };
 
 export default function ContactPage() {

@@ -1432,7 +1432,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     if (!article) return {};
 
     return {
-        title: `${article.title} | EFS Solar`,
+        title: article.title,
         description: article.metaDescription,
         alternates: { canonical: `https://www.efssolar.com.au/news/${slug}` },
         openGraph: {

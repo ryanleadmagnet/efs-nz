@@ -80,8 +80,8 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
             ></div>
 
             {/* Quote Modal Overlay */}
-            <div id="quote-modal" className={`modal-overlay ${isModalOpen ? 'active' : ''}`} onClick={(e) => e.target === e.currentTarget && setIsModalOpen(false)}>
-                <div className="modal-content">
+            <div id="quote-modal" className={`modal-overlay ${isModalOpen ? 'active' : ''}`} onClick={() => setIsModalOpen(false)}>
+                <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                     <button className="modal-close" onClick={() => setIsModalOpen(false)}><i className="fas fa-times"></i></button>
                     <iframe src={modalUrl} title="Get a Quote" frameBorder="0"></iframe>
                 </div>

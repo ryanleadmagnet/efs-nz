@@ -9,7 +9,7 @@ import ReviewsGallery from '@/components/ReviewsGallery';
 
 
 export const metadata: Metadata = {
-    title: 'Solar Reviews & Customer Stories | EFS Solar Gold Coast',
+    title: 'Solar Reviews & Customer Stories Gold Coast',
     description: 'Real reviews and case studies from EFS Solar customers across Gold Coast and Sydney. See how we have helped Australians cut energy costs with solar and batteries.',
     keywords: ['EFS Solar reviews', 'solar customer reviews Gold Coast', 'solar installation reviews', 'solar case studies Queensland'],
     alternates: { canonical: 'https://www.efssolar.com.au/reviews' },
@@ -28,7 +28,7 @@ export default function ReviewsPage() {
             />
 
             {/* Intro Content Section */}
-            <section className="bg-[#f4f6fa] relative z-10" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
+            <section className="relative z-10" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
                 <div className="container max-w-[1140px] mx-auto animate-on-scroll px-4">
                     <div className="max-w-[800px]" style={{ textAlign: 'left' }}>
                         <AnimatedHeading tag="h3" className="text-[#47c7ea] font-heading font-semibold text-[18px] uppercase tracking-wide block" style={{ marginBottom: '16px', textAlign: 'inherit' }}>
@@ -45,7 +45,7 @@ export default function ReviewsPage() {
             </section>
 
             {/* Case Study Grid */}
-            <section className="bg-[#f4f6fa]" style={{ paddingBottom: '100px' }}>
+            <section style={{ paddingBottom: '60px' }}>
                 <div className="container mx-auto px-4 max-w-[1140px]">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         {[

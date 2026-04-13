@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ReviewStoryTemplate from '@/components/ReviewStoryTemplate';
 
 export const metadata: Metadata = {
-    title: 'Oxenford Solar System Upgrade Case Study | EFS Solar',
+    title: 'Oxenford Solar System Upgrade Case Study',
     description: 'How EFS Solar helped an Oxenford homeowner replace aging solar panels and restore maximum energy savings. Read the full case study.',
     keywords: ['solar upgrade Oxenford', 'solar system replacement Gold Coast', 'old solar upgrade Queensland'],
     alternates: { canonical: 'https://www.efssolar.com.au/reviews/oxenford-solar-system-upgrade' },

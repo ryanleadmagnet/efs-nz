@@ -6,11 +6,11 @@ import ServicePageHero from '@/components/ServicePageHero';
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
 export const metadata: Metadata = {
-    title: 'Sungrow Solar Inverters & Batteries | EFS Solar Gold Coast',
-    description: 'EFS Solar installs Sungrow solar inverters and battery storage systems on the Gold Coast and Sydney. Smart, reliable Sungrow technology for Australian homes and businesses.',
-    keywords: ['Sungrow inverter Gold Coast', 'Sungrow battery Sydney', 'Sungrow solar installation Queensland', 'Sungrow installer Australia'],
+    title: 'Sungrow Solar Inverters & Batteries across QLD & NSW',
+    description: 'EFS Solar installs Sungrow solar inverters and battery storage systems across QLD & NSW. Smart, reliable Sungrow technology for Australian homes and businesses.',
+    keywords: ['Sungrow inverter QLD', 'Sungrow battery NSW', 'Sungrow solar installation Queensland', 'Sungrow installer Australia'],
     alternates: { canonical: 'https://www.efssolar.com.au/technology/sungrow' },
-    openGraph: { title: 'Sungrow Solar — EFS Solar', description: 'EFS Solar installs Sungrow inverters & batteries across Gold Coast & Sydney.', url: 'https://www.efssolar.com.au/technology/sungrow' },
+    openGraph: { title: 'EFS Solar | Sungrow Solar Inverters & Batteries across QLD & NSW', description: 'EFS Solar installs Sungrow inverters & batteries across QLD & NSW.', url: 'https://www.efssolar.com.au/technology/sungrow' },
 };
 
 const QuoteBtn = () => (

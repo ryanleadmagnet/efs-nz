@@ -5,6 +5,18 @@ import ServicePageHero from '@/components/ServicePageHero';
 import AnimatedHeading from '@/components/AnimatedHeading';
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
+const QuoteBtn = () => (
+    <a href="#" className="btn btn-primary quote-trigger">
+        <span className="btn-text">Get a Quote</span>
+        <span className="btn-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
+                <path fill="none" stroke="currentColor" strokeWidth="2"
+                    d="m.71.71l6.03,6.03c1.35,1.35,1.35,3.55,0,4.9L.71,17.67"></path>
+            </svg>
+        </span>
+    </a>
+);
+
 export async function generateMetadata({ searchParams }: { searchParams: Promise<{ location?: string }> }): Promise<Metadata> {
     const { location } = await searchParams;
     const locationDisplay = location 
@@ -12,7 +24,7 @@ export async function generateMetadata({ searchParams }: { searchParams: Promise
         : 'across QLD and NSW';
 
     return {
-        title: `Commercial Solar Panels ${location === 'gold-coast-sydney' ? 'Gold Coast & Sydney' : locationDisplay} | EFS Solar`,
+        title: `Commercial Solar Panels ${location === 'gold-coast-sydney' ? 'Gold Coast & Sydney' : locationDisplay}`,
         description: `EFS Solar installs premium commercial solar panel systems ${locationDisplay === 'across QLD and NSW' ? 'across QLD and NSW' : 'in ' + locationDisplay}. Empower your business with sustainable energy solutions. Get a free quote.`,
         keywords: [`commercial solar ${locationDisplay}`, 'business solar panels', 'commercial solar installation', 'industrial solar power', 'solar for business'],
         alternates: { canonical: `https://www.efssolar.com.au/services/commercial-solar${location ? '?location=' + location : ''}` },
@@ -38,7 +50,7 @@ export default async function CommercialSolar({ searchParams }: { searchParams: 
                 <ServicePageHero
                     subtitle="Services >"
                     title={`Commercial Solar ${locationDisplay}`}
-                    bgImage="/assets/solar-panels-commercial.jpg"
+                    bgImage="/assets/solar-panels-in-city-2022-12-15-19-58-21-utc.jpg"
                 />
 
                 <section className="section-stop-paying" style={{ backgroundColor: "#ffffff" }}>

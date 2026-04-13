@@ -33,7 +33,7 @@ export default function SolarMonitoringPage() {
                 <ServicePageHero
                     subtitle="Technology >"
                     title="SOLAR MONITORING APPS"
-                    bgImage="/assets/solar-monitoring-hero.webp"
+                    bgImage="/assets/roof-solar-energy-in-sunset-2021-08-26-17-52-56-utc.jpg"
                 />
 
                 {/* ── Section 1: Video Tutorials ── */}

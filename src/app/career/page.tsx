@@ -6,10 +6,10 @@ import ServicePageHero from '@/components/ServicePageHero';
 
 
 export const metadata: Metadata = {
-    title: 'Solar Careers — Join the EFS Solar Team | Gold Coast & Sydney',
-    description: 'Explore career opportunities at EFS Solar. We are hiring solar installers, sales consultants and support staff across Gold Coast and Sydney.',
+    title: 'Solar Careers — Join Our Team across QLD & NSW',
+    description: 'Explore career opportunities at EFS Solar. We are hiring solar installers, sales consultants and support staff across QLD & NSW.',
     alternates: { canonical: 'https://www.efssolar.com.au/career' },
-    openGraph: { title: 'Careers at EFS Solar', description: 'Join our growing solar team in Gold Coast & Sydney.', url: 'https://www.efssolar.com.au/career' },
+    openGraph: { title: 'Careers at EFS Solar', description: 'Join our growing solar team across QLD & NSW.', url: 'https://www.efssolar.com.au/career' },
 };
 
 export default function CareerPage() {

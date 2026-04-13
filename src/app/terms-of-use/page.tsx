@@ -5,7 +5,7 @@ export default function TermsOfUsePage() {
     return (
         <div className="flex flex-col min-h-screen">
             <Header alwaysSticky={true} />
-            <main className="flex-grow pt-[150px] pb-20">
+            <main style={{ flexGrow: 1, paddingTop: '150px', paddingBottom: '80px' }}>
                 <div className="container max-w-[900px]">
                     <h1 className="text-4xl font-bold mb-10 text-[#002e6e]">Terms of Use</h1>
                     <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Solar News & Insights | EFS Solar Gold Coast & Sydney',
+    title: 'Solar News & Insights — Gold Coast & Sydney',
     description:
         'Stay up to date with the latest solar energy news, tips, and insights from EFS Solar. Learn about solar systems, energy savings, government rebates, and more.',
     keywords: ['solar news', 'solar energy Australia', 'solar tips', 'solar rebates', 'EFS Solar blog'],

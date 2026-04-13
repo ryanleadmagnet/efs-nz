@@ -6,11 +6,11 @@ import AnimatedHeading from '@/components/AnimatedHeading';
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
 export const metadata: Metadata = {
-    title: 'Solar Battery Storage Gold Coast & Sydney | EFS Solar',
-    description: 'Store your solar energy and reduce grid reliance with premium battery storage solutions. EFS Solar installs Tesla Powerwall, Energizer and more across Gold Coast & Sydney.',
+    title: 'Solar Battery Storage across QLD & NSW',
+    description: 'Store your solar energy and reduce grid reliance with premium battery storage solutions. EFS Solar installs Tesla Powerwall, Energizer and more across QLD & NSW.',
     keywords: ['solar battery storage Gold Coast', 'home battery Sydney', 'Tesla Powerwall installer', 'Energizer battery', 'solar battery Queensland'],
     alternates: { canonical: 'https://www.efssolar.com.au/services/batteries' },
-    openGraph: { title: 'Solar Battery Storage — EFS Solar', description: 'Premium solar battery storage solutions across Gold Coast & Sydney.', url: 'https://www.efssolar.com.au/services/batteries' },
+    openGraph: { title: 'EFS Solar | Solar Battery Storage across QLD & NSW', description: 'Premium solar battery storage solutions across QLD & NSW.', url: 'https://www.efssolar.com.au/services/batteries' },
 };
 
 const QuoteBtn = () => (

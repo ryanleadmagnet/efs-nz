@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ReviewStoryTemplate from '@/components/ReviewStoryTemplate';
 
 export const metadata: Metadata = {
-    title: 'Carrara Premium Solar System Installation | EFS Solar',
+    title: 'Carrara Premium Solar System Installation',
     description: 'EFS Solar installed a premium Energizer 8.8KW solar system for a Carrara homeowner on the Gold Coast. See the full installation story and results.',
     keywords: ['solar installation Carrara', 'Energizer solar Gold Coast', 'premium solar system QLD', 'solar system Carrara'],
     alternates: { canonical: 'https://www.efssolar.com.au/reviews/carrara-premium-solar-system-installation' },

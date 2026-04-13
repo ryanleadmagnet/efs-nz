@@ -55,7 +55,7 @@ const inverterIcons = [
 ];
 
 export const metadata = {
-    title: 'Energizer EFS Solar: Premium Solar Panels & Inverters',
+    title: 'Energizer Premium Solar Panels & Inverters',
     description:
         'Discover energizer solutions for solar panels and inverters. Contact us today to learn more about our offerings for your solar needs.',
 };
@@ -202,6 +202,39 @@ export default function EnergizerPage() {
                                             <img src={item.icon} alt={item.label} width={85} height={85} />
                                         </div>
                                     ))}
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* ── EnergiStack spotlight ── */}
+                        <div className="ez-spotlight-battery">
+                            <div
+                                className="ez-spotlight-bg"
+                                style={{ backgroundImage: "url('/assets/Solar_energizer_bg.webp')" }}
+                            >
+                                <div className="ez-spotlight-inner">
+                                    <div className="ez-spotlight-img animate-on-scroll">
+                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                                        <img
+                                            src="/assets/energizer_battery.webp"
+                                            alt="Energizer EnergiStack Battery"
+                                        />
+                                    </div>
+                                    <div className="ez-spotlight-text animate-on-scroll delay-1">
+                                        <h2>EnergiStack</h2>
+                                        <h3>Stackable Battery</h3>
+                                        <p>
+                                            The Energizer® Solar EnergiStack is a high-performance,
+                                            scalable battery storage system. The modular design
+                                            allows for maximum flexibility, making it suitable for a
+                                            broad range of storage applications.
+                                            <br /><br />
+                                            Up to 6 batteries can be installed in series, allowing for
+                                            a maximum storage capacity of 20.16kWh. Installation is
+                                            easy, with a plug and play solution that can save valuable
+                                            time for installers.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

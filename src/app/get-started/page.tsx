@@ -108,12 +108,12 @@ export default function GetStarted() {
                 <ServicePageHero
                     subtitle="After Installation >"
                     title="Get Started"
-                    bgImage="/assets/solar-panels-2022-11-11-08-53-10-utc.jpg"
+                    bgImage="/assets/roof-solar-energy-in-sunset-2021-08-26-17-52-56-utc.jpg"
                 />
 
                 {/* ── Section 1: Download After Install Docs ── */}
                 <section className="section-stop-paying" style={{ backgroundColor: '#ffffff', minHeight: 'auto' }}>
-                    <div className="section-stop-paying-inner" style={{ alignItems: 'center', padding: '80px 20px' }}>
+                    <div className="section-stop-paying-inner mobile-reverse" style={{ alignItems: 'center' }}>
                         {/* Left: text + downloads */}
                         <div className="section-stop-paying-content" style={{ padding: '0 60px 0 0', width: '50%' }}>
                             <div className="hero-content-center animate-on-scroll">
@@ -139,7 +139,7 @@ export default function GetStarted() {
                                         className="gs-download-btn"
                                     >
                                         <svg className="gs-pdf-icon" viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/>
+                                            <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z" />
                                         </svg>
                                         Queensland &gt;
                                     </a>
@@ -150,7 +150,7 @@ export default function GetStarted() {
                                         className="gs-download-btn"
                                     >
                                         <svg className="gs-pdf-icon" viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/>
+                                            <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z" />
                                         </svg>
                                         New South Wales &gt;
                                     </a>
@@ -161,7 +161,7 @@ export default function GetStarted() {
                                         className="gs-download-btn"
                                     >
                                         <svg className="gs-pdf-icon" viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"/>
+                                            <path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z" />
                                         </svg>
                                         Northern Territory &gt;
                                     </a>
@@ -172,7 +172,7 @@ export default function GetStarted() {
                         {/* Right: solar panels image */}
                         <div className="section-stop-paying-image animate-on-scroll delay-1" style={{ width: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0' }}>
                             <img
-                                src="/assets/Asset-64-1024x873.webp"
+                                src="/assets/After-Install.jpg"
                                 alt="Solar panels and inverter"
                                 style={{ width: '90%', maxWidth: '480px', borderRadius: '12px' }}
                             />
@@ -181,19 +181,19 @@ export default function GetStarted() {
                 </section>
 
                 {/* ── Section 2: FAQs ── */}
-                <section className="section-stop-paying" style={{ backgroundColor: '#f7faff', minHeight: 'auto' }}>
-                    <div className="section-stop-paying-inner" style={{ alignItems: 'flex-start', padding: '80px 20px', flexWrap: 'wrap', gap: '60px' }}>
+                <section className="section-stop-paying" style={{ minHeight: 'auto' }}>
+                    <div className="section-stop-paying-inner" style={{ alignItems: 'flex-start', padding: '40px 20px 80px', gap: '60px' }}>
                         {/* Left: support illustration */}
-                        <div className="gs-faq-image animate-on-scroll" style={{ flex: '0 0 320px' }}>
+                        <div className="gs-faq-image animate-on-scroll" style={{ flex: '1' }}>
                             <img
-                                src="/assets/faq-support-icon.png"
+                                src="/assets/faq-support-icon.webp"
                                 alt="Customer support"
-                                style={{ width: '100%', borderRadius: '12px' }}
+                                style={{ width: '80%', borderRadius: '12px' }}
                             />
                         </div>
 
                         {/* Right: FAQs */}
-                        <div className="gs-faq-col animate-on-scroll delay-1" style={{ flex: '1 1 400px' }}>
+                        <div className="gs-faq-col animate-on-scroll delay-1" style={{ flex: '1' }}>
                             <AnimatedHeading tag="h2" className="section-subtitle" style={{ color: 'var(--accent-color)' }}>
                                 GOT QUESTIONS?
                             </AnimatedHeading>
