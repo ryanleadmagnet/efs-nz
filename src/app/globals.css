@@ -1078,6 +1078,9 @@ p {
     overflow: visible;
 }
 
+.section-peace .section-stop-paying-content {
+    padding: 0 80px 60px 0;
+}
 
 
 .section-peace-image img {
@@ -1200,12 +1203,12 @@ p {
 
 @media (max-width: 991px) {
     .section-stop-paying-inner {
-        padding: 60px 20px;
+        padding: 0 20px;
     }
 
     .section-stop-paying-content {
         width: 100%;
-        padding: 60px 20px;
+        padding: 0 20px;
     }
 }
 
@@ -1709,6 +1712,7 @@ p {
     .section-stop-paying-inner {
         flex-direction: column !important;
         justify-content: center !important;
+        padding: 0px;
         min-height: inherit;
     }
 
@@ -2670,7 +2674,7 @@ p {
     }
 
     .ez-spotlight-battery {
-        margin: 80px -15px;
+        margin: 40px -15px !important;
     }
 
     .ez-spotlight-bg {
@@ -2810,14 +2814,17 @@ p {
 /* --- Energizer Battery Section Customizations --- */
 .ez-spotlight-battery .ez-spotlight-text h2 {
     color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ez-spotlight-battery .ez-spotlight-text h3 {
     color: #fff !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ez-spotlight-battery .ez-spotlight-text p {
     color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 1024px) {
