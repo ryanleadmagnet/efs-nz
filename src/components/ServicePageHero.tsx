@@ -54,9 +54,8 @@ const ServicePageHero: React.FC<ServicePageHeroProps> = ({ title, subtitle, bgIm
                     {subtitle}
                 </span>
                 <h1 
-                    className="font-heading font-extrabold text-white uppercase m-0 p-0"
+                    className="font-heading font-extrabold text-white uppercase m-0 p-0 text-[36px] md:text-[65px]"
                     style={{
-                        fontSize: 'min(65px, 12vw)',
                         lineHeight: '1.2em',
                         letterSpacing: '0.5px',
                         textShadow: '0px 0px 10px rgba(0,0,0,0.36)',
