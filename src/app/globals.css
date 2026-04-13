@@ -642,6 +642,67 @@ p {
     object-fit: cover;
 }
 
+/* --- Animated Scroll Arrow --- */
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 40;
+    width: 40px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-down-arrow:hover {
+    opacity: 0.8;
+}
+
+.arrows {
+    width: 40px;
+    height: 52px;
+}
+
+.arrows path {
+    stroke: #ffffff;
+    fill: transparent;
+    stroke-width: 3px;  
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: bounceChevron 2.5s infinite;
+    -webkit-animation: bounceChevron 2.5s infinite; 
+}
+
+@keyframes bounceChevron {
+    0% { opacity: 0; transform: translateY(-8px); }
+    40% { opacity: 0.8; transform: translateY(0); }
+    80% { opacity: 0; transform: translateY(8px); }
+    100% { opacity: 0; }
+}
+
+@-webkit-keyframes bounceChevron {
+    0% { opacity: 0; transform: translateY(-8px); }
+    40% { opacity: 0.8; transform: translateY(0); }
+    80% { opacity: 0; transform: translateY(8px); }
+    100% { opacity: 0; }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s; 
+}
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s; 
+}
+.arrows path.a3 { 
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -660,8 +721,8 @@ p {
     z-index: 30;
     width: 100%;
     padding-top: 30px;
-
-    /* offset for top headers */
+    padding-bottom: 80px;
+    /* offset for top headers and bottom arrow */
 }
 
 .hero-subtitle {
