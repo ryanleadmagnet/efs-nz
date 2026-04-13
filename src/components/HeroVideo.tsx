@@ -9,7 +9,7 @@ export default function HeroVideo() {
     useEffect(() => {
         // Randomly choose from Sequence-01 to Sequence-04
         const randomIndex = Math.floor(Math.random() * 4) + 1;
-        const extension = (randomIndex === 2) ? 'm4v' : 'mp4';
+        const extension = (randomIndex === 1 || randomIndex === 2) ? 'm4v' : 'mp4';
         setVideoSrc(`/assets/Sequence-0${randomIndex}.${extension}`);
     }, []);
 
