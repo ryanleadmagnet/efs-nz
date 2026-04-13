@@ -33,11 +33,7 @@ const ServicePageHero: React.FC<ServicePageHeroProps> = ({ title, subtitle, bgIm
     return (
         <section 
             ref={heroRef}
-            className="relative w-full overflow-hidden flex flex-col justify-center text-white"
-            style={{ 
-                height: '500px',
-                padding: '160px 20px 150px' 
-            }}
+            className="relative w-full overflow-hidden flex flex-col justify-center text-white h-[340px] md:h-[500px] pt-[120px] pb-[60px] md:pt-[160px] md:pb-[150px] px-5"
         >
             {/* Moving Background Image */}
             <div 

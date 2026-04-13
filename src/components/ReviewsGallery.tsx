@@ -43,7 +43,7 @@ export default function ReviewsGallery() {
         <>
             <section className="bg-[#082042] text-white text-center" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
                 <div className="container max-w-[1200px] mx-auto animate-on-scroll px-4">
-                    <h2 className="text-[40px] font-heading font-bold uppercase tracking-wide" style={{ marginBottom: '24px' }}>
+                    <h2 className="text-[32px] md:text-[40px] font-heading font-bold uppercase tracking-wide leading-[1.1] md:leading-tight" style={{ marginBottom: '24px' }}>
                         More Installation Videos
                     </h2>
                     <Swiper
