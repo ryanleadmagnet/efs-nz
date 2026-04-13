@@ -31,15 +31,15 @@ const ServicePageHero: React.FC<ServicePageHeroProps> = ({ title, subtitle, bgIm
     }, []);
 
     return (
-        <section 
+        <section
             ref={heroRef}
             className="relative w-full overflow-hidden flex flex-col justify-center text-white h-[340px] md:h-[500px] pt-[120px] pb-[60px] md:pt-[160px] md:pb-[150px] px-5"
         >
             {/* Moving Background Image */}
-            <div 
+            <div
                 ref={bgRef}
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 ease-out"
-                style={{ 
+                style={{
                     backgroundImage: `url('${bgImage}')`,
                     zIndex: 0,
                     transform: 'scale(1.1)' // Start slightly scaled to avoid white edges during move
@@ -53,8 +53,8 @@ const ServicePageHero: React.FC<ServicePageHeroProps> = ({ title, subtitle, bgIm
                 <span className="text-white font-heading font-semibold text-[18px] uppercase tracking-wide block mb-2">
                     {subtitle}
                 </span>
-                <h1 
-                    className="font-heading font-extrabold text-white uppercase m-0 p-0 text-[36px] md:text-[65px]"
+                <h1
+                    className="font-heading font-extrabold text-white uppercase m-0 p-0 text-[42px] md:text-[65px]"
                     style={{
                         lineHeight: '1.2em',
                         letterSpacing: '0.5px',
