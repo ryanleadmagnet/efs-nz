@@ -50,8 +50,8 @@ export default function Footer() {
                     <h4 className="footer-heading">Addresses</h4>
 
                     <ul className="footer-links text-[14px]">
-                        <li className="mb-[5px]"><a href="https://maps.app.goo.gl/76J4tQ9T2NsGjJGF7" target="_blank" rel="noopener noreferrer">15 Lawrence Dr, Nerang QLD 4211</a></li>
-                        <li><a href="https://maps.app.goo.gl/XPXwmDN36UeYAMEj8" target="_blank" rel="noopener noreferrer">147 Smeaton Grange Rd, Smeaton Grange NSW 2567</a></li>
+                        <li className="mb-[5px]"><a href="https://maps.app.goo.gl/76J4tQ9T2NsGjJGF7" target="_blank" rel="noopener noreferrer">3/15 Lawrence Dr, Nerang QLD 4211</a></li>
+                        <li><a href="https://maps.app.goo.gl/XPXwmDN36UeYAMEj8" target="_blank" rel="noopener noreferrer">4/147 Smeaton Grange Rd, Smeaton Grange NSW 2567</a></li>
                     </ul>
                 </div>
 
