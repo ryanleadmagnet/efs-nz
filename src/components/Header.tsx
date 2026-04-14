@@ -35,7 +35,7 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                 if (customUrl) {
                     setModalUrl(customUrl);
                 } else {
-                    setModalUrl('https://form-efs.vercel.app');
+                    setModalUrl('/form/solar');
                 }
                 setIsModalOpen(true);
             }
