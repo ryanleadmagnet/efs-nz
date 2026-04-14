@@ -110,7 +110,7 @@ export default function SolarMonitoringPage() {
 
                         <div className="section-stop-paying-image animate-on-scroll delay-1" style={{ width: '50%', textAlign: 'center' }}>
                             <img
-                                src="/assets/after-install-composite.png"
+                                src="/assets/After-Install.jpg"
                                 alt="Solar maintenance"
                                 style={{ width: '90%', maxWidth: '480px' }}
                             />
