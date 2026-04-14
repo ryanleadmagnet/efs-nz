@@ -51,7 +51,7 @@ export default function CareerPage() {
                                         ))}
                                     </ul>
                                     <div className="flex flex-col items-center md:items-start">
-                                        <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="https://form-efs.vercel.app/sales" style={{ marginBottom: '16px' }}>
+                                        <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="/form/sales" style={{ marginBottom: '16px' }}>
                                             <span className="btn-text">Apply for Sales</span>
                                             <span className="btn-icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
@@ -59,7 +59,7 @@ export default function CareerPage() {
                                                 </svg>
                                             </span>
                                         </a>
-                                        <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="https://form-efs.vercel.app/aptm_setter">
+                                        <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="/form/aptm_setter">
                                             <span className="btn-text">Apply for Appointment Setter</span>
                                             <span className="btn-icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
@@ -94,7 +94,7 @@ export default function CareerPage() {
                                         ))}
                                     </ul>
                                     <div className="flex flex-col items-center md:items-start">
-                                        <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="https://form-efs.vercel.app/electrician">
+                                        <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="/form/electrician">
                                             <span className="btn-text">Apply for electrician</span>
                                             <span className="btn-icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">

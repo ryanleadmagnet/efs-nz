@@ -36,7 +36,7 @@ export default function ThankYouPage() {
                             width: '80px',
                             height: '80px',
                             borderRadius: '50%',
-                            backgroundColor: '#4ade80',
+                            backgroundColor: '#00e5ff',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
