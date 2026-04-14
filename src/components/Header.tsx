@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolean }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [modalUrl, setModalUrl] = useState('/form/solar');
+    const [modalUrl, setModalUrl] = useState('https://form-efs.vercel.app');
     const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
     const pathname = usePathname();
 
@@ -35,7 +35,7 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                 if (customUrl) {
                     setModalUrl(customUrl);
                 } else {
-                    setModalUrl('/form/solar');
+                    setModalUrl('https://form-efs.vercel.app');
                 }
                 setIsModalOpen(true);
             }
