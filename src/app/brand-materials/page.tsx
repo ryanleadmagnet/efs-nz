@@ -228,7 +228,7 @@ export default function BrandMaterialsPage() {
                         <p>
                             These assets are for approved partners and media use only. For
                             permission requests please contact{' '}
-                            <a href="mailto:support@efssolar.com.au">support@efssolar.com.au</a>.
+                            <a href="mailto:support@efssolar.co.nz">support@efssolar.co.nz</a>.
                         </p>
                     </div>
                 </section>

@@ -8,28 +8,28 @@ import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
 export async function generateMetadata({ searchParams }: { searchParams: Promise<{ location?: string }> }): Promise<Metadata> {
     const { location } = await searchParams;
-    const locationDisplay = location 
-        ? location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') 
-        : 'across QLD and NSW';
+    const locationDisplay = location
+        ? location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+        : 'across New Zealand';
 
     return {
-        title: `Residential Solar Panels ${location === 'gold-coast-sydney' ? 'Gold Coast & Sydney' : locationDisplay}`,
-        description: `EFS Solar installs premium residential solar panel systems ${locationDisplay === 'across QLD and NSW' ? 'across QLD and NSW' : 'in ' + locationDisplay}. Reduce your power bills with CEC-certified solar experts. Get a free quote.`,
+        title: `Residential Solar Panels ${location === 'gold-coast-sydney' ? 'New Zealand & Sydney' : locationDisplay}`,
+        description: `EFS Solar installs premium residential solar panel systems ${locationDisplay === 'across New Zealand' ? 'across New Zealand' : 'in ' + locationDisplay}. Reduce your power bills with CEC-certified solar experts. Get a free quote.`,
         keywords: [`residential solar ${locationDisplay}`, 'home solar panels', 'solar installation', 'solar power home', 'solar rebate 2024'],
-        alternates: { canonical: `https://www.efssolar.com.au/services/residential-solar${location ? '?location=' + location : ''}` },
-        openGraph: { 
-            title: `Residential Solar ${locationDisplay} — EFS Solar`, 
-            description: `Premium home solar installations ${locationDisplay}.`, 
-            url: `https://www.efssolar.com.au/services/residential-solar${location ? '?location=' + location : ''}` 
+        alternates: { canonical: `https://www.efssolar.co.nz/services/residential-solar${location ? '?location=' + location : ''}` },
+        openGraph: {
+            title: `Residential Solar ${locationDisplay} — EFS Solar`,
+            description: `Premium home solar installations ${locationDisplay}.`,
+            url: `https://www.efssolar.co.nz/services/residential-solar${location ? '?location=' + location : ''}`
         },
     };
 }
 
 export default async function ResidentialSolar({ searchParams }: { searchParams: Promise<{ location?: string }> }) {
     const { location } = await searchParams;
-    const locationDisplay = location 
-        ? location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') 
-        : 'across QLD and NSW';
+    const locationDisplay = location
+        ? location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+        : 'across New Zealand';
 
     return (
         <>
@@ -50,9 +50,9 @@ export default async function ResidentialSolar({ searchParams }: { searchParams:
                         <div className="section-stop-paying-content animate-on-scroll delay-1">
                             <div className="hero-content-center">
                                 <AnimatedHeading tag="h2" className="section-subtitle">STOP PAYING FOR POWER</AnimatedHeading>
-                                <AnimatedHeading tag="h3" className="section-title" style={{ color: "var(--primary-color)" }}>A Smart Move<br />for Your Home in {locationDisplay === 'across QLD and NSW' ? 'QLD & NSW' : locationDisplay}</AnimatedHeading>
+                                <AnimatedHeading tag="h3" className="section-title" style={{ color: "var(--primary-color)" }}>A Smart Move<br />for Your Home in {locationDisplay === 'across New Zealand' ? 'New Zealand' : locationDisplay}</AnimatedHeading>
                                 <div className="section-desc" style={{ color: "var(--text-color)" }}>
-                                    <p>Making the decision to go solar for your electricity needs in {locationDisplay === 'across QLD and NSW' ? 'QLD and NSW' : locationDisplay} is one of the brightest you&apos;ll ever make. Solar power can reduce your home electricity bill, earn you money for extra electricity generated, and help reduce greenhouse gas emissions.</p>
+                                    <p>Making the decision to go solar for your electricity needs in {locationDisplay === 'across New Zealand' ? 'New Zealand' : locationDisplay} is one of the brightest you&apos;ll ever make. Solar power can reduce your home electricity bill, earn you money for extra electricity generated, and help reduce greenhouse gas emissions.</p>
                                     <br />
                                     <p>By choosing EFS as your solar energy system supplier, you also get the peace of mind that comes from using an experienced and fully licensed installer.</p>
                                 </div>
@@ -75,9 +75,9 @@ export default async function ResidentialSolar({ searchParams }: { searchParams:
                         <div className="section-stop-paying-content animate-on-scroll">
                             <div className="hero-content-center">
                                 <AnimatedHeading tag="h2" className="section-subtitle" style={{ color: "var(--primary-color)" }}>PEACE OF MIND</AnimatedHeading>
-                                <AnimatedHeading tag="h3" className="section-title" style={{ color: "var(--primary-color)" }}>High Quality Service in {locationDisplay === 'across QLD and NSW' ? 'QLD & NSW' : locationDisplay}</AnimatedHeading>
+                                <AnimatedHeading tag="h3" className="section-title" style={{ color: "var(--primary-color)" }}>High Quality Service in {locationDisplay === 'across New Zealand' ? 'New Zealand' : locationDisplay}</AnimatedHeading>
                                 <div className="section-desc" style={{ color: "var(--text-color)" }}>
-                                    <p>Our range of home solar power systems are designed to power you in {locationDisplay === 'across QLD and NSW' ? 'QLD and NSW' : locationDisplay}, whatever your needs may be. With only the best quality products being used in our solar arrays, you can rest easy knowing that each system we install is also backed by a 25 year warranty.</p>
+                                    <p>Our range of home solar power systems are designed to power you in {locationDisplay === 'across New Zealand' ? 'New Zealand' : locationDisplay}, whatever your needs may be. With only the best quality products being used in our solar arrays, you can rest easy knowing that each system we install is also backed by a 30 year warranty.</p>
                                     <p>Give us a call today and let&apos;s design a system to suit your individual needs, there has truly never been a better time to go solar!</p>
                                 </div>
                                 <div className="mt-8">
@@ -112,14 +112,14 @@ export default async function ResidentialSolar({ searchParams }: { searchParams:
                                     <img src="/assets/Asset-30-1.svg" alt="Site Assessment" />
                                 </div>
                                 <h4>SITE ASSESSMENT</h4>
-                                <p>One of our reps will conduct an on-site assessment of your home in {locationDisplay === 'across QLD and NSW' ? 'QLD or NSW' : locationDisplay} before designing a system to suit your household needs.</p>
+                                <p>One of our reps will conduct an on-site assessment of your home in {locationDisplay === 'across New Zealand' ? 'New Zealand' : locationDisplay} before designing a system to suit your household needs.</p>
                             </div>
                             <div className="switch-item animate-on-scroll delay-1">
                                 <div className="switch-icon">
                                     <img src="/assets/Asset-29-1.svg" alt="Install" />
                                 </div>
                                 <h4>INSTALL</h4>
-                                <p>Our fully licenced solar technicians will come out and install your new system on your roof in {locationDisplay === 'across QLD and NSW' ? 'QLD or NSW' : locationDisplay} and educate you on how to get the most out of it.</p>
+                                <p>Our fully licenced solar technicians will come out and install your new system on your roof in {locationDisplay === 'across New Zealand' ? 'New Zealand' : locationDisplay} and educate you on how to get the most out of it.</p>
                             </div>
                             <div className="switch-item animate-on-scroll delay-2">
                                 <div className="switch-icon">
@@ -144,7 +144,7 @@ export default async function ResidentialSolar({ searchParams }: { searchParams:
                                 <div className="hero-content-center">
                                     <AnimatedHeading tag="h2" className="section-subtitle">TIER 1 PRODUCTS</AnimatedHeading>
                                     <AnimatedHeading tag="h3" className="section-title" style={{ color: "#000000" }}>We Only Use the Best<br />of the Best</AnimatedHeading>
-                                    <p className="section-desc" style={{ color: "#000000" }}>We don&apos;t settle for anything but the best when it comes to the solar products we sell &amp; install in {locationDisplay === 'across QLD and NSW' ? 'QLD and NSW' : locationDisplay}. With long manufacture warranties of up to 30 years, you can rest easy knowing your system will perform long into the future.</p>
+                                    <p className="section-desc" style={{ color: "#000000" }}>We don&apos;t settle for anything but the best when it comes to the solar products we sell &amp; install in {locationDisplay === 'across New Zealand' ? 'New Zealand' : locationDisplay}. With long manufacture warranties of up to 30 years, you can rest easy knowing your system will perform long into the future.</p>
                                     <div className="mt-8">
                                         <a href="#" className="btn btn-primary quote-trigger">
                                             <span className="btn-text">Get a Quote</span>
@@ -165,7 +165,7 @@ export default async function ResidentialSolar({ searchParams }: { searchParams:
                 {/* Custom CTA matching the design */}
 
 
-                <section className="section-reviews content-section bg-light">
+                <section className="section-reviews content-section">
                     <div className="container">
                         <AnimatedHeading tag="h3" className="section-title">How customers rate their experience with us</AnimatedHeading>
                         <div className="animate-on-scroll visible">
@@ -180,7 +180,7 @@ export default async function ResidentialSolar({ searchParams }: { searchParams:
                             Help your pocket and the planet.<br />
                             Make the switch to solar, today!
                         </h2>
-                        <a href="#" className="btn btn-primary hover-dark quote-trigger" style={{ backgroundColor: "#1e2e4f", padding: "16px 36px", color: "#fff", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", border: "none" }}>
+                        <a href="#" className="btn btn-primary hover-dark quote-trigger" style={{ backgroundColor: "#000000", padding: "16px 36px", color: "#fff", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", border: "none" }}>
                             <span className="btn-text">Enquire Now</span>
                             <span className="btn-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">

@@ -6,11 +6,11 @@ import AnimatedHeading from '@/components/AnimatedHeading';
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
 export const metadata: Metadata = {
-    title: 'Solar Battery Storage across QLD & NSW',
-    description: 'Store your solar energy and reduce grid reliance with premium battery storage solutions. EFS Solar installs Tesla Powerwall, Energizer and more across QLD & NSW.',
-    keywords: ['solar battery storage Gold Coast', 'home battery Sydney', 'Tesla Powerwall installer', 'Energizer battery', 'solar battery Queensland'],
-    alternates: { canonical: 'https://www.efssolar.com.au/services/batteries' },
-    openGraph: { title: 'EFS Solar | Solar Battery Storage across QLD & NSW', description: 'Premium solar battery storage solutions across QLD & NSW.', url: 'https://www.efssolar.com.au/services/batteries' },
+    title: 'Solar Battery Storage across New Zealand',
+    description: 'Store your solar energy and reduce grid reliance with premium battery storage solutions. EFS Solar installs Tesla Powerwall, Energizer and more across New Zealand.',
+    keywords: ['solar battery storage New Zealand', 'home battery Sydney', 'Tesla Powerwall installer', 'Energizer battery', 'solar battery New Zealand'],
+    alternates: { canonical: 'https://www.efssolar.co.nz/services/batteries' },
+    openGraph: { title: 'EFS Solar | Solar Battery Storage across New Zealand', description: 'Premium solar battery storage solutions across New Zealand.', url: 'https://www.efssolar.co.nz/services/batteries' },
 };
 
 const QuoteBtn = () => (
@@ -84,7 +84,7 @@ export default function Batteries() {
                                 <div className="hero-content-center">
                                     <AnimatedHeading tag="h2" className="section-subtitle">TIER 1 PRODUCTS</AnimatedHeading>
                                     <AnimatedHeading tag="h3" className="section-title" style={{ color: "#000000" }}>We Only Use the Best<br />of the Best</AnimatedHeading>
-                                    <p className="section-desc" style={{ color: "#000000" }}>We don&apos;t settle for anything but the best for the Battery products we sell &amp; install. By using the best brands such as Tesla, Energizer and Sungrow, we can offer a 10-year replacement warranty and 10-year workmanship warranty. You can rest easy knowing your system will perform long into the future.</p>
+                                    <p className="section-desc" style={{ color: "#000000" }}>We don&apos;t settle for anything but the best for the Battery products we sell &amp; install. By using the best brands such as Tesla and Energizer, we can offer a 10-year replacement warranty and 10-year workmanship warranty. You can rest easy knowing your system will perform long into the future.</p>
                                     <QuoteBtn />
                                 </div>
                             </div>
@@ -134,7 +134,7 @@ export default function Batteries() {
                         <h2 className="cta-banner-title">
                             Help your pocket and the planet.<br />Make the switch to solar, today!
                         </h2>
-                        <a href="#" className="btn btn-primary quote-trigger hover-dark" style={{ backgroundColor: "#1e2e4f", padding: "16px 36px", color: "#fff", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", border: "none" }}>
+                        <a href="#" className="btn btn-primary quote-trigger hover-dark" style={{ backgroundColor: "#000000", padding: "16px 36px", color: "#fff", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", border: "none" }}>
                             <span className="btn-text">Get a Quote</span>
                             <span className="btn-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
@@ -145,7 +145,7 @@ export default function Batteries() {
                     </div>
                 </section>
 
-                <section className="section-reviews content-section bg-light">
+                <section className="section-reviews content-section">
                     <div className="container">
                         <AnimatedHeading tag="h3" className="section-title">How customers rate their experience with us</AnimatedHeading>
                         <div className="animate-on-scroll visible">

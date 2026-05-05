@@ -13,10 +13,10 @@ export default function PrivacyPolicyPage() {
                             EFS Solar is committed to providing quality services to you and this privacy policy outlines our ongoing obligations to you in respect of how we manage your Personal Information.
                         </p>
                         <p className="mb-6">
-                            We have adopted the Australian Privacy Principles (APPs) contained in the Privacy Act 1988 (Cth) (the Privacy Act). The Australian Privacy Principles (APPs) govern the way in which we collect, use, disclose, store, secure and dispose of your Personal Information.
+                            We have adopted the New Zealand Privacy Principles (APPs) contained in the Privacy Act 1988 (Cth) (the Privacy Act). The New Zealand Privacy Principles (APPs) govern the way in which we collect, use, disclose, store, secure and dispose of your Personal Information.
                         </p>
                         <p className="mb-6">
-                            A copy of the Australian Privacy Principles may be obtained from the website of The Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au" className="text-blue-600 hover:underline">www.oaic.gov.au</a>
+                            A copy of the New Zealand Privacy Principles may be obtained from the website of The Office of the New Zealand Information Commissioner at <a href="https://www.oaic.gov.au" className="text-blue-600 hover:underline">www.oaic.gov.au</a>
                         </p>
 
                         <h2 className="text-2xl font-bold mt-10 mb-4 text-[#002e6e]">What is Personal Information and why do we collect it?</h2>
@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
                             Personal Information is information or an opinion that identifies an individual. Examples of Personal Information we collect includes but is not limited to: names, addresses, email addresses, phone and facsimile numbers.
                         </p>
                         <p className="mb-6">
-                            This Personal Information is obtained in many ways including interviews, correspondence, by telephone and facsimile, by email, via our website www.efssolar.com.au, from your website, from media and publications, from other publicly available sources, from cookies and from third parties.
+                            This Personal Information is obtained in many ways including interviews, correspondence, by telephone and facsimile, by email, via our website www.efssolar.co.nz, from your website, from media and publications, from other publicly available sources, from cookies and from third parties.
                         </p>
                         <p className="mb-6">
                             We do not guarantee that your information is safe if you enter your information into any links on our website. We do not guarantee the Privacy Policy or security of any third parties or their websites that we are authorised to release your information to.
@@ -81,7 +81,7 @@ export default function PrivacyPolicyPage() {
 
                         <h2 className="text-2xl font-bold mt-10 mb-4 text-[#002e6e]">Privacy Policy Complaints and Enquiries</h2>
                         <p className="mb-6">
-                            If you have any queries or complaints about our Privacy Policy please contact us at: <a href="mailto:privacy@efssolar.com.au" className="text-blue-600 hover:underline">privacy@efssolar.com.au</a> or on 1300 911 736.
+                            If you have any queries or complaints about our Privacy Policy please contact us at: <a href="mailto:privacy@efssolar.co.nz" className="text-blue-600 hover:underline">privacy@efssolar.co.nz</a> or on 0800 428 557.
                         </p>
                     </div>
                 </div>

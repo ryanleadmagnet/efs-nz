@@ -16,6 +16,18 @@ const nextConfig: NextConfig = {
   },
   // Enable gzip compression
   compress: true,
+
+  // Proxy forms app so iframes load from the same origin (avoids X-Frame-Options: SAMEORIGIN)
+  // The forms app uses basePath: '/forms', so its routes are at localhost:3001/forms/*
+  async rewrites() {
+    return [
+      {
+        source: "/forms/:path*",
+        destination: "http://localhost:3001/forms/:path*",
+      },
+    ];
+  },
+
   // Add security and caching headers
   async headers() {
     return [
@@ -32,7 +44,7 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         headers: [
           { key: "X-Content-Type-Options", value: "nosniff" },
-          { key: "X-Frame-Options", value: "SAMEORIGIN" }, // Changed to allow embedding forms on the same site
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
           { key: "X-XSS-Protection", value: "1; mode=block" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
         ],
@@ -42,3 +54,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+

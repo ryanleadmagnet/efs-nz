@@ -2,10 +2,13 @@
 
 export default function GoogleReviewsWidget() {
     return (
-        <div
-            className="elfsight-app-33763896-dc79-4313-b549-5e02b961ba90"
-            data-elfsight-app-lazy=""
-            style={{ minHeight: '400px' }}
-        ></div>
+        <>
+            {/* Elfsight Google Reviews | EFS NZ */}
+            <div
+                className="elfsight-app-e2f3ed2f-e994-4314-9b69-a11479e74d9e"
+                data-elfsight-app-lazy=""
+                style={{ minHeight: '400px' }}
+            ></div>
+        </>
     );
 }

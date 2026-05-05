@@ -258,7 +258,7 @@ export default function EnergizerPage() {
                             href="#"
                             className="btn btn-primary quote-trigger hover-dark"
                             style={{
-                                backgroundColor: '#1e2e4f',
+                                backgroundColor: '#000000',
                                 padding: '16px 36px',
                                 color: '#fff',
                                 fontWeight: 'bold',
@@ -278,7 +278,7 @@ export default function EnergizerPage() {
                 </section>
 
                 {/* ── Reviews ───────────────────────────────────── */}
-                <section className="section-reviews content-section bg-light text-center">
+                <section className="section-reviews content-section text-center">
                     <div className="container">
                         <h3 className="section-title">How customers rate their experience with us</h3>
                         <div className="animate-on-scroll visible">

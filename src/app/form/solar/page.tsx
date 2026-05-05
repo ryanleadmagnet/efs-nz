@@ -240,11 +240,11 @@ export default function SolarFormPage() {
       } catch {
         await fetch(formUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...base, ip_address: "", country: "", city: "", timezone: "" }) })
       }
-      const redirect = "https://www.efssolar.com.au/thank-you"
+      const redirect = "/thank-you"
       if (window.parent && window.parent !== window) window.parent.location.href = redirect
       else window.location.href = redirect
     } catch {
-      const redirect = "https://www.efssolar.com.au/thank-you"
+      const redirect = "/thank-you"
       if (window.parent && window.parent !== window) window.parent.location.href = redirect
       else window.location.href = redirect
     }

@@ -1,8 +1,7 @@
 export type LocationParams = { location?: string };
 
 export function formatLocation(location?: string): string {
-    if (!location) return 'across QLD and NSW';
-    if (location === 'gold-coast-sydney') return 'Gold Coast & Sydney';
+    if (!location) return 'across New Zealand';
     
     return location
         .split('-')

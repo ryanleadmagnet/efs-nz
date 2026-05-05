@@ -4,11 +4,11 @@ import Footer from '@/components/Footer';
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
 export const metadata: Metadata = {
-    title: 'GoodWe Solar Inverters across QLD & NSW',
-    description: 'EFS Solar supplies and installs GoodWe solar inverters across QLD & NSW. Reliable, smart, and affordable solar inverter solutions for homes and businesses.',
-    keywords: ['GoodWe inverter QLD', 'GoodWe solar NSW', 'solar inverter installation Queensland', 'GoodWe installer Australia'],
-    alternates: { canonical: 'https://www.efssolar.com.au/technology/goodwe' },
-    openGraph: { title: 'EFS Solar | GoodWe Solar Inverters across QLD & NSW', description: 'EFS Solar installs GoodWe inverters across QLD & NSW.', url: 'https://www.efssolar.com.au/technology/goodwe' },
+    title: 'GoodWe Solar Inverters across New Zealand',
+    description: 'EFS Solar supplies and installs GoodWe solar inverters across New Zealand. Reliable, smart, and affordable solar inverter solutions for homes and businesses.',
+    keywords: ['GoodWe inverter QLD', 'GoodWe solar NSW', 'solar inverter installation New Zealand', 'GoodWe installer New Zealand'],
+    alternates: { canonical: 'https://www.efssolar.co.nz/technology/goodwe' },
+    openGraph: { title: 'EFS Solar | GoodWe Solar Inverters across New Zealand', description: 'EFS Solar installs GoodWe inverters across New Zealand.', url: 'https://www.efssolar.co.nz/technology/goodwe' },
 };
 
 export default function GoodwePage() {
@@ -27,7 +27,7 @@ export default function GoodwePage() {
         },
         {
             title: 'Better performance in extreme conditions',
-            desc: 'Operates from -25°C to +60°C with natural cooling for the Australian climate.',
+            desc: 'Operates from -25°C to +60°C with natural cooling for the New Zealand climate.',
         },
         {
             title: 'Lower power loss',
@@ -39,7 +39,7 @@ export default function GoodwePage() {
         },
         {
             title: 'Built to last',
-            desc: "Engineered and designed to withstand Australia's harsh outdoor conditions.",
+            desc: "Engineered and designed to withstand New Zealand's harsh outdoor conditions.",
         },
     ];
 
@@ -227,7 +227,7 @@ export default function GoodwePage() {
                             href="#"
                             className="btn btn-primary quote-trigger hover-dark"
                             style={{
-                                backgroundColor: '#1e2e4f',
+                                backgroundColor: '#000000',
                                 padding: '16px 36px',
                                 color: '#fff',
                                 fontWeight: 'bold',
@@ -247,7 +247,7 @@ export default function GoodwePage() {
                 </section>
 
                 {/* ── Reviews ───────────────────────────────────── */}
-                <section className="section-reviews content-section bg-light text-center">
+                <section className="section-reviews content-section text-center">
                     <div className="container">
                         <h3 className="section-title">How customers rate their experience with us</h3>
                         <div className="animate-on-scroll visible">

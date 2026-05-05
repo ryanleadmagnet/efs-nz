@@ -13,13 +13,13 @@ const articles: Record<string, {
 }> = {
     'about-the-national-electricity-market': {
         title: 'About The National Electricity Market (NEM)',
-        metaDescription: 'Learn about Australia\'s National Electricity Market (NEM) — how it works, its benefits, and what it means for solar energy owners across QLD, NSW, VIC, SA and TAS.',
+        metaDescription: 'Learn about New Zealand\'s National Electricity Market (NEM) — how it works, its benefits, and what it means for solar energy owners across New Zealand.',
         date: '12 June 2023',
         category: 'Energy Market',
         content: `
-<p>The <strong>National Electricity Market (NEM)</strong> is a unique and complex system that operates across Australia's eastern and southern states. It is a wholesale market that facilitates the purchase and sale of electricity between generators and retailers. The market is regulated by the Australian Energy Regulator (AER) under the National Electricity Law and National Electricity Rules.</p>
+<p>The <strong>National Electricity Market (NEM)</strong> is a unique and complex system that operates across New Zealand's eastern and southern states. It is a wholesale market that facilitates the purchase and sale of electricity between generators and retailers. The market is regulated by the New Zealand Energy Regulator (AER) under the National Electricity Law and National Electricity Rules.</p>
 
-<p>The NEM is made up of five regions: Queensland, New South Wales, Victoria, South Australia, and Tasmania. Each region has its own electricity grid, but they are interconnected through a network of transmission lines. This allows electricity to be transported between regions, which helps to ensure a reliable and secure supply of electricity.</p>
+<p>The NEM is made up of five regions: New Zealand, New South Wales, Victoria, South New Zealand, and Tasmania. Each region has its own electricity grid, but they are interconnected through a network of transmission lines. This allows electricity to be transported between regions, which helps to ensure a reliable and secure supply of electricity.</p>
 
 <p>The NEM operates on a real-time basis, with electricity prices determined by the balance of supply and demand at any given moment. This means that prices can fluctuate throughout the day depending on the level of demand and the availability of supply.</p>
 
@@ -42,7 +42,7 @@ const articles: Record<string, {
 
 <p>During periods of high electricity demand, the NEM price can spike significantly. Solar systems that feed into the grid during these peak periods provide tremendous value — both for the grid and for your energy bill savings.</p>
 
-<p>At EFS Solar, we help you design systems that maximise your energy independence and your ability to benefit from Australia's evolving energy market. <a href="/contact">Contact us today</a> for a free consultation.</p>
+<p>At EFS Solar, we help you design systems that maximise your energy independence and your ability to benefit from New Zealand's evolving energy market. <a href="/contact">Contact us today</a> for a free consultation.</p>
         `,
     },
     'sleek-6-6kw-solar-system': {
@@ -93,15 +93,15 @@ const articles: Record<string, {
         `,
     },
     'benefits-of-solar-power': {
-        title: 'Benefits of Solar Power for Australian Homes & Businesses',
-        metaDescription: 'Solar power is emerging as a critical solution to reduce carbon emissions. Discover the key benefits of solar energy for Australian homes and businesses with EFS Solar.',
+        title: 'Benefits of Solar Power for New Zealand Homes & Businesses',
+        metaDescription: 'Solar power is emerging as a critical solution to reduce carbon emissions. Discover the key benefits of solar energy for New Zealand homes and businesses with EFS Solar.',
         date: '25 February 2023',
         category: 'Solar Tips',
         content: `
-<p>Solar power is emerging as a critical solution as the world becomes increasingly aware of the need to reduce carbon emissions and combat climate change. In Australia, with its exceptional solar resources, the case for going solar has never been stronger.</p>
+<p>Solar power is emerging as a critical solution as the world becomes increasingly aware of the need to reduce carbon emissions and combat climate change. In New Zealand, with its exceptional solar resources, the case for going solar has never been stronger.</p>
 
-<h2>Why Solar Power Makes Sense in Australia</h2>
-<p>Australia has one of the highest rates of solar panel uptake in the world. With an average of over 2,000 hours of sunshine per year across most of the country, Australian homes and businesses are perfectly positioned to benefit from solar energy.</p>
+<h2>Why Solar Power Makes Sense in New Zealand</h2>
+<p>New Zealand has one of the highest rates of solar panel uptake in the world. With an average of over 2,000 hours of sunshine per year across most of the country, New Zealand homes and businesses are perfectly positioned to benefit from solar energy.</p>
 
 <h2>Key Benefits of Solar Power</h2>
 
@@ -118,13 +118,13 @@ const articles: Record<string, {
 <p>Multiple studies show that solar panels increase property values. Buyers increasingly look for homes with solar installed, knowing it will reduce their ongoing energy costs. A property with a quality solar system typically sells faster and at a higher price.</p>
 
 <h3>5. Government Rebates and Incentives</h3>
-<p>The Australian federal government's Small-scale Renewable Energy Scheme (SRES) provides financial incentives in the form of Small-scale Technology Certificates (STCs) for eligible solar installations. This effectively reduces the upfront cost of going solar.</p>
+<p>The New Zealand federal government's Small-scale Renewable Energy Scheme (SRES) provides financial incentives in the form of Small-scale Technology Certificates (STCs) for eligible solar installations. This effectively reduces the upfront cost of going solar.</p>
 
 <h3>6. Energy Independence and Security</h3>
 <p>With solar panels (and optionally a battery system), you reduce your dependence on the grid and protect yourself from rising electricity prices. This energy independence is particularly valuable in areas prone to grid outages.</p>
 
 <h3>7. Low Maintenance</h3>
-<p>Once installed, solar panels require minimal maintenance. They have no moving parts and are designed to withstand Australian weather conditions. A periodic clean and annual inspection is typically all that's required to keep your system performing optimally.</p>
+<p>Once installed, solar panels require minimal maintenance. They have no moving parts and are designed to withstand New Zealand weather conditions. A periodic clean and annual inspection is typically all that's required to keep your system performing optimally.</p>
 
 <h2>Is Solar Right for You?</h2>
 <p>The best way to find out if solar is right for your home or business is to get a professional assessment. At EFS Solar, we provide free, no-obligation consultations and quotes. Our team of experts will assess your energy usage, roof orientation, and other factors to design the ideal system for your needs.</p>
@@ -140,22 +140,22 @@ const articles: Record<string, {
 <p>Solar power is a rapidly growing industry, but despite its many benefits, many misconceptions exist. From the cost of solar panels to the reliability of solar energy, let's set the record straight about some of the most common solar myths.</p>
 
 <h2>Myth 1: Solar Panels Are Too Expensive</h2>
-<p>This was true a decade ago, but solar panel costs have fallen dramatically — by over 90% in the past ten years. With government rebates, feed-in tariffs, and flexible payment plans (including $0 upfront options), solar is now accessible to the vast majority of Australian homeowners and businesses. The question is no longer whether you can afford solar — it's whether you can afford not to have it.</p>
+<p>This was true a decade ago, but solar panel costs have fallen dramatically — by over 90% in the past ten years. With government rebates, feed-in tariffs, and flexible payment plans (including $0 upfront options), solar is now accessible to the vast majority of New Zealand homeowners and businesses. The question is no longer whether you can afford solar — it's whether you can afford not to have it.</p>
 
 <h2>Myth 2: Solar Panels Don't Work on Cloudy Days</h2>
-<p>Solar panels still generate electricity on cloudy days — they just produce less than on a clear sunny day. Panels work by capturing daylight (diffuse light), not just direct sunlight. Countries like Germany and the UK, which have significantly less sunshine than Australia, are among the world's leading solar energy producers. In Australia's climate, this is rarely a concern.</p>
+<p>Solar panels still generate electricity on cloudy days — they just produce less than on a clear sunny day. Panels work by capturing daylight (diffuse light), not just direct sunlight. Countries like Germany and the UK, which have significantly less sunshine than New Zealand, are among the world's leading solar energy producers. In New Zealand's climate, this is rarely a concern.</p>
 
 <h2>Myth 3: Solar Panels Require a Lot of Maintenance</h2>
-<p>Solar panels are remarkably low maintenance. With no moving parts, they're designed to last 25+ years with minimal upkeep. The main maintenance task is occasional cleaning (rain does most of the job naturally) and a periodic inspection. The manufacturer warranty typically covers performance for 25 years.</p>
+<p>Solar panels are remarkably low maintenance. With no moving parts, they're designed to last 25+ years with minimal upkeep. The main maintenance task is occasional cleaning (rain does most of the job naturally) and a periodic inspection. The manufacturer warranty typically covers performance for 30 years.</p>
 
 <h2>Myth 4: Solar Panels Will Damage My Roof</h2>
-<p>When installed by a qualified, accredited installer, solar panels protect your roof rather than damage it. The sections of roof under the panels are shielded from UV exposure, hail, and weather. Proper installation follows Australian standards and ensures no water ingress or structural issues.</p>
+<p>When installed by a qualified, accredited installer, solar panels protect your roof rather than damage it. The sections of roof under the panels are shielded from UV exposure, hail, and weather. Proper installation follows New Zealand standards and ensures no water ingress or structural issues.</p>
 
 <h2>Myth 5: Solar Is Not Worth It If I Rent or Plan to Move</h2>
 <p>If you own the property but plan to move, solar panels add value and can make your home sell faster and for more. If you're a landlord, solar can help attract and retain tenants. Even if you move within a few years, the energy savings and property value increase typically make solar worthwhile.</p>
 
 <h2>Myth 6: The Grid Will Look After Me Without Solar</h2>
-<p>Australian electricity prices have risen significantly in recent years and are expected to continue rising. By generating your own power, you lock in a lower effective energy cost and protect yourself from future price hikes. The sooner you go solar, the more you save over the lifetime of the system.</p>
+<p>New Zealand electricity prices have risen significantly in recent years and are expected to continue rising. By generating your own power, you lock in a lower effective energy cost and protect yourself from future price hikes. The sooner you go solar, the more you save over the lifetime of the system.</p>
 
 <h2>Ready to Make an Informed Decision?</h2>
 <p>Now that you know the truth about solar power, take the next step. At EFS Solar, we provide honest, transparent advice tailored to your specific situation. <a href="/contact">Get in touch today</a> for a free consultation.</p>
@@ -167,7 +167,7 @@ const articles: Record<string, {
         date: '15 February 2023',
         category: 'Consumer Advice',
         content: `
-<p>Discover the truth about dodgy solar installers or "solar cowboys" and how to spot them from a mile away. Since 2011 more than 700 solar companies have gone out of business in Australia, leaving customers without warranties or service support. Don't let this happen to you.</p>
+<p>Discover the truth about dodgy solar installers or "solar cowboys" and how to spot them from a mile away. Since 2011 more than 700 solar companies have gone out of business in New Zealand, leaving customers without warranties or service support. Don't let this happen to you.</p>
 
 <h2>What is a Solar Cowboy?</h2>
 <p>A solar cowboy (or dodgy solar installer) is a company or individual that installs solar panels without proper accreditation, uses substandard components, or makes misleading claims to win business. They often appear online with too-good-to-be-true prices and aggressive sales tactics.</p>
@@ -181,7 +181,7 @@ const articles: Record<string, {
 <p>Legitimate solar companies don't need to pressure you into signing immediately. Phrases like "This deal expires tonight" or "I can only give you this price if you sign now" are classic high-pressure tactics used by disreputable operators.</p>
 
 <h3>3. No CEC Accreditation</h3>
-<p>All reputable solar installers in Australia should be accredited by the Clean Energy Council (CEC). CEC accreditation means the installer has met training and ethical standards. Always ask to see CEC accreditation and verify it on the CEC website.</p>
+<p>All reputable solar installers in New Zealand should be accredited by the Clean Energy Council (CEC). CEC accreditation means the installer has met training and ethical standards. Always ask to see CEC accreditation and verify it on the CEC website.</p>
 
 <h3>4. No NETCC Membership</h3>
 <p>The New Energy Tech Consumer Code (NETCC) is a consumer protection program. NETCC-approved retailers have committed to ethical sales and service practices. EFS Solar is a proud NETCC-approved seller.</p>
@@ -203,7 +203,7 @@ const articles: Record<string, {
 </ul>
 
 <h2>Why Choose EFS Solar?</h2>
-<p>EFS Solar is a locally owned and operated business with offices in Gold Coast and Sydney. We are CEC accredited, NETCC approved, and have thousands of satisfied customers across Queensland, New South Wales, and the Northern Territory. We use only Tier 1 solar panels and inverters and back all installations with comprehensive warranties.</p>
+<p>EFS Solar is a locally owned and operated business with offices in New Zealand and Sydney. We are CEC accredited, NETCC approved, and have thousands of satisfied customers across New Zealand, New South Wales, and the Northern Territory. We use only Tier 1 solar panels and inverters and back all installations with comprehensive warranties.</p>
 <p><a href="/contact">Contact EFS Solar today</a> for an honest, no-pressure consultation.</p>
         `,
     },
@@ -222,7 +222,7 @@ const articles: Record<string, {
 <li><strong>Immediate ownership:</strong> The system is yours from day one.</li>
 <li><strong>Simplicity:</strong> No ongoing monthly payments to manage.</li>
 </ul>
-<p>The typical payback period for a cash-purchased 6.6kW solar system in Australia is 3–5 years, after which you're generating power at essentially zero cost.</p>
+<p>The typical payback period for a cash-purchased 6.6kW solar system in New Zealand is 3–5 years, after which you're generating power at essentially zero cost.</p>
 
 <h2>Option 2: Solar Payment Plan ($0 Upfront)</h2>
 <p>EFS Solar offers $0 upfront payment plans that allow you to go solar today without any out-of-pocket expense. Here's how it works:</p>
@@ -248,11 +248,11 @@ const articles: Record<string, {
     },
     'feed-in-tariffs-explained': {
         title: 'What Are Feed-In Tariffs & What Do They Do?',
-        metaDescription: 'Everything you need to know about solar feed-in tariffs in Australia — what they are, how they work, current rates, and how to maximise your solar export earnings.',
+        metaDescription: 'Everything you need to know about solar feed-in tariffs in New Zealand — what they are, how they work, current rates, and how to maximise your solar export earnings.',
         date: '10 January 2023',
         category: 'Finance',
         content: `
-<p>In short, if you're considering solar you need to know everything about Feed-In Tariffs. Here's why: If you're considering installing solar panels on your home or business in Australia, you've probably heard the term "feed-in tariff" (FiT). But what exactly is it, and how can it help you get the most out of your solar investment?</p>
+<p>In short, if you're considering solar you need to know everything about Feed-In Tariffs. Here's why: If you're considering installing solar panels on your home or business in New Zealand, you've probably heard the term "feed-in tariff" (FiT). But what exactly is it, and how can it help you get the most out of your solar investment?</p>
 
 <h2>What is a Feed-In Tariff?</h2>
 <p>A feed-in tariff (FiT) is the rate your electricity retailer pays you for the surplus solar electricity your system exports to the grid. When your solar panels produce more electricity than your home uses, the excess is sent to the electricity grid. Your retailer then credits your account at the FiT rate for every kilowatt-hour (kWh) exported.</p>
@@ -310,7 +310,7 @@ const articles: Record<string, {
 <p>Even in sleep mode, computers and monitors can draw 1–10 watts. Fully shutting down overnight eliminates this waste.</p>
 
 <h2>How Much Does Standby Power Cost?</h2>
-<p>The Australian Government estimates that standby power accounts for approximately 10% of the average household electricity bill. In a home spending $2,000 per year on electricity, that's $200 wasted on appliances that aren't even in use.</p>
+<p>The New Zealand Government estimates that standby power accounts for approximately 10% of the average household electricity bill. In a home spending $2,000 per year on electricity, that's $200 wasted on appliances that aren't even in use.</p>
 
 <h2>How Solar Power Helps</h2>
 <p>While the best first step is to reduce standby consumption (using power boards with switches, fully powering off devices), solar power neutralises the cost of residual standby usage by covering it with free electricity from the sun during daylight hours.</p>
@@ -327,10 +327,10 @@ const articles: Record<string, {
         date: '10 May 2022',
         category: 'Consumer Advice',
         content: `
-<p>Why you need to watch out for solar cowboys: Going solar can be a big deal for Australian home or business owners. There are many reputable companies offering quality products and installation — but unfortunately, there are also those who are less scrupulous.</p>
+<p>Why you need to watch out for solar cowboys: Going solar can be a big deal for New Zealand home or business owners. There are many reputable companies offering quality products and installation — but unfortunately, there are also those who are less scrupulous.</p>
 
 <h2>What is a Solar Cowboy?</h2>
-<p>A solar cowboy is an unscrupulous solar installer who prioritises profit over quality. They may use cheap panels not certified to Australian standards, employ unqualified installers, make misleading promises about savings, or disappear after installation, leaving you without warranty support.</p>
+<p>A solar cowboy is an unscrupulous solar installer who prioritises profit over quality. They may use cheap panels not certified to New Zealand standards, employ unqualified installers, make misleading promises about savings, or disappear after installation, leaving you without warranty support.</p>
 
 <h2>The Risks of Using a Solar Cowboy</h2>
 <ul>
@@ -346,7 +346,7 @@ const articles: Record<string, {
 <p>A quality 6.6kW solar system from reputable brands costs a certain minimum. If a quote is dramatically lower than competitors, the quality of components or installation is almost certainly compromised.</p>
 
 <h3>Unlicensed or Non-Accredited Installers</h3>
-<p>In Australia, solar installers must hold the relevant electrical licence for their state and be accredited by the Clean Energy Council. Always verify accreditation before signing anything.</p>
+<p>In New Zealand, solar installers must hold the relevant electrical licence for their state and be accredited by the Clean Energy Council. Always verify accreditation before signing anything.</p>
 
 <h3>No Verifiable Local Address</h3>
 <p>Companies without a verifiable local presence have little accountability after installation. Choose a company with a real office you can visit and a track record in your area.</p>
@@ -364,7 +364,7 @@ const articles: Record<string, {
 </ol>
 
 <h2>Choose EFS Solar with Confidence</h2>
-<p>EFS Solar is CEC accredited, NETCC approved, and has served thousands of customers across Queensland, NSW, and the NT. We only use Tier 1 panels and inverters, and we back every installation with comprehensive warranties.</p>
+<p>EFS Solar is CEC accredited, NETCC approved, and has served thousands of customers across New Zealand. We only use Tier 1 panels and inverters, and we back every installation with comprehensive warranties.</p>
 <p><a href="/contact">Get a free, no-obligation quote today.</a></p>
         `,
     },
@@ -377,7 +377,7 @@ const articles: Record<string, {
 <p>We're sick of solar myths circulating so we're here to set the record straight. When it comes to installing solar panels on your roof, some things simply aren't true. Here are the top 5 solar myths — debunked.</p>
 
 <h2>Myth 1: Solar Panels Only Work in Full Sun</h2>
-<p><strong>The truth:</strong> Solar panels generate electricity from daylight, not just direct sunlight. Even on overcast days, panels produce a significant portion of their rated output. Australia's climate means even the cloudiest days still deliver useful solar generation.</p>
+<p><strong>The truth:</strong> Solar panels generate electricity from daylight, not just direct sunlight. Even on overcast days, panels produce a significant portion of their rated output. New Zealand's climate means even the cloudiest days still deliver useful solar generation.</p>
 
 <h2>Myth 2: Solar Panels Are Too Expensive</h2>
 <p><strong>The truth:</strong> Solar system costs have fallen by over 90% since 2010. Combined with government STCs (rebates), $0 upfront payment plans, and rapidly rising electricity prices, solar has never been more affordable or more valuable. Most homeowners see full payback in 3–5 years.</p>
@@ -404,18 +404,18 @@ const articles: Record<string, {
 <p>Businesses should consider solar systems to reduce overheads, work towards a more sustainable future, and invest in a greener economy. Solar PV is one of the smartest investments any business owner can make in the current energy climate.</p>
 
 <h2>The Business Case for Solar</h2>
-<p>Commercial electricity prices in Australia have risen dramatically in recent years. For businesses that operate during daylight hours — when solar generation peaks — the financial case for solar has never been stronger. A well-designed commercial solar system can deliver exceptional returns, often with payback periods of 3–6 years.</p>
+<p>Commercial electricity prices in New Zealand have risen dramatically in recent years. For businesses that operate during daylight hours — when solar generation peaks — the financial case for solar has never been stronger. A well-designed commercial solar system can deliver exceptional returns, often with payback periods of 3–6 years.</p>
 
 <h2>Key Benefits of Commercial Solar</h2>
 
 <h3>Reduced Electricity Costs</h3>
-<p>Electricity is one of the largest operating costs for most Australian businesses. A commercial solar system can offset 40–80% of your daytime electricity consumption, dramatically reducing your bills from day one.</p>
+<p>Electricity is one of the largest operating costs for most New Zealand businesses. A commercial solar system can offset 40–80% of your daytime electricity consumption, dramatically reducing your bills from day one.</p>
 
 <h3>Improved Cash Flow</h3>
 <p>With $0 upfront financing options, many businesses can install solar and immediately see positive cash flow — where monthly energy savings exceed repayment costs.</p>
 
 <h3>Instant Asset Write-Off</h3>
-<p>Commercial solar systems may be eligible for the Australian Government's instant asset write-off, allowing businesses to deduct the full cost in the year of installation, significantly reducing the effective upfront cost.</p>
+<p>Commercial solar systems may be eligible for the New Zealand Government's instant asset write-off, allowing businesses to deduct the full cost in the year of installation, significantly reducing the effective upfront cost.</p>
 
 <h3>Enhanced Brand and ESG Credentials</h3>
 <p>Customers, suppliers, and employees increasingly prefer businesses that demonstrate environmental responsibility. A solar installation is a visible, meaningful sustainability commitment that can differentiate your brand.</p>
@@ -433,28 +433,28 @@ const articles: Record<string, {
 </ul>
 
 <h2>Get a Commercial Solar Quote</h2>
-<p>EFS Solar specialises in commercial solar installations across Queensland and New South Wales. <a href="/services/commercial-solar">Learn more about our commercial solar services</a> or <a href="/contact">contact us today</a> for a free commercial energy assessment.</p>
+<p>EFS Solar specialises in commercial solar installations across New Zealand and New South Wales. <a href="/services/commercial-solar">Learn more about our commercial solar services</a> or <a href="/contact">contact us today</a> for a free commercial energy assessment.</p>
         `,
     },
     'australias-energy-supply-crisis': {
-        title: "Australia's Energy Supply Crisis — And How Solar Helps",
-        metaDescription: "Australia is facing an energy supply crisis driven by underinvestment in renewable energy. Learn how solar power offers a solution for Australian homes and businesses.",
+        title: "New Zealand's Energy Supply Crisis — And How Solar Helps",
+        metaDescription: "New Zealand is facing an energy supply crisis driven by underinvestment in renewable energy. Learn how solar power offers a solution for New Zealand homes and businesses.",
         date: '15 July 2022',
         category: 'Energy Market',
         content: `
-<p>Australia is currently amid an energy supply crisis, as identified by the Clean Energy Council and major market operators. A lack of investment in reliable renewable energy sources has left the grid vulnerable to supply shortfalls, price spikes, and increasing reliability concerns.</p>
+<p>New Zealand is currently amid an energy supply crisis, as identified by the Clean Energy Council and major market operators. A lack of investment in reliable renewable energy sources has left the grid vulnerable to supply shortfalls, price spikes, and increasing reliability concerns.</p>
 
-<h2>What's Causing Australia's Energy Crisis?</h2>
+<h2>What's Causing New Zealand's Energy Crisis?</h2>
 <p>Several factors have combined to create the current energy market pressures:</p>
 <ul>
-<li><strong>Ageing coal infrastructure:</strong> Many of Australia's coal power stations are old and increasingly unreliable, with unexpected outages causing supply shortfalls.</li>
-<li><strong>Global energy market disruptions:</strong> The global gas market disruption has driven up wholesale electricity and gas prices across Australia.</li>
+<li><strong>Ageing coal infrastructure:</strong> Many of New Zealand's coal power stations are old and increasingly unreliable, with unexpected outages causing supply shortfalls.</li>
+<li><strong>Global energy market disruptions:</strong> The global gas market disruption has driven up wholesale electricity and gas prices across New Zealand.</li>
 <li><strong>Delayed renewable investment:</strong> Years of policy uncertainty slowed investment in the renewable capacity needed to replace retiring fossil fuel plants.</li>
 <li><strong>Extreme weather events:</strong> Increased frequency and severity of heatwaves drives peak demand spikes that stress the grid.</li>
 </ul>
 
-<h2>The Impact on Australian Households and Businesses</h2>
-<p>The result has been sharply rising electricity prices, with many Australian households and businesses facing bill increases of 20–30% or more. This is expected to continue while the energy system transitions away from fossil fuels.</p>
+<h2>The Impact on New Zealand Households and Businesses</h2>
+<p>The result has been sharply rising electricity prices, with many New Zealand households and businesses facing bill increases of 20–30% or more. This is expected to continue while the energy system transitions away from fossil fuels.</p>
 
 <h2>How Solar Is Part of the Solution</h2>
 <p>Distributed rooftop solar plays a critical role in addressing the energy crisis by:</p>
@@ -479,7 +479,7 @@ const articles: Record<string, {
 <p>Solar panels have become an increasingly popular way for homeowners to generate clean and renewable energy. While solar panels require minimal maintenance, it's essential to understand what's involved to keep your system operating at peak efficiency for its full lifespan.</p>
 
 <h2>How Long Do Solar Panels Last?</h2>
-<p>Quality solar panels from reputable manufacturers are rated to last at least 25 years at or above 80% of their original performance. Many systems continue to function well beyond this, with some degradation over time but still generating useful electricity.</p>
+<p>Quality solar panels from reputable manufacturers are rated to last at least 30 years at or above 80% of their original performance. Many systems continue to function well beyond this, with some degradation over time but still generating useful electricity.</p>
 
 <p>The key components and their typical lifespans:</p>
 <ul>
@@ -492,7 +492,7 @@ const articles: Record<string, {
 <h2>Solar Panel Maintenance Requirements</h2>
 
 <h3>Cleaning</h3>
-<p>In most Australian locations, rainfall is sufficient to keep panels reasonably clean. However, in areas with heavy dust, pollen, bird droppings, or nearby industrial activity, more frequent cleaning may be needed. A gentle rinse with water (ideally early morning or evening when panels are cool) is usually sufficient. Avoid abrasive cleaners or harsh chemicals.</p>
+<p>In most New Zealand locations, rainfall is sufficient to keep panels reasonably clean. However, in areas with heavy dust, pollen, bird droppings, or nearby industrial activity, more frequent cleaning may be needed. A gentle rinse with water (ideally early morning or evening when panels are cool) is usually sufficient. Avoid abrasive cleaners or harsh chemicals.</p>
 
 <h3>Inspection</h3>
 <p>An annual inspection by a qualified installer is recommended. This should include:</p>
@@ -516,7 +516,7 @@ const articles: Record<string, {
 
 <h2>Warranties to Look For</h2>
 <ul>
-<li><strong>Panel performance warranty:</strong> Should guarantee at least 80% output at 25 years</li>
+<li><strong>Panel performance warranty:</strong> Should guarantee at least 80% output at 30 years</li>
 <li><strong>Panel product warranty:</strong> 10–15 years covering manufacturing defects</li>
 <li><strong>Inverter warranty:</strong> 5–10 years (extendable with some brands)</li>
 <li><strong>Installation workmanship warranty:</strong> At least 5 years, covering installation quality</li>
@@ -532,15 +532,15 @@ const articles: Record<string, {
         date: '20 January 2023',
         category: 'Solar Tips',
         content: `
-<p>Is your roof solar ready? Across Australia, solar panels are becoming an increasingly popular way to generate electricity. As a result, businesses and homeowners are increasingly asking whether their roof is suitable for solar installation.</p>
+<p>Is your roof solar ready? Across New Zealand, solar panels are becoming an increasingly popular way to generate electricity. As a result, businesses and homeowners are increasingly asking whether their roof is suitable for solar installation.</p>
 
 <h2>Key Factors That Determine Solar Suitability</h2>
 
 <h3>1. Roof Orientation</h3>
-<p>In Australia, north-facing roofs receive the most direct sunlight and produce the most solar energy. However, east and west-facing roofs also perform well and are suitable for solar installation — particularly when combined with modern monitoring and optimiser technology. South-facing roofs in Australia receive the least sun and are generally less suitable.</p>
+<p>In New Zealand, north-facing roofs receive the most direct sunlight and produce the most solar energy. However, east and west-facing roofs also perform well and are suitable for solar installation — particularly when combined with modern monitoring and optimiser technology. South-facing roofs in New Zealand receive the least sun and are generally less suitable.</p>
 
 <h3>2. Roof Pitch</h3>
-<p>The ideal roof pitch for solar panels in most Australian locations is 15–40 degrees. However, solar panels can be installed on roofs anywhere from flat (0°) to very steep pitches using appropriate mounting systems. Flat roofs often use tilt frames to achieve optimal angles.</p>
+<p>The ideal roof pitch for solar panels in most New Zealand locations is 15–40 degrees. However, solar panels can be installed on roofs anywhere from flat (0°) to very steep pitches using appropriate mounting systems. Flat roofs often use tilt frames to achieve optimal angles.</p>
 
 <h3>3. Shading</h3>
 <p>Shading from trees, chimneys, or neighbouring buildings significantly impacts solar performance. Even partial shading of one panel can reduce the output of the entire string of panels connected to it (with standard inverters). A site assessment will identify shading issues and — where necessary — recommend micro-inverters or DC optimisers to mitigate the impact.</p>
@@ -557,7 +557,7 @@ const articles: Record<string, {
 </ul>
 
 <h3>6. Structural Capacity</h3>
-<p>Solar panels add weight to your roof (approximately 10–15 kg per panel). In most cases, standard roof structures easily support this load. For older homes, a structural assessment may be warranted. EFS Solar's installs conform to all Australian Standards.</p>
+<p>Solar panels add weight to your roof (approximately 10–15 kg per panel). In most cases, standard roof structures easily support this load. For older homes, a structural assessment may be warranted. EFS Solar's installs conform to all New Zealand Standards.</p>
 
 <h3>7. Available Space</h3>
 <p>A 6.6kW system requires approximately 35–45 m² of suitable roof space. If your roof has multiple aspects or obstacles, a qualified designer can plan the system to make the best use of available area.</p>
@@ -631,11 +631,11 @@ const articles: Record<string, {
     },
     'when-to-consider-going-solar': {
         title: 'When To Consider Going Solar — Key Signals to Watch For',
-        metaDescription: 'Solar energy is growing fast across Australia. Find out the key signals that indicate the right time for your home or business to make the switch to solar power.',
+        metaDescription: 'Solar energy is growing fast across New Zealand. Find out the key signals that indicate the right time for your home or business to make the switch to solar power.',
         date: '15 May 2022',
         category: 'Solar Tips',
         content: `
-<p>When to consider going solar: Solar energy is becoming more and more popular all over the world. In Australia, one of the sunniest countries on earth, it's becoming an increasingly compelling proposition for homeowners and businesses alike. But when is the right time to make the switch?</p>
+<p>When to consider going solar: Solar energy is becoming more and more popular all over the world. In New Zealand, one of the sunniest countries on earth, it's becoming an increasingly compelling proposition for homeowners and businesses alike. But when is the right time to make the switch?</p>
 
 <h2>Signs It's Time to Go Solar</h2>
 
@@ -673,7 +673,7 @@ const articles: Record<string, {
 <p>The Approved Solar Retailer program has now been replaced by the New Energy Tech Consumer Code (NETCC) program. In recent years, there has been a growing need for stronger consumer protections in the solar industry, and the NETCC delivers this through a comprehensive code of conduct for solar and battery retailers.</p>
 
 <h2>What is the NETCC?</h2>
-<p>The New Energy Tech Consumer Code (NETCC) is a national consumer protection initiative for the solar and emerging energy technology sector in Australia. It is administered by the New Energy Tech Consumer Code program and provides a framework of standards and obligations for approved retailers.</p>
+<p>The New Energy Tech Consumer Code (NETCC) is a national consumer protection initiative for the solar and emerging energy technology sector in New Zealand. It is administered by the New Energy Tech Consumer Code program and provides a framework of standards and obligations for approved retailers.</p>
 
 <h2>What Does the NETCC Require of Approved Sellers?</h2>
 <p>NETCC-approved sellers must commit to:</p>
@@ -702,22 +702,22 @@ const articles: Record<string, {
         `,
     },
     'why-solar-power-is-the-future-of-energy-in-australia': {
-        title: 'Why Solar Power is the Future of Energy in Australia',
-        metaDescription: 'Solar power is rapidly becoming Australia\'s primary energy source. Discover why solar is Australia\'s energy future and how you can be part of it with EFS Solar.',
+        title: 'Why Solar Power is the Future of Energy in New Zealand',
+        metaDescription: 'Solar power is rapidly becoming New Zealand\'s primary energy source. Discover why solar is New Zealand\'s energy future and how you can be part of it with EFS Solar.',
         date: '10 March 2023',
         category: 'Solar Industry',
         content: `
-<p>Solar power is rapidly becoming Australia's go-to energy source for a good reason. With abundant sunlight and a growing need to reduce carbon emissions, solar is not just the future — for millions of Australians, it's already the present.</p>
+<p>Solar power is rapidly becoming New Zealand's go-to energy source for a good reason. With abundant sunlight and a growing need to reduce carbon emissions, solar is not just the future — for millions of New Zealands, it's already the present.</p>
 
-<h2>Australia's Solar Opportunity</h2>
-<p>Australia has some of the world's highest solar irradiance — the amount of solar energy hitting the earth's surface. This natural advantage, combined with falling solar panel costs and rising electricity prices, makes the case for solar irresistible.</p>
+<h2>New Zealand's Solar Opportunity</h2>
+<p>New Zealand has some of the world's highest solar irradiance — the amount of solar energy hitting the earth's surface. This natural advantage, combined with falling solar panel costs and rising electricity prices, makes the case for solar irresistible.</p>
 
-<p>Australia already leads the world in residential solar uptake per capita. More than 30% of Australian homes now have solar panels, and this number is growing rapidly as more Australians see the financial and environmental benefits.</p>
+<p>New Zealand already leads the world in residential solar uptake per capita. More than 30% of New Zealand homes now have solar panels, and this number is growing rapidly as more New Zealands see the financial and environmental benefits.</p>
 
-<h2>Solar's Role in Australia's Energy Transition</h2>
-<p>Australia has committed to ambitious renewable energy targets, aiming to significantly decarbonise the electricity grid over the coming decades. Rooftop solar is a critical part of this transition, complementing large-scale wind and solar farms.</p>
+<h2>Solar's Role in New Zealand's Energy Transition</h2>
+<p>New Zealand has committed to ambitious renewable energy targets, aiming to significantly decarbonise the electricity grid over the coming decades. Rooftop solar is a critical part of this transition, complementing large-scale wind and solar farms.</p>
 
-<p>The Australian Energy Market Operator (AEMO) has modelled a future where near-100% renewable electricity is not only achievable but is the lowest-cost path forward. In these scenarios, rooftop solar plays a central role, with millions of homes and businesses generating electricity locally and contributing to the grid.</p>
+<p>The New Zealand Energy Market Operator (AEMO) has modelled a future where near-100% renewable electricity is not only achievable but is the lowest-cost path forward. In these scenarios, rooftop solar plays a central role, with millions of homes and businesses generating electricity locally and contributing to the grid.</p>
 
 <h2>Technological Advances Accelerating Solar Adoption</h2>
 <p>Several technological developments are further accelerating solar's role:</p>
@@ -729,10 +729,10 @@ const articles: Record<string, {
 </ul>
 
 <h2>The Economics Are Compelling</h2>
-<p>With electricity prices continuing to rise and solar system costs at historic lows, the economics of solar have never been better. The typical Australian home solar system pays for itself in 3–5 years and then generates free electricity for 20+ more years.</p>
+<p>With electricity prices continuing to rise and solar system costs at historic lows, the economics of solar have never been better. The typical New Zealand home solar system pays for itself in 3–5 years and then generates free electricity for 20+ more years.</p>
 
 <h2>Join the Solar Revolution</h2>
-<p>EFS Solar makes it easy to become part of Australia's clean energy future. With $0 upfront options, expert installation, and comprehensive after-sales support, there's no reason to delay. <a href="/contact">Get a free quote today</a> and start generating your own clean energy.</p>
+<p>EFS Solar makes it easy to become part of New Zealand's clean energy future. With $0 upfront options, expert installation, and comprehensive after-sales support, there's no reason to delay. <a href="/contact">Get a free quote today</a> and start generating your own clean energy.</p>
         `,
     },
     'household-budgets': {
@@ -744,17 +744,17 @@ const articles: Record<string, {
 <p>It's no secret that household budgets are tighter than ever. With inflation and other economic factors causing living costs to increase, families and businesses alike are looking for ways to reduce their expenses. Solar energy is one of the most effective tools available for reducing costs in the long term.</p>
 
 <h2>Electricity: A Major Household Expense</h2>
-<p>For most Australian households, electricity is one of the largest recurring expenses after housing and food. The average Australian household spends $1,500–$2,500 per year on electricity, and this has been rising steadily.</p>
+<p>For most New Zealand households, electricity is one of the largest recurring expenses after housing and food. The average New Zealand household spends $1,500–$2,500 per year on electricity, and this has been rising steadily.</p>
 
 <p>With electricity tariffs increasing significantly in recent years, many families are finding their energy bills have become a significant financial burden — particularly in regions with hot summers driving heavy air conditioning use.</p>
 
 <h2>How Solar Directly Reduces Your Electricity Bill</h2>
 <p>When you install solar panels, you generate your own electricity from sunlight. Every unit of electricity your system generates is one less unit you buy from the grid. At typical electricity prices of 30–40 cents per kWh, each kilowatt-hour you generate yourself represents real savings.</p>
 
-<p>A quality 6.6kW solar system in Queensland or NSW generates approximately 25–30 kWh per day on average. At current electricity prices, this represents $7.50–$12 of daily savings — or $2,700–$4,380 per year.</p>
+<p>A quality 6.6kW solar system in New Zealand or NSW generates approximately 25–30 kWh per day on average. At current electricity prices, this represents $7.50–$12 of daily savings — or $2,700–$4,380 per year.</p>
 
 <h2>Real Numbers: Before and After Solar</h2>
-<p>A typical EFS Solar customer in Queensland before solar:</p>
+<p>A typical EFS Solar customer in New Zealand before solar:</p>
 <ul>
 <li>Quarterly electricity bill: $500–$700</li>
 <li>Annual electricity cost: $2,000–$2,800</li>
@@ -778,14 +778,14 @@ const articles: Record<string, {
     },
     'how-are-solar-panels-tested': {
         title: 'How Are Solar Panels Tested for Quality and Performance?',
-        metaDescription: 'How do you know a solar panel is reliable and high quality? Learn how solar panels are tested to meet Australian and international standards before reaching your roof.',
+        metaDescription: 'How do you know a solar panel is reliable and high quality? Learn how solar panels are tested to meet New Zealand and international standards before reaching your roof.',
         date: '5 February 2023',
         category: 'Solar Tips',
         content: `
 <p>As solar panel technology continues to improve, an increasing number of businesses and homeowners are making the switch to solar energy. But with this increased demand has come an influx of cheaper, lower-quality panels to the market. So how do you know a panel is actually reliable?</p>
 
 <h2>International Testing Standards</h2>
-<p>Solar panels sold in Australia must meet several international standards:</p>
+<p>Solar panels sold in New Zealand must meet several international standards:</p>
 <ul>
 <li><strong>IEC 61215:</strong> This standard tests crystalline silicon solar panels for performance and durability. Tests include thermal cycling, damp heat, humidity freeze, and mechanical load testing.</li>
 <li><strong>IEC 61730:</strong> Safety testing standard covering electrical safety, mechanical integrity, and fire resistance.</li>
@@ -801,7 +801,7 @@ const articles: Record<string, {
 <p>Panels are exposed to 85°C and 85% relative humidity for 1,000 hours. This accelerated ageing test reveals the susceptibility of panels to moisture-induced degradation, a common cause of premature failure.</p>
 
 <h3>Mechanical Load Testing</h3>
-<p>Panels are tested for resistance to static mechanical loads from wind and snow. This is critical for ensuring panels remain secure in strong winds — particularly relevant in tropical Queensland where cyclone conditions can occur.</p>
+<p>Panels are tested for resistance to static mechanical loads from wind and snow. This is critical for ensuring panels remain secure in strong winds — particularly relevant in tropical New Zealand where cyclone conditions can occur.</p>
 
 <h3>Hail Impact Testing</h3>
 <p>25mm ice balls are fired at panels at speeds above 23 m/s. Quality panels withstand this without cracking.</p>
@@ -819,15 +819,15 @@ const articles: Record<string, {
         `,
     },
     'what-is-neo-and-why-its-changing': {
-        title: "What is NEO, and Why It's Changing Australia's Energy Market",
-        metaDescription: "Australia's National Electricity Objective (NEO) now includes emissions reduction goals. Learn what this means for the energy market and your solar investment.",
+        title: "What is NEO, and Why It's Changing New Zealand's Energy Market",
+        metaDescription: "New Zealand's National Electricity Objective (NEO) now includes emissions reduction goals. Learn what this means for the energy market and your solar investment.",
         date: '1 February 2023',
         category: 'Energy Market',
         content: `
-<p>Federal, state, and territory energy ministers have agreed to include emissions reduction goals in the National Electricity Objective (NEO). This decision represents a significant step in Australia's energy policy and has important implications for the electricity market and energy transition.</p>
+<p>Federal, state, and territory energy ministers have agreed to include emissions reduction goals in the National Electricity Objective (NEO). This decision represents a significant step in New Zealand's energy policy and has important implications for the electricity market and energy transition.</p>
 
 <h2>What is the National Electricity Objective?</h2>
-<p>The National Electricity Objective (NEO) is the foundational statement that guides Australia's National Electricity Market (NEM). It sets out the primary objective that market decisions — including those by regulators, network businesses, and market operators — are required to pursue.</p>
+<p>The National Electricity Objective (NEO) is the foundational statement that guides New Zealand's National Electricity Market (NEM). It sets out the primary objective that market decisions — including those by regulators, network businesses, and market operators — are required to pursue.</p>
 
 <p>Previously, the NEO focused exclusively on economic efficiency: promoting reliable, secure supply and competitive prices. The new amendment adds a requirement to reduce greenhouse gas emissions in a way consistent with climate objectives.</p>
 
@@ -835,7 +835,7 @@ const articles: Record<string, {
 <p>By explicitly embedding emissions reduction in the NEO, policymakers have signalled that the transition to clean energy is now central to — not in competition with — the electricity market's objectives. This:</p>
 <ul>
 <li>Provides greater regulatory certainty for investment in renewable energy</li>
-<li>Aligns market rules and decisions with Australia's climate commitments</li>
+<li>Aligns market rules and decisions with New Zealand's climate commitments</li>
 <li>Creates a stronger foundation for accelerating the retirement of coal and gas generation</li>
 <li>Supports the growth of distributed energy resources like rooftop solar</li>
 </ul>
@@ -848,24 +848,24 @@ const articles: Record<string, {
 <li>The transition away from fossil fuels will be more orderly and supported</li>
 </ul>
 
-<h2>The Opportunity for Australian Households and Businesses</h2>
+<h2>The Opportunity for New Zealand Households and Businesses</h2>
 <p>With policy now aligned with the clean energy transition, the long-term trajectory for solar value — both financially and environmentally — is positive. Investing in rooftop solar today means you're capitalising on the current incentives while positioning yourself favourably for an increasingly renewable electricity future.</p>
 
 <p><a href="/contact">Contact EFS Solar today</a> to learn how solar can benefit your home or business in this evolving energy landscape.</p>
         `,
     },
     'jobs-of-the-future-in-clean-energy': {
-        title: 'Jobs of the Future in Clean Energy — Australia\'s Solar Workforce',
-        metaDescription: 'Australia\'s clean energy future is creating thousands of new jobs. Discover the career opportunities emerging from the solar and renewable energy sector.',
+        title: 'Jobs of the Future in Clean Energy — New Zealand\'s Solar Workforce',
+        metaDescription: 'New Zealand\'s clean energy future is creating thousands of new jobs. Discover the career opportunities emerging from the solar and renewable energy sector.',
         date: '10 February 2023',
         category: 'Industry News',
         content: `
-<p>Australia's clean energy future is looking bright, and with it comes a range of new career opportunities. The Clean Energy Council has released industry workforce reports showing that thousands of new jobs are being created in solar installation, battery storage, grid management, and related fields.</p>
+<p>New Zealand's clean energy future is looking bright, and with it comes a range of new career opportunities. The Clean Energy Council has released industry workforce reports showing that thousands of new jobs are being created in solar installation, battery storage, grid management, and related fields.</p>
 
 <h2>The Scale of the Opportunity</h2>
-<p>The clean energy transition represents one of the largest economic transformations in Australian history. Moving from a fossil fuel-based energy system to one powered predominantly by renewables requires not just new technology, but a vastly expanded workforce to install, maintain, and manage that technology.</p>
+<p>The clean energy transition represents one of the largest economic transformations in New Zealand history. Moving from a fossil fuel-based energy system to one powered predominantly by renewables requires not just new technology, but a vastly expanded workforce to install, maintain, and manage that technology.</p>
 
-<p>Industry projections suggest that tens of thousands of additional workers will be needed in Australia's clean energy sector over the next decade, across a range of roles and skill levels.</p>
+<p>Industry projections suggest that tens of thousands of additional workers will be needed in New Zealand's clean energy sector over the next decade, across a range of roles and skill levels.</p>
 
 <h2>Key Clean Energy Career Areas</h2>
 
@@ -896,7 +896,7 @@ const articles: Record<string, {
     },
     '5-biggest-solar-farms-in-the-world': {
         title: 'The 5 Biggest Solar Farms In The World',
-        metaDescription: 'Discover the world\'s largest solar farms and how these massive renewable energy installations are powering millions of homes. Learn about Australia\'s place in the global solar story.',
+        metaDescription: 'Discover the world\'s largest solar farms and how these massive renewable energy installations are powering millions of homes. Learn about New Zealand\'s place in the global solar story.',
         date: '5 July 2022',
         category: 'Solar Industry',
         content: `
@@ -917,15 +917,15 @@ const articles: Record<string, {
 <h2>5. Benban Solar Park — Aswan, Egypt (1,650 MW)</h2>
 <p>Africa's largest solar installation is located near the historic city of Aswan, Egypt. Developed across 37 square kilometres of desert, Benban comprises multiple individual projects from different developers that together form one of the world's solar giants. It forms a key part of Egypt's ambitious renewable energy expansion.</p>
 
-<h2>Australia's Solar Story</h2>
-<p>While Australia's largest solar farms are significantly smaller than the global giants, Australia's greatest solar achievement is in rooftop solar. Australia has more rooftop solar per capita than any other country in the world, with over 30% of households having panels — a remarkable grass-roots solar revolution.</p>
+<h2>New Zealand's Solar Story</h2>
+<p>While New Zealand's largest solar farms are significantly smaller than the global giants, New Zealand's greatest solar achievement is in rooftop solar. New Zealand has more rooftop solar per capita than any other country in the world, with over 30% of households having panels — a remarkable grass-roots solar revolution.</p>
 
-<p>EFS Solar is proud to contribute to this story. Every system we install adds to Australia's distributed solar capacity and helps move the country towards its renewable energy future. <a href="/contact">Join the solar revolution today.</a></p>
+<p>EFS Solar is proud to contribute to this story. Every system we install adds to New Zealand's distributed solar capacity and helps move the country towards its renewable energy future. <a href="/contact">Join the solar revolution today.</a></p>
         `,
     },
     'investment-in-clean-energy': {
         title: 'A Greater Investment In Clean Energy — The IPCC Demands',
-        metaDescription: 'The IPCC\'s landmark report urges governments worldwide to urgently increase clean energy investment. Learn what this means for Australia\'s energy future and your solar decision.',
+        metaDescription: 'The IPCC\'s landmark report urges governments worldwide to urgently increase clean energy investment. Learn what this means for New Zealand\'s energy future and your solar decision.',
         date: '10 April 2022',
         category: 'Industry News',
         content: `
@@ -940,8 +940,8 @@ const articles: Record<string, {
 <li>The economic costs of inaction on climate change significantly exceed the costs of action.</li>
 </ul>
 
-<h2>What This Means for Australia</h2>
-<p>Australia, with its exceptional solar resources, is uniquely positioned to benefit from the global clean energy transition. The IPCC findings reinforce the case for:</p>
+<h2>What This Means for New Zealand</h2>
+<p>New Zealand, with its exceptional solar resources, is uniquely positioned to benefit from the global clean energy transition. The IPCC findings reinforce the case for:</p>
 <ul>
 <li>Accelerating the adoption of rooftop solar and home batteries</li>
 <li>Supporting the development of large-scale renewable energy projects</li>
@@ -961,20 +961,20 @@ const articles: Record<string, {
         `,
     },
     'energy-efficient-6-6kw-solar-system': {
-        title: 'Energy-Efficient 6.6kW Solar System for Australian Homes',
+        title: 'Energy-Efficient 6.6kW Solar System for New Zealand Homes',
         metaDescription: 'Reduce your energy bills and carbon footprint with an energy-efficient 6.6kW solar system. Learn about the benefits, incentives, and why EFS Solar is the right choice.',
         date: '10 June 2023',
         category: 'Solar Systems',
         content: `
-<p>An <strong>energy-efficient 6.6kW solar system</strong> is one of the smartest investments an Australian homeowner can make. By harnessing the power of the sun, you can dramatically reduce your reliance on the grid, lower your electricity bills, and shrink your carbon footprint — all while increasing the value of your property.</p>
+<p>An <strong>energy-efficient 6.6kW solar system</strong> is one of the smartest investments an New Zealand homeowner can make. By harnessing the power of the sun, you can dramatically reduce your reliance on the grid, lower your electricity bills, and shrink your carbon footprint — all while increasing the value of your property.</p>
 <h2>Why Energy Efficiency Matters</h2>
 <p>An energy-efficient solar system maximises the electricity output per unit of sunlight received. Modern high-efficiency panels — typically operating at 20–22% efficiency — generate more power from the same roof space compared to lower-grade alternatives.</p>
 <h2>Key Benefits</h2>
 <ul>
 <li><strong>Reduced electricity bills:</strong> A well-designed 6.6kW system can offset the majority of a typical household's daytime electricity use.</li>
 <li><strong>Government incentives:</strong> The Small-scale Renewable Energy Scheme (SRES) provides STC rebates that reduce upfront system cost.</li>
-<li><strong>Increased property value:</strong> Energy-efficient homes command premium prices in the Australian market.</li>
-<li><strong>Environmental impact:</strong> Averaged over 25 years, a 6.6kW solar system prevents hundreds of tonnes of CO₂ emissions.</li>
+<li><strong>Increased property value:</strong> Energy-efficient homes command premium prices in the New Zealand market.</li>
+<li><strong>Environmental impact:</strong> Averaged over 30 years, a 6.6kW solar system prevents hundreds of tonnes of CO₂ emissions.</li>
 </ul>
 <p><a href="/contact">Contact EFS Solar today</a> for a free assessment and find out how much an energy-efficient 6.6kW system could save you.</p>
         `,
@@ -985,26 +985,26 @@ const articles: Record<string, {
         date: '8 June 2023',
         category: 'Solar Systems',
         content: `
-<p>When you invest in a <strong>long-lasting 6.6kW solar system</strong>, you're installing infrastructure for your home that will perform for 25 years or more. The durability of a solar system depends on the quality of its components, the standards of its installation, and the reputation of the manufacturer.</p>
+<p>When you invest in a <strong>long-lasting 6.6kW solar system</strong>, you're installing infrastructure for your home that will perform for 30 years or more. The durability of a solar system depends on the quality of its components, the standards of its installation, and the reputation of the manufacturer.</p>
 <h2>What Makes a Solar System Long-Lasting?</h2>
-<p>Quality solar panels from Tier 1 manufacturers carry a performance warranty of at least 25 years. Professional installation by CEC-accredited installers ensures proper mounting, waterproofing, and electrical compliance. A quality inverter backed by a comprehensive warranty completes the picture.</p>
+<p>Quality solar panels from Tier 1 manufacturers carry a performance warranty of at least 30 years. Professional installation by CEC-accredited installers ensures proper mounting, waterproofing, and electrical compliance. A quality inverter backed by a comprehensive warranty completes the picture.</p>
 <h2>EFS Solar's Quality Promise</h2>
 <p>EFS Solar installs only Tier 1 panels and quality-branded inverters, backed by the manufacturer's warranty and our own installation workmanship guarantee.</p>
 <p><a href="/contact">Get a free quote today</a> and invest in a solar system that's built to last.</p>
         `,
     },
     'durable-6-6kw-solar-system': {
-        title: 'Durable 6.6kW Solar System: Engineered for Australian Conditions',
-        metaDescription: 'Australia\'s climate demands durable solar equipment. Discover the benefits of a durable 6.6kW solar system tested to withstand heat, UV, hail, and coastal conditions.',
+        title: 'Durable 6.6kW Solar System: Engineered for New Zealand Conditions',
+        metaDescription: 'New Zealand\'s climate demands durable solar equipment. Discover the benefits of a durable 6.6kW solar system tested to withstand heat, UV, hail, and coastal conditions.',
         date: '6 June 2023',
         category: 'Solar Systems',
         content: `
-<p>Australia's climate presents unique challenges for solar equipment. A <strong>durable 6.6kW solar system</strong> must be engineered to withstand everything the Australian environment delivers — tropical heat and humidity, coastal salt spray, extreme UV, and high winds.</p>
-<h2>Testing for Australian Conditions</h2>
+<p>New Zealand's climate presents unique challenges for solar equipment. A <strong>durable 6.6kW solar system</strong> must be engineered to withstand everything the New Zealand environment delivers — tropical heat and humidity, coastal salt spray, extreme UV, and high winds.</p>
+<h2>Testing for New Zealand Conditions</h2>
 <p>Quality solar panels undergo rigorous testing including IEC 61215 thermal cycling and damp heat tests, IEC 61701 salt mist corrosion testing, mechanical load resistance, and 25mm hail impact testing.</p>
 <h2>The Cost of Choosing Cheap</h2>
 <p>Lower-quality panels degrade faster, reducing your energy generation and financial returns. A durable, quality system generates more energy over its lifetime, delivering superior return on investment.</p>
-<p><a href="/contact">Contact EFS Solar</a> to learn about the durable, high-performance panels and systems we install across Queensland and NSW.</p>
+<p><a href="/contact">Contact EFS Solar</a> to learn about the durable, high-performance panels and systems we install across New Zealand and NSW.</p>
         `,
     },
     'hybrid-6-6kw-solar-system': {
@@ -1043,9 +1043,9 @@ const articles: Record<string, {
         date: '31 May 2023',
         category: 'Solar Systems',
         content: `
-<p>Choosing an <strong>eco-friendly 6.6kW solar system</strong> is one of the most impactful environmental decisions an Australian homeowner can make. Solar power is clean, renewable, and produces zero direct greenhouse gas emissions during operation.</p>
+<p>Choosing an <strong>eco-friendly 6.6kW solar system</strong> is one of the most impactful environmental decisions an New Zealand homeowner can make. Solar power is clean, renewable, and produces zero direct greenhouse gas emissions during operation.</p>
 <h2>The Environmental Impact of Solar</h2>
-<p>A 6.6kW solar system in Queensland or NSW generates 25–30 kWh per day. Given the carbon intensity of Australian grid electricity, this system can prevent approximately 6–7 tonnes of CO₂ per year — equivalent to taking a car off the road permanently while the system operates.</p>
+<p>A 6.6kW solar system in New Zealand or NSW generates 25–30 kWh per day. Given the carbon intensity of New Zealand grid electricity, this system can prevent approximately 6–7 tonnes of CO₂ per year — equivalent to taking a car off the road permanently while the system operates.</p>
 <h2>Energy Payback Period</h2>
 <p>Modern solar panels typically pay back their manufacturing carbon footprint within 1–3 years. For a system designed to last 25+ years, the environmental return on investment is exceptional.</p>
 <p><a href="/contact">Contact EFS Solar today</a> to design your eco-friendly 6.6kW solar system.</p>
@@ -1066,7 +1066,7 @@ const articles: Record<string, {
 <li><strong>Quality inverter:</strong> High European efficiency rating (97.5%+) and strong MPPT tracking.</li>
 </ul>
 <h2>The Financial Return on High Performance</h2>
-<p>A system that performs 10% better than a cheaper alternative generates approximately 2.5–3 extra kWh per day. Over 25 years, this difference compounds to thousands of dollars in additional savings.</p>
+<p>A system that performs 10% better than a cheaper alternative generates approximately 2.5–3 extra kWh per day. Over 30 years, this difference compounds to thousands of dollars in additional savings.</p>
 <p><a href="/contact">Contact EFS Solar</a> for a high-performing 6.6kW solar system quote.</p>
         `,
     },
@@ -1092,7 +1092,7 @@ const articles: Record<string, {
         date: '25 May 2023',
         category: 'Solar Systems',
         content: `
-<p>A <strong>futuristic 6.6kW solar system</strong> is designed not just for today's needs — but for the rapidly evolving world of smart homes, electric vehicles, and virtual power grids already emerging in Australia.</p>
+<p>A <strong>futuristic 6.6kW solar system</strong> is designed not just for today's needs — but for the rapidly evolving world of smart homes, electric vehicles, and virtual power grids already emerging in New Zealand.</p>
 <h2>Solar and Electric Vehicles</h2>
 <p>A solar system is the perfect complement to an EV — charge your car with free solar electricity. A 6.6kW system can generate enough energy to drive an average EV approximately 120–150 km per day, on top of covering household electricity needs.</p>
 <h2>Virtual Power Plants (VPPs)</h2>
@@ -1118,11 +1118,11 @@ const articles: Record<string, {
     },
     'classic-6-6kw-solar-system': {
         title: 'Classic 6.6kW Solar System: Proven Performance You Can Trust',
-        metaDescription: 'A classic 6.6kW solar system delivers time-tested, reliable performance for Australian homes. Learn about the components, benefits, and costs with EFS Solar.',
+        metaDescription: 'A classic 6.6kW solar system delivers time-tested, reliable performance for New Zealand homes. Learn about the components, benefits, and costs with EFS Solar.',
         date: '21 May 2023',
         category: 'Solar Systems',
         content: `
-<p>A <strong>classic 6.6kW solar system</strong> represents a proven, reliable proposition — quality technology, professional installation, and substantial financial returns for Australian homeowners.</p>
+<p>A <strong>classic 6.6kW solar system</strong> represents a proven, reliable proposition — quality technology, professional installation, and substantial financial returns for New Zealand homeowners.</p>
 <h2>What's Included in a Classic 6.6kW System?</h2>
 <ul>
 <li>18–22 solar panels (300W–370W per panel)</li>
@@ -1131,7 +1131,7 @@ const articles: Record<string, {
 <li>Cabling, switchboard connection, and performance monitoring</li>
 </ul>
 <h2>Proven Financial Returns</h2>
-<p>The 6.6kW system size has become Australia's most popular for good reason. It maximises the government STC rebate and typically generates 25–30 kWh per day in Queensland and NSW, with a payback period of 3–5 years for most households.</p>
+<p>The 6.6kW system size has become New Zealand's most popular for good reason. It maximises the government STC rebate and typically generates 25–30 kWh per day in New Zealand and NSW, with a payback period of 3–5 years for most households.</p>
 <p><a href="/contact">Contact EFS Solar</a> for a classic, reliable 6.6kW solar system quote with no hidden costs.</p>
         `,
     },
@@ -1141,7 +1141,7 @@ const articles: Record<string, {
         date: '19 May 2023',
         category: 'Solar Systems',
         content: `
-<p>For many Australian households, a <strong>simple 6.6kW solar system</strong> — well-designed, properly installed, quality components — delivers everything needed to dramatically reduce electricity bills and environmental impact.</p>
+<p>For many New Zealand households, a <strong>simple 6.6kW solar system</strong> — well-designed, properly installed, quality components — delivers everything needed to dramatically reduce electricity bills and environmental impact.</p>
 <h2>Simplicity is a Feature, Not a Compromise</h2>
 <p>A straightforward grid-connected 6.6kW solar system with a quality string inverter is often the most cost-effective and reliable configuration. With fewer components to fail, a simple system can be exceptionally reliable over its 25-year lifespan.</p>
 <h2>Government Rebate Makes it Even Simpler</h2>
@@ -1174,7 +1174,7 @@ const articles: Record<string, {
 <ul>
 <li><strong>System design:</strong> A professional solar designer uses energy audit data, roof orientation analysis, and shading assessment tools. Poor design can cost 10–30% of potential energy output.</li>
 <li><strong>Quality workmanship:</strong> Proper mounting, wiring, and waterproofing protect your system for its 25-year life.</li>
-<li><strong>Electrical compliance:</strong> All solar installations must comply with Australian wiring rules (AS/NZS 3000). Non-compliant installations can be dangerous and may void warranties.</li>
+<li><strong>Electrical compliance:</strong> All solar installations must comply with New Zealand wiring rules (AS/NZS 3000). Non-compliant installations can be dangerous and may void warranties.</li>
 </ul>
 <h2>EFS Solar's Professional Standard</h2>
 <p>EFS Solar employs only CEC-accredited installers. Every installation includes a thorough handover, performance testing, and monitoring setup.</p>
@@ -1183,7 +1183,7 @@ const articles: Record<string, {
     },
     'top-rated-6-6kw-solar-system': {
         title: 'Top-Rated 6.6kW Solar System: What to Look For',
-        metaDescription: 'What separates a top-rated 6.6kW solar system from an average one? EFS Solar explains the key factors defining the best solar systems in Australia.',
+        metaDescription: 'What separates a top-rated 6.6kW solar system from an average one? EFS Solar explains the key factors defining the best solar systems in New Zealand.',
         date: '13 May 2023',
         category: 'Solar Systems',
         content: `
@@ -1193,14 +1193,14 @@ const articles: Record<string, {
 <li>Tier 1 manufacturer classification</li>
 <li>High efficiency (20%+)</li>
 <li>25-year performance guarantee, 12+ year product warranty</li>
-<li>Proven real-world performance data in Australian conditions</li>
+<li>Proven real-world performance data in New Zealand conditions</li>
 </ul>
 <h2>Top-Rated Inverters</h2>
 <ul>
 <li>High European Efficiency (97%+)</li>
 <li>User-friendly monitoring app</li>
 <li>Minimum 5-year warranty (10 years preferred)</li>
-<li>Local support/service in Australia</li>
+<li>Local support/service in New Zealand</li>
 </ul>
 <h2>Top-Rated Installers</h2>
 <ul>
@@ -1233,7 +1233,7 @@ const articles: Record<string, {
 <li>Over-the-air firmware updates</li>
 </ul>
 <h2>Real-World Performance Advantage</h2>
-<p>Advanced systems consistently outperform standard systems by 8–15% in real-world Australian conditions — translating to thousands of dollars in additional savings over 25 years.</p>
+<p>Advanced systems consistently outperform standard systems by 8–15% in real-world New Zealand conditions — translating to thousands of dollars in additional savings over 30 years.</p>
 <p><a href="/contact">Contact EFS Solar</a> to specify an advanced 6.6kW solar system for your home.</p>
         `,
     },
@@ -1248,7 +1248,7 @@ const articles: Record<string, {
 <ul>
 <li>Tier 2 or Tier 3 panels without strong quality controls</li>
 <li>Unknown or short-warranty inverters that may be hard to service</li>
-<li>Faster, less rigorous installations that may not comply fully with Australian Standards</li>
+<li>Faster, less rigorous installations that may not comply fully with New Zealand Standards</li>
 <li>Companies with thin margins that may not survive to honour warranty claims</li>
 </ul>
 <h2>The True Cost of Cheap Solar</h2>
@@ -1289,27 +1289,27 @@ const articles: Record<string, {
 </ul>
 <h2>Premium Inverter Options</h2>
 <p>Premium inverter brands like Fronius, SMA, or SolarEdge offer European efficiency ratings of 97.5–98.5%, outstanding monitoring platforms, and extended warranty options up to 10+ years.</p>
-<h2>The Premium Difference Over 25 Years</h2>
+<h2>The Premium Difference Over 30 Years</h2>
 <p>While a premium system costs more upfront, performance advantages compound over time — delivering tens of thousands of dollars in additional energy savings versus a budget alternative.</p>
 <p><a href="/contact">Contact EFS Solar</a> to design your premium 6.6kW solar system today.</p>
         `,
     },
     'large-6-6kw-solar-system': {
         title: 'Large 6.6kW Solar System: Ideal for High-Energy Homes',
-        metaDescription: 'A large 6.6kW solar system is the most popular choice for Australian homes. Learn about system components, expected generation, and financial returns with EFS Solar.',
+        metaDescription: 'A large 6.6kW solar system is the most popular choice for New Zealand homes. Learn about system components, expected generation, and financial returns with EFS Solar.',
         date: '3 May 2023',
         category: 'Solar Systems',
         content: `
-<p>In Australia's residential solar market, a <strong>large 6.6kW solar system</strong> represents the sweet spot of system sizing — powerful enough to make a major impact on electricity bills, while remaining within standard network capacity limits.</p>
-<h2>Why 6.6kW is Australia's Most Popular System Size</h2>
+<p>In New Zealand's residential solar market, a <strong>large 6.6kW solar system</strong> represents the sweet spot of system sizing — powerful enough to make a major impact on electricity bills, while remaining within standard network capacity limits.</p>
+<h2>Why 6.6kW is New Zealand's Most Popular System Size</h2>
 <ul>
 <li>Most distribution networks allow up to 5kW of export capacity, which a 6.6kW system with a 5kW inverter optimises</li>
 <li>The STC government rebate is maximised at this size class</li>
-<li>Sufficient generation for most Australian family homes</li>
+<li>Sufficient generation for most New Zealand family homes</li>
 <li>Accommodates future electricity use growth (EVs, pool, more appliances)</li>
 </ul>
 <h2>Expected Daily Generation</h2>
-<p>A well-designed 6.6kW system typically generates 26–30 kWh/day in Queensland, 24–28 kWh/day in NSW, and 20–24 kWh/day in Victoria on an annual average.</p>
+<p>A well-designed 6.6kW system typically generates 26–30 kWh/day in New Zealand, 24–28 kWh/day in NSW, and 20–24 kWh/day in Victoria on an annual average.</p>
 <p><a href="/contact">Contact EFS Solar</a> today for a large 6.6kW solar system quote tailored to your energy usage.</p>
         `,
     },
@@ -1326,22 +1326,22 @@ const articles: Record<string, {
 <li><strong>Reduced electricity costs from day one:</strong> A 6.6kW system can offset a substantial portion of a small business's daytime electricity consumption.</li>
 <li><strong>Improved business image:</strong> A visible solar installation signals environmental responsibility to customers and staff.</li>
 </ul>
-<p>EFS Solar specialises in commercial solar installations across Queensland and New South Wales. <a href="/services/commercial-solar">Learn more about our commercial solar services</a> or <a href="/contact">contact us</a> for a free commercial assessment.</p>
+<p>EFS Solar specialises in commercial solar installations across New Zealand and New South Wales. <a href="/services/commercial-solar">Learn more about our commercial solar services</a> or <a href="/contact">contact us</a> for a free commercial assessment.</p>
         `,
     },
     'residential-6-6kw-solar-system': {
         title: 'Residential 6.6kW Solar System: The Family Home Solution',
-        metaDescription: 'A residential 6.6kW solar system is perfect for the average Australian family home. Reduce electricity bills by thousands per year and increase property value with EFS Solar.',
+        metaDescription: 'A residential 6.6kW solar system is perfect for the average New Zealand family home. Reduce electricity bills by thousands per year and increase property value with EFS Solar.',
         date: '29 April 2023',
         category: 'Solar Systems',
         content: `
-<p>The <strong>residential 6.6kW solar system</strong> is the go-to solution for Australian family homes — the most-installed solar system size in the country for good reason.</p>
+<p>The <strong>residential 6.6kW solar system</strong> is the go-to solution for New Zealand family homes — the most-installed solar system size in the country for good reason.</p>
 <h2>Is 6.6kW Right for Your Home?</h2>
 <p>A 6.6kW system is typically ideal for households with 2–5 people, daily electricity use of 15–30 kWh, a quarterly electricity bill of $350–$700+, and at least 30–40m² of suitable roof space.</p>
 <h2>How Much Can You Save?</h2>
 <p>Net electricity bill reduction of $150–$250+ per month is common — approximately $1,800–$3,000 per year. Over a 25-year system life, this represents extraordinary cumulative savings.</p>
 <h2>Increase Your Property Value</h2>
-<p>Australian property research shows solar panels consistently add value to residential properties, often exceeding the net system cost after rebates.</p>
+<p>New Zealand property research shows solar panels consistently add value to residential properties, often exceeding the net system cost after rebates.</p>
 <p><a href="/contact">Contact EFS Solar</a> for a personalised residential 6.6kW solar quote and savings estimate.</p>
         `,
     },
@@ -1354,13 +1354,13 @@ const articles: Record<string, {
 <p>When you invest in a <strong>reliable 6.6kW solar system</strong>, you want to know it will perform consistently, year after year, without unexpected failures. Reliability comes from component quality, system design, installation standards, and manufacturer support.</p>
 <h2>What Makes a Solar System Reliable?</h2>
 <ul>
-<li><strong>Component quality:</strong> Only Tier 1 solar panels and established inverter brands with proven Australian market presence.</li>
+<li><strong>Component quality:</strong> Only Tier 1 solar panels and established inverter brands with proven New Zealand market presence.</li>
 <li><strong>Professional installation:</strong> CEC-accredited installation teams following established standards ensure long-term reliability.</li>
 <li><strong>Monitoring and early detection:</strong> Modern monitoring alerts you to any drop in performance, allowing issues to be identified and addressed early.</li>
-<li><strong>Warranty coverage:</strong> Comprehensive warranties from manufacturers with substantial local Australian presence.</li>
+<li><strong>Warranty coverage:</strong> Comprehensive warranties from manufacturers with substantial local New Zealand presence.</li>
 </ul>
 <h2>EFS Solar's Reliability Record</h2>
-<p>EFS Solar has installed thousands of solar systems across Queensland and NSW. Our after-care team is available to address any performance questions or service needs.</p>
+<p>EFS Solar has installed thousands of solar systems across New Zealand and NSW. Our after-care team is available to address any performance questions or service needs.</p>
 <p><a href="/contact">Get a reliable 6.6kW solar system quote from EFS Solar today.</a></p>
         `,
     },
@@ -1376,7 +1376,7 @@ const articles: Record<string, {
 <h2>System-Level Efficiency</h2>
 <p>Whole-system efficiency encompasses panel efficiency, inverter performance, cable losses, and design quality. A well-designed system delivers 85–90%+ of theoretical maximum generation — versus 70–80% for a poorly designed system.</p>
 <h2>Efficiency and Heat: The Temperature Coefficient</h2>
-<p>In Australia's warm climate, a low temperature coefficient is particularly important — meaning the panel loses less performance on hot days, keeping your system efficient through summer when you need it most.</p>
+<p>In New Zealand's warm climate, a low temperature coefficient is particularly important — meaning the panel loses less performance on hot days, keeping your system efficient through summer when you need it most.</p>
 <p><a href="/contact">Contact EFS Solar</a> for a free efficiency analysis and quote for your home.</p>
         `,
     },
@@ -1392,7 +1392,7 @@ const articles: Record<string, {
 <li><strong>Tier 1 manufacturer</strong> with IEC 61215 and IEC 61730 certification</li>
 <li>Positive power tolerance and low annual degradation rate (0.3–0.5% per year)</li>
 <li>25-year linear performance warranty, 15+ year product warranty</li>
-<li>Inverter with 97.5%+ European Efficiency and local Australian technical support</li>
+<li>Inverter with 97.5%+ European Efficiency and local New Zealand technical support</li>
 <li>CEC-accredited installer with NETCC Approved Seller status</li>
 </ul>
 <h2>Quality Pays for Itself</h2>
@@ -1410,11 +1410,11 @@ const articles: Record<string, {
 <h2>What Makes Solar Affordable?</h2>
 <ul>
 <li><strong>Government STCs:</strong> The federal STC rebate reduces system cost by $2,500–$4,000 for a 6.6kW system. EFS Solar applies this point-of-sale — you simply pay the discounted price.</li>
-<li><strong>Competitive market pricing:</strong> Australia's solar market is highly competitive, driving quality system prices to genuinely accessible levels.</li>
+<li><strong>Competitive market pricing:</strong> New Zealand's solar market is highly competitive, driving quality system prices to genuinely accessible levels.</li>
 <li><strong>$0 upfront options:</strong> With repayments often lower than your electricity bill savings, going solar can improve your monthly cash flow from day one.</li>
 </ul>
 <h2>The True Measure of Affordability</h2>
-<p>The most important question isn't "what does it cost to buy?" but "what does it cost to own over 25 years?" A quality system delivers substantially better lifetime value than a cheap system that underperforms.</p>
+<p>The most important question isn't "what does it cost to buy?" but "what does it cost to own over 30 years?" A quality system delivers substantially better lifetime value than a cheap system that underperforms.</p>
 <p><a href="/contact">Contact EFS Solar today</a> for an affordable 6.6kW solar system quote with transparent pricing and no hidden costs.</p>
         `,
     },
@@ -1434,11 +1434,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return {
         title: article.title,
         description: article.metaDescription,
-        alternates: { canonical: `https://www.efssolar.com.au/news/${slug}` },
+        alternates: { canonical: `https://www.efssolar.co.nz/news/${slug}` },
         openGraph: {
             title: `${article.title} | EFS Solar`,
             description: article.metaDescription,
-            url: `https://www.efssolar.com.au/news/${slug}`,
+            url: `https://www.efssolar.co.nz/news/${slug}`,
         },
     };
 }

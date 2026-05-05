@@ -7,23 +7,22 @@
 
 /* CSS Variables & Global Styles */
 :root {
-    --primary-color: #001233;
-    /* Deeper midnight blue */
-    --secondary-color: #00e5ff;
-    /* Electric neon blue */
-    --accent-color: #0044ff;
-    /* Strong vibrant blue */
-    --text-color: #1a1a24;
-    /* Softer, sleek black */
+    --primary-color: #000000;
+    /* Pure black */
+    --secondary-color: #47c7ea;
+    /* EFS teal accent */
+    --accent-color: #000000;
+    /* Black */
+    --text-color: #1a1a1a;
+    /* Near-black body text */
     --white: #ffffff;
     --bg-light: #ffffff;
-    /* Clean off-white for some panels */
+    /* Clean white */
 
     --font-heading: var(--font-rajdhani-stack);
     --font-body: var(--font-saira), var(--font-rubik), sans-serif;
 
     --container-width: 1280px;
-    /* Wider for modern monitors */
     --transition-speed: 0.4s;
 }
 
@@ -193,7 +192,6 @@ p {
 /* --- Main Header (Transparent) --- */
 .main-header {
     position: absolute;
-    top: 45px;
     /* below top bar */
     left: 0;
     width: 100%;
@@ -257,11 +255,11 @@ p {
 .desktop-nav>ul>li>a::after {
     content: '';
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 15px;
     right: 15px;
     height: 3px;
-    background-color: var(--secondary-color);
+    background-color: currentColor;
     transform: scaleX(0);
     transition: transform 0.3s ease;
     transform-origin: left;
@@ -278,7 +276,7 @@ p {
     top: 100%;
     left: 15px;
     /* Alignment with light blue line start */
-    background-color: #202020;
+    background-color: #000000;
     min-width: 200px;
     border-radius: 0 10px 10px 10px;
     opacity: 0;
@@ -319,7 +317,7 @@ p {
     font-family: var(--font-heading);
     font-size: 18px;
     font-weight: 800;
-    background-color: #202020;
+    background-color: #000000;
 }
 
 .dropdown a:hover {
@@ -353,7 +351,7 @@ p {
 }
 
 .sticky-header .logo img {
-    max-width: 170px;
+    width: 170px;
 }
 
 .sticky-nav>ul>li>a {
@@ -404,7 +402,7 @@ p {
     right: -100%;
     width: 300px;
     height: 100vh;
-    background-color: #202020;
+    background-color: #000000;
     z-index: 200;
     /* Above overlay */
     transition: right 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -456,7 +454,7 @@ p {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
-    background-color: #202020;
+    background-color: #000000;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -473,11 +471,11 @@ p {
     }
 
     .sticky-header .logo img {
-        max-width: 119px;
+        width: 119px;
     }
 
     .header-top-bar {
-        background-color: rgb(12, 26, 47);
+        background-color: #000000;
     }
 
     .top-bar-content {
@@ -543,16 +541,17 @@ p {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    background: #000000;
     color: var(--white);
-    border: none;
-    box-shadow: 0 6px 20px rgba(0, 68, 255, 0.3);
+    border: 2px solid #000000;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    box-shadow: 0 10px 35px rgba(0, 229, 255, 0.4);
-    /* Neon secondary glow */
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #000000;
+    box-shadow: 0 8px 28px rgba(71, 199, 234, 0.45);
 }
 
 .btn-icon {
@@ -623,7 +622,7 @@ p {
     align-items: center;
     color: var(--white);
     overflow: hidden;
-    background-color: #0a1628;
+    background-color: #111111;
     /* dark navy fallback while video loads */
 }
 
@@ -669,36 +668,66 @@ p {
 .arrows path {
     stroke: #ffffff;
     fill: transparent;
-    stroke-width: 3px;  
+    stroke-width: 3px;
     stroke-linecap: round;
     stroke-linejoin: round;
     animation: bounceChevron 2.5s infinite;
-    -webkit-animation: bounceChevron 2.5s infinite; 
+    -webkit-animation: bounceChevron 2.5s infinite;
 }
 
 @keyframes bounceChevron {
-    0% { opacity: 0; transform: translateY(-8px); }
-    40% { opacity: 0.8; transform: translateY(0); }
-    80% { opacity: 0; transform: translateY(8px); }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    40% {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @-webkit-keyframes bounceChevron {
-    0% { opacity: 0; transform: translateY(-8px); }
-    40% { opacity: 0.8; transform: translateY(0); }
-    80% { opacity: 0; transform: translateY(8px); }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    40% {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .arrows path.a1 {
     animation-delay: -1s;
-    -webkit-animation-delay: -1s; 
+    -webkit-animation-delay: -1s;
 }
+
 .arrows path.a2 {
     animation-delay: -0.5s;
-    -webkit-animation-delay: -0.5s; 
+    -webkit-animation-delay: -0.5s;
 }
-.arrows path.a3 { 
+
+.arrows path.a3 {
     animation-delay: 0s;
     -webkit-animation-delay: 0s;
 }
@@ -721,7 +750,7 @@ p {
     z-index: 30;
     width: 100%;
     padding-top: 30px;
-    padding-bottom: 80px;
+    padding-bottom: 10px;
     /* offset for top headers and bottom arrow */
 }
 
@@ -763,7 +792,6 @@ p {
 
 .hero-stats-row {
     display: flex;
-    gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -771,6 +799,16 @@ p {
     display: flex;
     flex-direction: column;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 0 40px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-stat-item:first-child {
+    padding-left: 0;
+}
+
+.hero-stat-item:last-child {
+    border-right: none;
 }
 
 .stat-number {
@@ -874,6 +912,10 @@ p {
         flex: 1;
         padding: 0 8px;
         border-right: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .hero-stat-item:first-child {
+        padding-left: 8px;
     }
 
     .hero-stat-item:last-child {
@@ -1218,7 +1260,7 @@ p {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(0, 18, 51, 0.85) 0%, rgba(26, 26, 36, 0.6) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.55) 100%);
 }
 
 /* Centred wrapper capped at container width */
@@ -1275,7 +1317,7 @@ p {
 
 /* --- Make the Switch --- */
 .section-switch {
-    background: linear-gradient(135deg, #050512 0%, #001233 100%);
+    background: #000000;
     position: relative;
 }
 
@@ -1288,7 +1330,7 @@ p {
     width: 150vw;
     height: 150vw;
     transform: translate(-50%, -50%);
-    background: radial-gradient(circle at center, rgba(0, 229, 255, 0.05) 0%, transparent 50%);
+    background: radial-gradient(circle at center, rgba(71, 199, 234, 0.06) 0%, transparent 50%);
     z-index: 0;
 }
 
@@ -1394,14 +1436,14 @@ p {
 .main-footer {
     background-color: #222;
     color: var(--white);
-    padding: 80px 0 0;
-    /* Removed bottom padding */
+    padding: 0;
 }
 
 .footer-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
@@ -1415,7 +1457,7 @@ p {
 }
 
 .footer-contact i {
-    color: var(--secondary-color);
+    color: var(--white);
     margin-right: 5px;
 }
 
@@ -1476,7 +1518,7 @@ p {
 }
 
 .footer-links i {
-    color: var(--secondary-color);
+    color: var(--white);
     margin-right: 10px;
 }
 
@@ -1510,10 +1552,7 @@ p {
 /* --- Shared BG Wrapper: Tier1 + Battery Sections --- */
 .sections-bg-wrapper {
     position: relative;
-    background-image: url('/bg-3.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
+    background-color: #fff;
 }
 
 .section-tier1 {
@@ -1721,7 +1760,7 @@ p {
 
 .social-icon-circle:hover {
     background-color: #fff;
-    color: #082042;
+    color: #000000;
     transform: translateY(-3px);
 }
 
@@ -3032,7 +3071,7 @@ p {
 
 /* --- Video Tutorials Section --- */
 .gs-videos-section {
-    background: linear-gradient(135deg, #050512 0%, #001233 100%);
+    background: #000000;
     padding: 100px 0;
     position: relative;
     overflow: hidden;

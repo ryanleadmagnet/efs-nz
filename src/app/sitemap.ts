@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://www.efssolar.com.au';
+const BASE_URL = 'https://www.efssolar.co.nz';
 
 const newsSlugs = [
     'about-the-national-electricity-market',

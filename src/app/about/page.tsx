@@ -6,10 +6,10 @@ import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 import ServicePageHero from '@/components/ServicePageHero';
 
 export const metadata: Metadata = {
-    title: 'About — Certified Solar Installers across QLD & NSW',
-    description: 'Learn about EFS Solar, a trusted CEC-certified solar installer serving QLD and NSW. Our expert team delivers premium solar and battery solutions.',
-    alternates: { canonical: 'https://www.efssolar.com.au/about' },
-    openGraph: { title: 'About EFS Solar', description: 'Certified solar installers across QLD and NSW.', url: 'https://www.efssolar.com.au/about' },
+    title: 'About — Certified Solar Installers across New Zealand',
+    description: 'Learn about EFS Solar, a trusted solar installer serving all of New Zealand. Our expert team delivers premium solar and battery solutions.',
+    alternates: { canonical: 'https://www.efssolar.co.nz/about' },
+    openGraph: { title: 'About EFS Solar NZ', description: 'Certified solar installers across New Zealand.', url: 'https://www.efssolar.co.nz/about' },
 };
 
 export default function AboutPage() {
@@ -26,7 +26,7 @@ export default function AboutPage() {
                 />
 
                 {/* ── EFS Solar intro (light grey bg) ──────────────────── */}
-                <section style={{ backgroundColor: '#f5f5f5', padding: '50px 20px' }}>
+                <section style={{ backgroundColor: '#f5f5f5', padding: '100px 20px' }}>
                     <div className="container">
                         <div className="about-intro-grid">
                             {/* left – illustration */}
@@ -44,21 +44,36 @@ export default function AboutPage() {
                                     fontSize: '40px',
                                     fontWeight: 600,
                                     color: '#47c7ea',
-                                    marginBottom: '12px',
+                                    marginBottom: '50px',
                                 }}>EFS Solar</h3>
                                 <p style={{ color: '#000', lineHeight: '22px', marginBottom: '1.15em' }}>
-                                    With an innovative approach to the renewable energy sector, EFS Solar has revolutionised the business of going solar. EFS delivers a seamless process from initial client contact to installation and aftercare with a company you can trust with a whopping 30 year product warranty guarantee.
+                                    With an innovative approach to the renewable energy sector, EFS Solar has revolutionised the business of going solar. Bringing our experience from a highly regulated market like Australia to New Zealand, we leverage years of expertise and over 20,000 installations to ensure quality and reliability. EFS delivers a seamless process from initial client contact to installation and aftercare, with a company you can trust, backed by a 30-year product warranty guarantee.
                                 </p>
                                 <p style={{ color: '#000', lineHeight: '22px' }}>
-                                    With exceptional customer service at the company&apos;s pinnacle, our staff can assist you at every step. Our technicians are fully qualified solar designers, installers, and master electricians, so you can rest easy knowing that you are dealing with professionals. As a team, we are devoted to and pride ourselves on delivering a seamless renewable energy experience.
+                                    With exceptional customer service at the company’s pinnacle, our staff assist you every step of the way. Our technicians are fully qualified solar designers, installers, and master electricians, so you can rest easy knowing that you are dealing with professionals. As a team, we are devoted to and pride ourselves on delivering a seamless renewable energy experience.
+                                </p>
+
+                                <h3 style={{
+                                    fontSize: '24px', fontWeight: 600,
+                                    color: '#47c7ea', marginBottom: '20px', marginTop: '60px',
+                                }}>Managing Director</h3>
+                                <h4 style={{
+                                    fontFamily: "'Rajdhani', sans-serif",
+                                    fontSize: '40px',
+                                    fontWeight: 600,
+                                    marginBottom: '50px',
+                                }}>Cody Rickit</h4>
+                                <p style={{ color: '#000', lineHeight: '22px', marginBottom: '1.15em' }}>Born and raised in New Zealand, Cody has always had a passion for renewable energy. In 2011, he moved to Australia and shortly after founded EFS Solar—now one of Australia’s leading solar retailers—completing over 20,000 installations backed by lifetime warranties.
+                                </p><p style={{ color: '#000', lineHeight: '22px', marginBottom: '1.15em' }}>Now back home in New Zealand, Cody brings that same knowledge and workmanship to every installation and power bill. His goal is to make solar simple for New Zealand homeowners.
                                 </p>
                             </div>
+
                         </div>
                     </div>
                 </section>
 
                 {/* ── Our Locations (dark bg) ───────────────────────────── */}
-                <section style={{ backgroundColor: '#000', padding: '60px 20px' }}>
+                <section style={{ backgroundColor: '#000', padding: '100px 20px' }}>
                     <div className="container">
                         {/* Section heading */}
                         <AnimatedHeading
@@ -80,7 +95,7 @@ export default function AboutPage() {
                             <div className="about-locations-left animate-on-scroll">
                                 <h3 style={{
                                     fontFamily: "'Rajdhani', sans-serif",
-                                    fontSize: 'clamp(28px, 4vw, 36px)',
+                                    fontSize: 'clamp(18px, 3vw, 26px)',
                                     fontWeight: 600,
                                     color: '#47c7ea',
                                     marginBottom: '30px',
@@ -89,9 +104,9 @@ export default function AboutPage() {
                                 </h3>
                                 <div className="about-locations-image-container">
                                     <img
-                                        src="/assets/Asset-67map2.svg"
-                                        alt="Australia service map with locations"
-                                        style={{ width: '100%', maxWidth: '800px', borderRadius: '8px' }}
+                                        src="/assets/location_map.svg"
+                                        alt="New Zealand service map with locations"
+                                        style={{ width: '100%', maxWidth: '700px', margin: '20px' }}
                                     />
                                 </div>
                             </div>
@@ -100,7 +115,7 @@ export default function AboutPage() {
                             <div className="about-locations-right animate-on-scroll delay-1">
                                 <h3 style={{
                                     fontFamily: "'Rajdhani', sans-serif",
-                                    fontSize: 'clamp(28px, 4vw, 36px)',
+                                    fontSize: 'clamp(18px, 3vw, 26px)',
                                     fontWeight: 600,
                                     color: '#47c7ea',
                                     marginBottom: '30px',
@@ -109,23 +124,10 @@ export default function AboutPage() {
                                 </h3>
                                 <div style={{ marginBottom: '32px' }}>
                                     <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '15px', lineHeight: '22px', marginBottom: '6px' }}>
-                                        3/15 Lawrence Drive Nerang QLD 4211
+                                        35 Clem Newby Road, Burbush, Hamilton 3200
                                     </p>
                                     <a
-                                        href="https://www.google.com/maps/search/?api=1&query=-28.0028082,153.3430568"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{ color: '#47c7ea', fontSize: '14px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
-                                    >
-                                        Google Map <span style={{ fontSize: '16px' }}>&#8250;</span>
-                                    </a>
-                                </div>
-                                <div>
-                                    <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '15px', lineHeight: '22px', marginBottom: '6px' }}>
-                                        4/147 Smeaton Gra, Smeaton Grange, NSW 2567
-                                    </p>
-                                    <a
-                                        href="https://maps.google.com/?q=Smeaton+Grange+NSW+2567"
+                                        href="https://maps.google.com/?q=35+Clem+Newby+Road+Burbush+Hamilton+3200"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         style={{ color: '#47c7ea', fontSize: '14px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
@@ -145,7 +147,7 @@ export default function AboutPage() {
                             Help your pocket and the planet.<br />
                             Make the switch to solar, today!
                         </h2>
-                        <a href="#" className="btn btn-primary quote-trigger hover-dark" style={{ backgroundColor: '#1e2e4f', padding: '16px 36px', color: '#fff', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', border: 'none' }}>
+                        <a href="#" className="btn btn-primary quote-trigger hover-dark" style={{ backgroundColor: '#000000', padding: '16px 36px', color: '#fff', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', border: 'none' }}>
                             <span className="btn-text">Get a Quote</span>
                             <span className="btn-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
@@ -157,7 +159,7 @@ export default function AboutPage() {
                 </section>
 
                 {/* ── Reviews ───────────────────────────────────────────── */}
-                <section className="section-reviews content-section bg-light">
+                <section className="section-reviews content-section">
                     <div className="container">
                         <AnimatedHeading tag="h3" className="section-title">How customers rate their experience with us</AnimatedHeading>
                         <div className="animate-on-scroll visible">

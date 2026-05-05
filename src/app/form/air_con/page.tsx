@@ -75,7 +75,7 @@ export default function AirConFormPage() {
       const base = { ...formData, contactNumber: formatted, ...marketingData, system_time: new Date().toISOString(), ...device }
       await fetch(formUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "application/json" }, body: JSON.stringify(base) })
     } catch { /* continue */ }
-    const redirect = "https://www.efssolar.com.au/thank-you"
+    const redirect = "/thank-you"
     if (window.parent && window.parent !== window) window.parent.location.href = redirect
     else window.location.href = redirect
   }

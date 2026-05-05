@@ -10,7 +10,7 @@ export default function TermsOfUsePage() {
                     <h1 className="text-4xl font-bold mb-10 text-[#002e6e]">Terms of Use</h1>
                     <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                         <p className="mb-6">
-                            Our website available at: <a href="https://www.efssolar.com.au" className="text-blue-600 hover:underline">www.efssolar.com.au</a> (Site) and may be available through other addresses or channels.
+                            Our website available at: <a href="https://www.efssolar.co.nz" className="text-blue-600 hover:underline">www.efssolar.co.nz</a> (Site) and may be available through other addresses or channels.
                         </p>
 
                         <section className="mb-8">
@@ -120,14 +120,14 @@ export default function TermsOfUsePage() {
                         <section className="mb-8">
                             <h2 className="text-2xl font-bold mb-4 text-[#002e6e]">Jurisdiction</h2>
                             <p className="mb-4">
-                                Your use of our Site and these Terms are governed by the laws of Queensland, Australia. You irrevocably and unconditionally submit to the exclusive jurisdiction of the courts operating in Queensland, Australia.
+                                Your use of our Site and these Terms are governed by the laws of New Zealand, Australia. You irrevocably and unconditionally submit to the exclusive jurisdiction of the courts operating in New Zealand, Australia.
                             </p>
                         </section>
 
                         <div className="mt-12 pt-8 border-t border-gray-200">
                             <p className="mb-2">For any questions and notices, please contact us at:</p>
-                            <p className="font-bold">Email: <a href="mailto:privacy@efssolar.com.au" className="text-blue-600">privacy@efssolar.com.au</a></p>
-                            <p className="font-bold">Phone: 1300 911 736</p>
+                            <p className="font-bold">Email: <a href="mailto:privacy@efssolar.co.nz" className="text-blue-600">privacy@efssolar.co.nz</a></p>
+                            <p className="font-bold">Phone: 0800 428 557</p>
                         </div>
                     </div>
                 </div>

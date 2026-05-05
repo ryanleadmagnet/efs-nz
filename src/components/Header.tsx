@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolean }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [modalUrl, setModalUrl] = useState('/form/solar');
+    const [modalUrl, setModalUrl] = useState('/forms');
     const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
     const pathname = usePathname();
 
@@ -33,9 +33,16 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                 e.preventDefault();
                 const customUrl = trigger.getAttribute('data-iframe-url');
                 if (customUrl) {
-                    setModalUrl(customUrl);
+                    // Map /form/<route> → /forms/<route> (proxied same-origin)
+                    if (customUrl.startsWith('/form/')) {
+                        const route = customUrl.replace('/form/', '');
+                        setModalUrl(`/forms/${route}`);
+                    } else {
+                        setModalUrl(customUrl);
+                    }
                 } else {
-                    setModalUrl('/form/solar');
+                    // Default: root form (SolarLeadForm / survey)
+                    setModalUrl('/forms');
                 }
                 setIsModalOpen(true);
             }
@@ -87,17 +94,7 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                 </div>
             </div>
 
-            {/* HEADER TOP BAR */}
-            <div className="header-top-bar">
-                <div className="container">
-                    <div className="top-bar-content">
-                        <span className="top-bar-text">Save up to 30% on a home battery</span>
-                        <img src="/assets/Asset-43.svg" alt="Battery Icon"
-                            className="top-bar-icon" />
-                        <a href="#" className="top-bar-link quote-trigger" onClick={toggleModal}>Check eligibility &gt;</a>
-                    </div>
-                </div>
-            </div>
+
 
             {/* MAIN NAV HEADER (Transparent over Hero) */}
             {!alwaysSticky && (
@@ -125,7 +122,7 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                                     <li><Link href="/technology/tesla-powerwall" className={pathname === '/technology/tesla-powerwall' ? 'active' : ''}>Tesla Powerwall</Link></li>
                                 </ul>
                             </li>
-                            <li><Link href="/reviews" className={pathname === '/reviews' ? 'active' : ''}>Reviews</Link></li>
+
                             <li><Link href="/about" className={pathname === '/about' ? 'active' : ''}>About</Link></li>
                             <li><Link href="/career" className={pathname === '/career' ? 'active' : ''}>Career</Link></li>
                             <li><Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact</Link></li>
@@ -143,7 +140,7 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                 <div className="container header-container">
                     <div className="logo">
                         <Link href="/">
-                            <img src="/image-1.png" alt="EFS Solar Logo Dark" />
+                            <img src="/assets/Asset-65.svg" alt="EFS Solar Logo Dark" />
                         </Link>
                     </div>
                     <nav className="desktop-nav sticky-nav">
@@ -163,7 +160,7 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                                     <li><Link href="/technology/tesla-powerwall" className={pathname === '/technology/tesla-powerwall' ? 'active' : ''}>Tesla Powerwall</Link></li>
                                 </ul>
                             </li>
-                            <li><Link href="/reviews" className={pathname === '/reviews' ? 'active' : ''}>Reviews</Link></li>
+
                             <li><Link href="/about" className={pathname === '/about' ? 'active' : ''}>About</Link></li>
                             <li><Link href="/career" className={pathname === '/career' ? 'active' : ''}>Career</Link></li>
                             <li><Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact</Link></li>
@@ -211,7 +208,6 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                                 <li><Link href="/technology/tesla-powerwall" className={pathname === '/technology/tesla-powerwall' ? 'active' : ''}>Tesla Powerwall</Link></li>
                             </ul>
                         </li>
-                        <li><Link href="/reviews" className={pathname === '/reviews' ? 'active' : ''}>Reviews</Link></li>
                         <li><Link href="/about" className={pathname === '/about' ? 'active' : ''}>About</Link></li>
                         <li><Link href="/career" className={pathname === '/career' ? 'active' : ''}>Career</Link></li>
                         <li><Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact</Link></li>

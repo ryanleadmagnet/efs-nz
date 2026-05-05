@@ -7,11 +7,11 @@ import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 import HeroVideo from '@/components/HeroVideo';
 
 export const metadata: Metadata = {
-    title: 'Solar Panels across QLD & NSW — 0% Upfront',
-    description: 'EFS Solar — trusted solar installers across QLD & NSW. Get premium solar panels, battery storage & Tesla Powerwall with 0% upfront. 13,000+ installations. Free quote.',
-    keywords: ['solar panels Gold Coast', 'solar installation Sydney', '0% upfront solar', 'solar battery storage', 'Tesla Powerwall', 'residential solar Queensland', 'solar quote Gold Coast'],
-    alternates: { canonical: 'https://www.efssolar.com.au' },
-    openGraph: { title: 'EFS Solar | Solar & Batteries 0% Upfront | across QLD & NSW', description: 'Trusted solar installers with 13,000+ installations. Solar panels, batteries & Tesla Powerwall.', url: 'https://www.efssolar.com.au' },
+    title: 'Solar Panels across New Zealand — 0% Upfront',
+    description: 'EFS Solar — trusted solar installers across New Zealand. Get premium solar panels, battery storage & Tesla Powerwall with 0% upfront. 20,000+ installations. Free quote.',
+    keywords: ['solar panels New Zealand', 'solar installation Auckland', '0% upfront solar NZ', 'solar battery storage NZ', 'Tesla Powerwall NZ', 'residential solar Hamilton', 'solar quote New Zealand'],
+    alternates: { canonical: 'https://www.efssolar.co.nz' },
+    openGraph: { title: 'EFS Solar | Solar & Batteries 0% Upfront | across New Zealand', description: 'Trusted solar installers with 20,000+ installations. Solar panels, batteries & Tesla Powerwall.', url: 'https://www.efssolar.co.nz' },
 };
 
 export default function Home() {
@@ -35,8 +35,7 @@ export default function Home() {
                     </div>
 
                     <div className="container hero-content hero-home">
-                        <h1 className="hero-subtitle">Solar Made Simple</h1>
-                        <AnimatedHeading tag="h2" className="hero-title">Solar &amp; Batteries<br />0% Upfront</AnimatedHeading>
+                        <AnimatedHeading tag="h1" className="hero-title">Solar.<br />Made Simple.</AnimatedHeading>
 
                         <a href="#" className="btn btn-primary quote-trigger">
                             <span className="btn-text">Get a Quote</span>
@@ -48,19 +47,11 @@ export default function Home() {
                             </span>
                         </a>
 
-                        <div className="hero-trust-image">
-                            <img src="/assets/logo1.png"
-                                alt="Certificates" />
-                        </div>
 
                         <div className="hero-stats-row">
                             <div className="hero-stat-item">
                                 <div className="stat-number">10+</div>
                                 <div className="stat-text">Years Experience</div>
-                            </div>
-                            <div className="hero-stat-item">
-                                <div className="stat-number">13,000+</div>
-                                <div className="stat-text">Installations</div>
                             </div>
                             <div className="hero-stat-item">
                                 <div className="stat-number">30</div>
@@ -76,6 +67,9 @@ export default function Home() {
                             <path className="a3" d="M0 40 L30 72 L60 40"></path>
                         </svg>
                     </a>
+
+                    {/* Pattern Bar */}
+                    <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '20px', backgroundImage: 'url(/assets/Asset-66.svg)', backgroundRepeat: 'repeat-x', backgroundSize: 'contain', zIndex: 30 }}></div>
                 </section> {/* SHARED BACKGROUND WRAPPER: Tier1 + Battery */}
                 <div className="sections-bg-wrapper">
                     {/* Circle overlay spanning full height of both sections + 30px */}
@@ -103,13 +97,11 @@ export default function Home() {
                     <section className="section-battery content-section">
                         <div className="container section-container reverse-mobile">
                             <div className="section-text animate-on-scroll">
-                                <AnimatedHeading tag="h2" className="section-subtitle">Keep the Lights On</AnimatedHeading>
-                                <AnimatedHeading tag="h3" className="section-title">Up to 30% off your battery</AnimatedHeading>
-                                <p className="section-desc">Take control of your home's energy. A solar battery lets you use your
-                                    own
-                                    power at night and keeps your essential appliances running during outages — and now you can
-                                    get
-                                    one at a fraction of the cost.</p>
+                                <AnimatedHeading tag="h2" className="section-subtitle">Stop Paying for Power</AnimatedHeading>
+                                <AnimatedHeading tag="h3" className="section-title">Backup Power &amp;<br />Energy Independence</AnimatedHeading>
+                                <p className="section-desc">Take control of your home's energy with a solar battery. Use your own
+                                    power at night, earn from excess power, and keep your essential appliances running during outages — all
+                                    with no upfront payment on interest-free plans.</p>
                                 <Link href="/services/batteries" className="btn btn-primary">
                                     <span className="btn-text">Learn more</span>
                                     <span className="btn-icon">
@@ -180,8 +172,8 @@ export default function Home() {
                             <div className="hero-content-center animate-on-scroll">
                                 <AnimatedHeading tag="h2" className="section-subtitle">STOP PAYING FOR POWER</AnimatedHeading>
                                 <AnimatedHeading tag="h3" className="section-title">Take Control of<br />Your Power Bill</AnimatedHeading>
-                                <p className="section-desc">Did you know that if you are spending $350 per quarter on your energy
-                                    bill, you could save a whopping $35,000 over the next 25 years* just by going solar? Best of all
+                                <p className="section-desc">Did you know that if you are spending $250 per quarter on your energy
+                                    bill, you could save a whopping $35,000 over the next 30 years* just by going solar? Best of all
                                     you can get solar without paying anything upfront and may never pay for power again!**</p>
                                 <a href="#" className="btn btn-primary quote-trigger">
                                     <span className="btn-text">Get a Quote</span>
@@ -265,7 +257,7 @@ export default function Home() {
                 </section>
 
                 {/* SECTION 7: REVIEWS */}
-                <section className="section-reviews content-section bg-light text-center">
+                <section className="section-reviews content-section text-center">
                     <div className="container">
                         <AnimatedHeading tag="h3" className="section-title">How customers rate their experience with us</AnimatedHeading>
                         <div className="animate-on-scroll visible">

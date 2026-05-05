@@ -14,7 +14,7 @@ interface FormData {
 }
 
 const questions = [
-  { id: "location", type: "multiple", caption: "Please select the option that best describes your situation:", question: "Which location are you wanting to work in?", options: ["Sydney", "Gold Coast", "Brisbane", "Darwin", "Port Macquarie", "Coffs Harbour"] },
+  { id: "location", type: "multiple", caption: "Please select the option that best describes your situation:", question: "Which location are you wanting to work in?", options: ["Sydney", "New Zealand", "Brisbane", "Darwin", "Port Macquarie", "Coffs Harbour"] },
   { id: "workType", type: "multiple", caption: "Please select the option that best describes your situation:", question: "What type of work are you looking for?", options: ["Full-time", "Part-time", "Casual"] },
   { id: "position", type: "multiple", caption: "", question: "Which of the following positions are you applying for?", options: ["Electrician", "Roofer/Installer", "Both electrician & Installer"] },
   { id: "cecAccreditation", type: "multiple", caption: "Can be obtained on a pay back system through company.", question: "Do you hold a CEC accreditation or be willing to obtain one?", options: ["Yes", "No"] },
@@ -80,7 +80,7 @@ export default function ElectricianFormPage() {
       const base = { ...formData, contactNumber: formatted, ...marketingData, system_time: new Date().toISOString(), ...device }
       await fetch(formUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "application/json" }, body: JSON.stringify(base) })
     } catch { /* continue */ }
-    const redirect = "https://www.efssolar.com.au/thank-you"
+    const redirect = "/thank-you"
     if (window.parent && window.parent !== window) window.parent.location.href = redirect
     else window.location.href = redirect
   }

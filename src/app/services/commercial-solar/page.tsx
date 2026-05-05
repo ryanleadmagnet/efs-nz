@@ -19,28 +19,28 @@ const QuoteBtn = () => (
 
 export async function generateMetadata({ searchParams }: { searchParams: Promise<{ location?: string }> }): Promise<Metadata> {
     const { location } = await searchParams;
-    const locationDisplay = location 
-        ? location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') 
-        : 'across QLD and NSW';
+    const locationDisplay = location
+        ? location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+        : 'across New Zealand';
 
     return {
-        title: `Commercial Solar Panels ${location === 'gold-coast-sydney' ? 'Gold Coast & Sydney' : locationDisplay}`,
-        description: `EFS Solar installs premium commercial solar panel systems ${locationDisplay === 'across QLD and NSW' ? 'across QLD and NSW' : 'in ' + locationDisplay}. Empower your business with sustainable energy solutions. Get a free quote.`,
+        title: `Commercial Solar Panels ${location === 'gold-coast-sydney' ? 'New Zealand & Sydney' : locationDisplay}`,
+        description: `EFS Solar installs premium commercial solar panel systems ${locationDisplay === 'across New Zealand' ? 'across New Zealand' : 'in ' + locationDisplay}. Empower your business with sustainable energy solutions. Get a free quote.`,
         keywords: [`commercial solar ${locationDisplay}`, 'business solar panels', 'commercial solar installation', 'industrial solar power', 'solar for business'],
-        alternates: { canonical: `https://www.efssolar.com.au/services/commercial-solar${location ? '?location=' + location : ''}` },
-        openGraph: { 
-            title: `Commercial Solar ${locationDisplay} — EFS Solar`, 
-            description: `Premium commercial solar installations ${locationDisplay}.`, 
-            url: `https://www.efssolar.com.au/services/commercial-solar${location ? '?location=' + location : ''}` 
+        alternates: { canonical: `https://www.efssolar.co.nz/services/commercial-solar${location ? '?location=' + location : ''}` },
+        openGraph: {
+            title: `Commercial Solar ${locationDisplay} — EFS Solar`,
+            description: `Premium commercial solar installations ${locationDisplay}.`,
+            url: `https://www.efssolar.co.nz/services/commercial-solar${location ? '?location=' + location : ''}`
         },
     };
 }
 
 export default async function CommercialSolar({ searchParams }: { searchParams: Promise<{ location?: string }> }) {
     const { location } = await searchParams;
-    const locationDisplay = location 
-        ? location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') 
-        : 'across QLD and NSW';
+    const locationDisplay = location
+        ? location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+        : 'across New Zealand';
 
     return (
         <>
@@ -130,7 +130,7 @@ export default async function CommercialSolar({ searchParams }: { searchParams: 
                         <h2 className="cta-banner-title">
                             Help your pocket and the planet.<br />Make the switch to solar, today!
                         </h2>
-                        <a href="#" className="btn btn-primary quote-trigger hover-dark" style={{ backgroundColor: "#1e2e4f", padding: "16px 36px", color: "#fff", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", border: "none" }}>
+                        <a href="#" className="btn btn-primary quote-trigger hover-dark" style={{ backgroundColor: "#000000", padding: "16px 36px", color: "#fff", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", border: "none" }}>
                             <span className="btn-text">Get a Quote</span>
                             <span className="btn-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
@@ -141,7 +141,7 @@ export default async function CommercialSolar({ searchParams }: { searchParams: 
                     </div>
                 </section>
 
-                <section className="section-reviews content-section bg-light">
+                <section className="section-reviews content-section">
                     <div className="container">
                         <AnimatedHeading tag="h3" className="section-title">How customers rate their experience with us</AnimatedHeading>
                         <div className="animate-on-scroll visible">
