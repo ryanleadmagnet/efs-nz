@@ -6,13 +6,19 @@ import { Button } from "@/components/form-ui/button"
 import { Input } from "@/components/form-ui/input"
 import { Progress } from "@/components/form-ui/progress"
 import { Card, CardContent } from "@/components/form-ui/card"
+import { useRouter } from "next/navigation"
 
 interface FormData {
   homeOwnership: string
-  acType: string
+  homeAge: string
+  existingSolar: string
+  shadingIssues: string
+  powerUsage: string
+  powerBill: string
+  postcode: string
   firstName: string
   lastName: string
-  address: string
+  email: string
   contactNumber: string
 }
 
@@ -29,49 +35,91 @@ const questions = [
     id: "homeOwnership",
     type: "multiple",
     caption: "Please select the option that best describes your situation:",
-    question: "Do you own the house you're wanting to install A/C on?",
-    options: ["Yes", "No"],
+    question: "Do you own the house you're wanting to install solar on?",
+    options: ["Yes, I own", "No, I Rent"],
   },
   {
-    id: "acType",
+    id: "homeAge",
     type: "multiple",
-    caption: "Please select the type of air conditioning system:",
-    question: "What type of A/C are you looking for?",
-    options: ["Ducted", "Split System(s)"],
+    caption: "Please select the option that best describes your situation:",
+    question: "Please select the estimated age of your home:",
+    options: ["0-10 years", "10-20 years", "20+ years"],
+  },
+  {
+    id: "existingSolar",
+    type: "multiple",
+    caption: "Please select the option that best describes your situation:",
+    question: "Do you have an existing solar system installed?",
+    options: ["No, I don't", "Yes, I do"],
+  },
+  {
+    id: "shadingIssues",
+    type: "multiple",
+    caption: "Please select the option that best describes your situation:",
+    question: "Do you have any shading issues over the roof?",
+    options: ["No shading issues", "Minor shading issues", "Major shading issues", "Not sure"],
+  },
+  {
+    id: "powerUsage",
+    type: "multiple",
+    caption: "Please select the option that best describes your situation:",
+    question: "When do you use most of your power?",
+    options: ["Mostly day time", "Mostly night time", "A mixture of both"],
+  },
+  {
+    id: "powerBill",
+    type: "multiple",
+    caption: "Please select the average cost your power bill",
+    question: "How much is your power bill?",
+    options: ["Under $300", "$300 - $600", "$900+"],
+  },
+  {
+    id: "postcode",
+    type: "text",
+    caption: "",
+    question: "Please enter your postcode:",
+    placeholder: "Your postcode",
+    validation: "postcode",
   },
   {
     id: "name",
     type: "name",
     caption: "",
-    question: "What's your full name?",
+    question: "What's your first & last name?",
     validation: "name",
   },
   {
-    id: "address",
+    id: "email",
     type: "text",
     caption: "",
-    question: "What's your address?",
-    placeholder: "Your full address",
-    validation: "address",
+    question: "What's your best email?",
+    placeholder: "Your email address",
+    validation: "email",
   },
   {
     id: "contactNumber",
     type: "phone",
     caption: "",
     question: "Last question. What's your best contact number?",
-    placeholder: "021 000 0000",
+    placeholder: "0200 000 000",
     validation: "phone",
   },
 ]
 
-export default function AirConPage() {
+export default function LandingPage() {
+  const router = useRouter()
   const [currentStep, setCurrentStep] = useState(0)
   const [formData, setFormData] = useState<FormData>({
     homeOwnership: "",
-    acType: "",
+    homeAge: "",
+    existingSolar: "",
+    shadingIssues: "",
+    powerUsage: "",
+    powerBill: "",
+    postcode: "",
     firstName: "",
     lastName: "",
-    address: "",
+    email: "",
     contactNumber: "",
   })
   const [marketingData, setMarketingData] = useState<MarketingData>({
@@ -85,7 +133,7 @@ export default function AirConPage() {
   const [errors, setErrors] = useState<{ [key: string]: string }>({})
 
   const formUrl =
-    "https://script.google.com/macros/s/AKfycbyBOIcgHWWE6S46sgA0tfhDv2QfivtHRn_zPeTp04-jP1iIVQPjC_v1D0FEKKd0oCNabA/exec"
+    "https://script.google.com/macros/s/AKfycbxbz7tRxYyv40-4SvlZ7hzZTnhNhoG9cc97l-MNT5z0ZyDMon0dX8RTiiTN8BzhjH9UKA/exec"
 
   useEffect(() => {
     // Extract marketing parameters from URL
@@ -101,9 +149,14 @@ export default function AirConPage() {
 
   const validateField = (field: string, value: string): string => {
     switch (field) {
-      case "address":
-        if (!value.trim()) {
-          return "Please enter your address"
+      case "postcode":
+        if (!/^\d{4}$/.test(value)) {
+          return "Please enter a valid 4-digit postcode"
+        }
+        break
+      case "email":
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+          return "Please enter a valid email address"
         }
         break
       case "contactNumber":
@@ -125,8 +178,9 @@ export default function AirConPage() {
   const handleMultipleChoice = (value: string) => {
     const currentQuestion = questions[currentStep]
 
-    if (currentQuestion.id === "homeOwnership" && value === "No") {
-      window.location.href = "/form/rejection"
+    // Check if user doesn't own home
+    if (currentQuestion.id === "homeOwnership" && value === "No, I Rent") {
+      window.location.href = "/sorry.html"
       return
     }
 
@@ -139,6 +193,8 @@ export default function AirConPage() {
     setTimeout(() => {
       if (currentStep < questions.length - 1) {
         setCurrentStep((prev) => prev + 1)
+      } else {
+        handleSubmit()
       }
     }, 300)
   }
@@ -216,7 +272,7 @@ export default function AirConPage() {
   const getLocationData = async () => {
     try {
       const controller = new AbortController()
-      const timeoutId = setTimeout(() => controller.abort(), 2000)
+      const timeoutId = setTimeout(() => controller.abort(), 2000) // 2 second timeout
 
       const ipResponse = await fetch("https://ipapi.co/json/", {
         signal: controller.signal,
@@ -255,6 +311,12 @@ export default function AirConPage() {
         ? `+64${formData.contactNumber.slice(1)}`
         : `+64${formData.contactNumber}`
 
+      sessionStorage.setItem("firstName", formData.firstName)
+      sessionStorage.setItem("lastName", formData.lastName)
+      sessionStorage.setItem("postcode", formData.postcode)
+      sessionStorage.setItem("email", formData.email)
+      sessionStorage.setItem("contactNumber", formattedContactNumber)
+
       const locationDataPromise = getLocationData()
       const deviceInfo = getDeviceInfo()
 
@@ -280,7 +342,7 @@ export default function AirConPage() {
                 }),
               1000,
             ),
-          ),
+          ), // 1 second timeout
         ])
 
         await fetch(formUrl, {
@@ -352,6 +414,7 @@ export default function AirConPage() {
                   <Button
                     key={index}
                     onClick={() => handleMultipleChoice(option)}
+                    /* Changed button color to #000000 */
                     className="p-6 text-center justify-center bg-[#000000] text-white font-bold text-lg rounded-lg hover:bg-[#222222] transition-colors duration-200 font-raleway mx-[0] flex-col w-full my-1.5"
                   >
                     {option}
@@ -368,6 +431,7 @@ export default function AirConPage() {
                   onChange={(e) => handleTextInput(currentQuestion.id, e.target.value)}
                   onKeyPress={handleKeyPress}
                   name={currentQuestion.id}
+                  /* Changed input styling for white background */
                   className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500 focus:border-[#000000] focus:ring-[#000000] font-raleway text-lg"
                 />
                 {errors[currentQuestion.id] && (
@@ -375,6 +439,7 @@ export default function AirConPage() {
                 )}
                 <Button
                   onClick={handleNext}
+                  /* Changed button color to #000000 */
                   className="w-full bg-[#000000] text-white font-bold py-4 rounded-lg hover:bg-[#222222] transition-colors duration-300 font-raleway leading-7 text-lg"
                 >
                   Next
@@ -392,6 +457,7 @@ export default function AirConPage() {
                       onChange={(e) => handleTextInput("firstName", e.target.value)}
                       onKeyPress={handleKeyPress}
                       name="firstName"
+                      /* Changed input styling for white background */
                       className="bg-gray-50 border-gray-300 text-black placeholder:text-gray-500 focus:border-[#000000] focus:ring-[#000000] font-raleway text-lg"
                     />
                     {errors.firstName && <p className="text-red-500 text-sm mt-1 font-raleway">{errors.firstName}</p>}
@@ -403,6 +469,7 @@ export default function AirConPage() {
                       onChange={(e) => handleTextInput("lastName", e.target.value)}
                       onKeyPress={handleKeyPress}
                       name="lastName"
+                      /* Changed input styling for white background */
                       className="bg-gray-50 border-gray-300 text-lg text-black placeholder:text-gray-500 focus:border-[#000000] focus:ring-[#000000] font-raleway"
                     />
                     {errors.lastName && <p className="text-red-500 text-sm mt-1 font-raleway">{errors.lastName}</p>}
@@ -410,9 +477,11 @@ export default function AirConPage() {
                 </div>
                 <Button
                   onClick={handleNext}
+                  disabled={isSubmitting}
+                  /* Changed button color to #000000 */
                   className="w-full bg-[#000000] text-white font-bold py-3 rounded-lg hover:bg-[#222222] transition-colors duration-300 font-raleway text-lg"
                 >
-                  Next
+                  {isSubmitting ? "Submitting..." : "Submit"}
                 </Button>
               </div>
             )}
@@ -433,6 +502,7 @@ export default function AirConPage() {
                     }}
                     onKeyPress={handleKeyPress}
                     name="contactNumber"
+                    /* Changed input styling for white background */
                     className="rounded-lg bg-gray-50 border-gray-300 text-lg text-black placeholder:text-gray-500 focus:border-[#000000] focus:ring-[#000000] font-raleway"
                   />
                 </div>
@@ -440,6 +510,7 @@ export default function AirConPage() {
                 <Button
                   onClick={handleNext}
                   disabled={isSubmitting}
+                  /* Changed button color to #000000 */
                   className="w-full bg-[#000000] text-white font-bold py-3 rounded-lg hover:bg-[#222222] transition-colors duration-300 font-raleway text-lg"
                 >
                   {isSubmitting ? "Submitting..." : "Submit"}

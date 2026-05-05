@@ -1,58 +1,65 @@
 "use client"
 
 import type React from "react"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { Button } from "@/components/form-ui/button"
 import { Input } from "@/components/form-ui/input"
 import { Progress } from "@/components/form-ui/progress"
 import { Card, CardContent } from "@/components/form-ui/card"
 
 interface FormData {
-  homeOwnership: string
-  acType: string
+  enquiryNature: string
+  address: string
+  complaintType: string
   firstName: string
   lastName: string
-  address: string
+  email: string
   contactNumber: string
-}
-
-interface MarketingData {
-  marketing_territory: string
-  marketing_platform: string
-  marketing_type: string
-  marketing_creative: string
-  marketing_hook: string
 }
 
 const questions = [
   {
-    id: "homeOwnership",
+    id: "enquiryNature",
     type: "multiple",
-    caption: "Please select the option that best describes your situation:",
-    question: "Do you own the house you're wanting to install A/C on?",
-    options: ["Yes", "No"],
-  },
-  {
-    id: "acType",
-    type: "multiple",
-    caption: "Please select the type of air conditioning system:",
-    question: "What type of A/C are you looking for?",
-    options: ["Ducted", "Split System(s)"],
-  },
-  {
-    id: "name",
-    type: "name",
-    caption: "",
-    question: "What's your full name?",
-    validation: "name",
+    caption: "Please select the option that best describes your enquiry:",
+    question: "What is the nature of your enquiry?",
+    options: [
+      "I need to cancel / reschedule an appointment",
+      "I'm wanting to put solar on my house / business",
+      "I need some tech support",
+      "I have a billing issue",
+      "I'd like to make a complaint",
+    ],
   },
   {
     id: "address",
     type: "text",
     caption: "",
-    question: "What's your address?",
-    placeholder: "Your full address",
+    question: "", // Will be set dynamically based on previous answer
+    placeholder: "Enter address",
     validation: "address",
+  },
+  {
+    id: "complaintType",
+    type: "multiple",
+    caption: "Please select what your complaint relates to:",
+    question: "What is the complaint in relation to?",
+    options: ["Staff member", "Installation", "Support", "Other"],
+  },
+  {
+    id: "name",
+    type: "name",
+    caption: "",
+    question: "What's your first & last name?",
+    validation: "name",
+  },
+  {
+    id: "email",
+    type: "text",
+    caption: "",
+    question: "What's your email address?",
+    placeholder: "Your email address",
+    validation: "email",
   },
   {
     id: "contactNumber",
@@ -64,58 +71,74 @@ const questions = [
   },
 ]
 
-export default function AirConPage() {
+export default function EnquiryPage(): React.JSX.Element {
   const [currentStep, setCurrentStep] = useState(0)
   const [formData, setFormData] = useState<FormData>({
-    homeOwnership: "",
-    acType: "",
+    enquiryNature: "",
+    address: "",
+    complaintType: "",
     firstName: "",
     lastName: "",
-    address: "",
+    email: "",
     contactNumber: "",
-  })
-  const [marketingData, setMarketingData] = useState<MarketingData>({
-    marketing_territory: "",
-    marketing_platform: "",
-    marketing_type: "",
-    marketing_creative: "",
-    marketing_hook: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [errors, setErrors] = useState<{ [key: string]: string }>({})
 
   const formUrl =
-    "https://script.google.com/macros/s/AKfycbyBOIcgHWWE6S46sgA0tfhDv2QfivtHRn_zPeTp04-jP1iIVQPjC_v1D0FEKKd0oCNabA/exec"
+    "https://script.google.com/macros/s/AKfycbwWn17Z0KYphJLrkRijErUSuKlWi-hpJJh_mTIfM34ZzwutpMPmwmjK1aBLZVIW5pj4/exec"
 
-  useEffect(() => {
-    // Extract marketing parameters from URL
-    const urlParams = new URLSearchParams(window.location.search)
-    setMarketingData({
-      marketing_territory: urlParams.get("marketing_territory") || "",
-      marketing_platform: urlParams.get("marketing_platform") || "",
-      marketing_type: urlParams.get("marketing_type") || "",
-      marketing_creative: urlParams.get("marketing_creative") || "",
-      marketing_hook: urlParams.get("marketing_hook") || "",
-    })
-  }, [])
+  const getNextStep = (currentQuestionId: string, answer: string): number => {
+    if (currentQuestionId === "enquiryNature") {
+      if (answer === "I'd like to make a complaint") {
+        return 2 // Go to complaint type question
+      } else {
+        return 1 // Go to address question
+      }
+    } else if (currentQuestionId === "address") {
+      return 3 // Go to name question
+    } else if (currentQuestionId === "complaintType") {
+      return 3 // Go to name question
+    }
+    return currentStep + 1
+  }
+
+  const getAddressQuestion = (enquiryType: string): string => {
+    switch (enquiryType) {
+      case "I need to cancel / reschedule an appointment":
+        return "What is the address you gave us for your appointment?"
+      case "I'm wanting to put solar on my house / business":
+        return "What is the address of the property you would like to install solar panels on?"
+      case "I need some tech support":
+      case "I have a billing issue":
+        return "Can you please provide the address where we installed your solar panels?"
+      default:
+        return "Please provide the address:"
+    }
+  }
 
   const validateField = (field: string, value: string): string => {
     switch (field) {
-      case "address":
-        if (!value.trim()) {
-          return "Please enter your address"
+      case "email":
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+          return "Please enter a valid email address"
         }
         break
       case "contactNumber":
         const cleanNumber = value.replace(/\s/g, "")
-        if (!/^0\d{9}$/.test(cleanNumber)) {
-          return "Please enter a valid 9-digit mobile number starting with 0"
+        if (!/^\d{10}$/.test(cleanNumber)) {
+          return "Please enter a valid 10-digit phone number"
         }
         break
       case "firstName":
       case "lastName":
         if (!value.trim()) {
           return "This field is required"
+        }
+        break
+      case "address":
+        if (!value.trim()) {
+          return "Address is required"
         }
         break
     }
@@ -125,20 +148,18 @@ export default function AirConPage() {
   const handleMultipleChoice = (value: string) => {
     const currentQuestion = questions[currentStep]
 
-    if (currentQuestion.id === "homeOwnership" && value === "No") {
-      window.location.href = "/form/rejection"
-      return
-    }
-
     setFormData((prev) => ({
       ...prev,
       [currentQuestion.id]: value,
     }))
 
-    // Auto-advance to next question
+    // Auto-advance to next question based on logic
     setTimeout(() => {
-      if (currentStep < questions.length - 1) {
-        setCurrentStep((prev) => prev + 1)
+      const nextStep = getNextStep(currentQuestion.id, value)
+      if (nextStep < questions.length) {
+        setCurrentStep(nextStep)
+      } else {
+        handleSubmit()
       }
     }, 300)
   }
@@ -149,7 +170,6 @@ export default function AirConPage() {
       [field]: value,
     }))
 
-    // Clear error when user starts typing
     if (errors[field]) {
       setErrors((prev) => ({
         ...prev,
@@ -198,11 +218,13 @@ export default function AirConPage() {
     }
 
     if (!hasError) {
-      // If it's the last question (phone), submit the form
       if (currentQuestion.type === "phone") {
         handleSubmit()
-      } else if (currentStep < questions.length - 1) {
-        setCurrentStep((prev) => prev + 1)
+      } else {
+        const nextStep = getNextStep(currentQuestion.id, formData[currentQuestion.id as keyof FormData])
+        if (nextStep < questions.length) {
+          setCurrentStep(nextStep)
+        }
       }
     }
   }
@@ -213,104 +235,50 @@ export default function AirConPage() {
     }
   }
 
-  const getLocationData = async () => {
-    try {
-      const controller = new AbortController()
-      const timeoutId = setTimeout(() => controller.abort(), 2000)
-
-      const ipResponse = await fetch("https://ipapi.co/json/", {
-        signal: controller.signal,
-      })
-      clearTimeout(timeoutId)
-      const ipData = await ipResponse.json()
-
-      return {
-        ip_address: ipData.ip || "",
-        country: ipData.country_name || "",
-        city: ipData.city || "",
-        timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || "",
-      }
-    } catch (error) {
-      return {
-        ip_address: "",
-        country: "",
-        city: "",
-        timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || "",
-      }
-    }
-  }
-
-  const getDeviceInfo = () => {
-    return {
-      device: navigator.userAgent,
-      screen_resolution: `${window.screen.width}x${window.screen.height}`,
-    }
-  }
-
   const handleSubmit = async () => {
     setIsSubmitting(true)
 
     try {
-      const formattedContactNumber = formData.contactNumber.startsWith("0")
-        ? `+64${formData.contactNumber.slice(1)}`
-        : `+64${formData.contactNumber}`
+      let emailRecipients = []
 
-      const locationDataPromise = getLocationData()
-      const deviceInfo = getDeviceInfo()
+      switch (formData.enquiryNature) {
+        case "I need to cancel / reschedule an appointment":
+        case "I'm wanting to put solar on my house / business":
+          emailRecipients = ["haydenb@efssolar.co.nz"]
+          break
+        case "I need some tech support":
+        case "I have a billing issue":
+          emailRecipients = ["support@efssolar.co.nz"]
+          break
+        case "I'd like to make a complaint":
+          emailRecipients = ["haydenb@efssolar.co.nz", "support@efssolar.co.nz"]
+          break
+        default:
+          emailRecipients = ["support@efssolar.co.nz"]
+      }
 
       const submissionData = {
-        ...formData,
-        contactNumber: formattedContactNumber,
-        ...marketingData,
-        system_time: new Date().toISOString(),
-        ...deviceInfo,
+        enquiry_nature: formData.enquiryNature,
+        address: formData.address,
+        complaint_type: formData.complaintType,
+        first_name: formData.firstName,
+        last_name: formData.lastName,
+        email: formData.email,
+        contact_number: formData.contactNumber,
+        submission_time: new Date().toISOString(),
+        email_recipients: emailRecipients, // Added email recipients to submission data
       }
 
-      try {
-        const locationData = await Promise.race([
-          locationDataPromise,
-          new Promise((resolve) =>
-            setTimeout(
-              () =>
-                resolve({
-                  ip_address: "",
-                  country: "",
-                  city: "",
-                  timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || "",
-                }),
-              1000,
-            ),
-          ),
-        ])
+      await fetch(formUrl, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(submissionData),
+      })
 
-        await fetch(formUrl, {
-          method: "POST",
-          mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            ...submissionData,
-            ...locationData,
-          }),
-        })
-      } catch (error) {
-        await fetch(formUrl, {
-          method: "POST",
-          mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            ...submissionData,
-            ip_address: "",
-            country: "",
-            city: "",
-            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || "",
-          }),
-        })
-      }
-
+      // Redirect to external thank you page
       if (window.parent) {
         window.parent.location.href = "http://localhost:3000/thank-you"
       } else {
@@ -318,7 +286,7 @@ export default function AirConPage() {
       }
     } catch (error) {
       console.error("Submission error:", error)
-
+      // Still redirect on error
       if (window.parent) {
         window.parent.location.href = "http://localhost:3000/thank-you"
       } else {
@@ -327,18 +295,44 @@ export default function AirConPage() {
     }
   }
 
-  const progress = ((currentStep + 1) / questions.length) * 100
+  const getTotalSteps = (): number => {
+    if (formData.enquiryNature === "I'd like to make a complaint") {
+      return 5 // enquiry -> complaint type -> name -> email -> phone
+    }
+    return 5 // enquiry -> address -> name -> email -> phone
+  }
+
+  const getCurrentStepForProgress = (): number => {
+    if (formData.enquiryNature === "I'd like to make a complaint") {
+      if (currentStep === 0) return 1
+      if (currentStep === 2) return 2 // complaint type
+      if (currentStep === 3) return 3 // name
+      if (currentStep === 4) return 4 // email
+      if (currentStep === 5) return 5 // phone
+    } else {
+      if (currentStep === 0) return 1
+      if (currentStep === 1) return 2 // address
+      if (currentStep === 3) return 3 // name
+      if (currentStep === 4) return 4 // email
+      if (currentStep === 5) return 5 // phone
+    }
+    return currentStep + 1
+  }
+
+  const progress = (getCurrentStepForProgress() / getTotalSteps()) * 100
   const currentQuestion = questions[currentStep]
+
+  if (currentQuestion.id === "address") {
+    currentQuestion.question = getAddressQuestion(formData.enquiryNature)
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-transparent">
       <div className="w-full max-w-2xl">
-        {/* Progress Bar */}
         <div className="mb-8">
           <Progress value={progress} className="h-2 [&>div]:bg-[#000000] bg-gray-300" />
         </div>
 
-        {/* Question Content */}
         <Card className="w-full bg-white border-0">
           <CardContent className="p-8 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-black font-rajdhani mb-4">{currentQuestion.question}</h2>
@@ -419,23 +413,18 @@ export default function AirConPage() {
 
             {currentQuestion.type === "phone" && (
               <div className="space-y-4">
-                <div className="flex">
-                  <Input
-                    placeholder={currentQuestion.placeholder}
-                    value={formData.contactNumber}
-                    onChange={(e) => {
-                      let value = e.target.value.replace(/\D/g, "")
-                      if (value.length > 0 && !value.startsWith("0")) {
-                        value = "0" + value
-                      }
-                      value = value.slice(0, 10)
-                      handleTextInput("contactNumber", value)
-                    }}
-                    onKeyPress={handleKeyPress}
-                    name="contactNumber"
-                    className="rounded-lg bg-gray-50 border-gray-300 text-lg text-black placeholder:text-gray-500 focus:border-[#000000] focus:ring-[#000000] font-raleway"
-                  />
-                </div>
+                <Input
+                  placeholder={currentQuestion.placeholder}
+                  value={formData.contactNumber}
+                  onChange={(e) => {
+                    let value = e.target.value.replace(/\D/g, "")
+                    value = value.slice(0, 10)
+                    handleTextInput("contactNumber", value)
+                  }}
+                  onKeyPress={handleKeyPress}
+                  name="contactNumber"
+                  className="bg-gray-50 border-gray-300 text-lg text-black placeholder:text-gray-500 focus:border-[#000000] focus:ring-[#000000] font-raleway"
+                />
                 {errors.contactNumber && <p className="text-red-500 text-sm font-raleway">{errors.contactNumber}</p>}
                 <Button
                   onClick={handleNext}
@@ -451,7 +440,7 @@ export default function AirConPage() {
               <div className="text-center mt-8">
                 <div className="inline-flex items-center space-x-2 text-[#000000]">
                   <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-[#000000]"></div>
-                  <span className="font-raleway">Submitting your assessment...</span>
+                  <span className="font-raleway">Submitting your enquiry...</span>
                 </div>
               </div>
             )}

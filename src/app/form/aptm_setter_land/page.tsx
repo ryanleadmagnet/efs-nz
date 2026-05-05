@@ -1,58 +1,59 @@
 "use client"
 
 import type React from "react"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { Button } from "@/components/form-ui/button"
 import { Input } from "@/components/form-ui/input"
 import { Progress } from "@/components/form-ui/progress"
 import { Card, CardContent } from "@/components/form-ui/card"
+import { useRouter } from "next/navigation"
 
 interface FormData {
-  homeOwnership: string
-  acType: string
+  priorExperience: string
+  solarExperience: string
+  commuteToNerang: string
   firstName: string
   lastName: string
-  address: string
+  email: string
   contactNumber: string
-}
-
-interface MarketingData {
-  marketing_territory: string
-  marketing_platform: string
-  marketing_type: string
-  marketing_creative: string
-  marketing_hook: string
 }
 
 const questions = [
   {
-    id: "homeOwnership",
+    id: "priorExperience",
     type: "multiple",
     caption: "Please select the option that best describes your situation:",
-    question: "Do you own the house you're wanting to install A/C on?",
+    question: "Do you have prior appointment setting or admin experience?",
     options: ["Yes", "No"],
   },
   {
-    id: "acType",
+    id: "solarExperience",
     type: "multiple",
-    caption: "Please select the type of air conditioning system:",
-    question: "What type of A/C are you looking for?",
-    options: ["Ducted", "Split System(s)"],
+    caption: "Please select the option that best describes your situation:",
+    question: "Do you have prior experience in the solar industry?",
+    options: ["Yes", "No"],
+  },
+  {
+    id: "commuteToNerang",
+    type: "multiple",
+    caption: "Please select the option that best describes your situation:",
+    question: "Our office is located in Nerang. Are you able to reliably commute to this location?",
+    options: ["Yes", "No"],
   },
   {
     id: "name",
     type: "name",
     caption: "",
-    question: "What's your full name?",
+    question: "What's your first & last name?",
     validation: "name",
   },
   {
-    id: "address",
+    id: "email",
     type: "text",
     caption: "",
-    question: "What's your address?",
-    placeholder: "Your full address",
-    validation: "address",
+    question: "What's your best email?",
+    placeholder: "Your email address",
+    validation: "email",
   },
   {
     id: "contactNumber",
@@ -64,52 +65,35 @@ const questions = [
   },
 ]
 
-export default function AirConPage() {
+export default function AppointmentSetterPage() {
+  const router = useRouter()
   const [currentStep, setCurrentStep] = useState(0)
   const [formData, setFormData] = useState<FormData>({
-    homeOwnership: "",
-    acType: "",
+    priorExperience: "",
+    solarExperience: "",
+    commuteToNerang: "",
     firstName: "",
     lastName: "",
-    address: "",
+    email: "",
     contactNumber: "",
-  })
-  const [marketingData, setMarketingData] = useState<MarketingData>({
-    marketing_territory: "",
-    marketing_platform: "",
-    marketing_type: "",
-    marketing_creative: "",
-    marketing_hook: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [errors, setErrors] = useState<{ [key: string]: string }>({})
 
   const formUrl =
-    "https://script.google.com/macros/s/AKfycbyBOIcgHWWE6S46sgA0tfhDv2QfivtHRn_zPeTp04-jP1iIVQPjC_v1D0FEKKd0oCNabA/exec"
-
-  useEffect(() => {
-    // Extract marketing parameters from URL
-    const urlParams = new URLSearchParams(window.location.search)
-    setMarketingData({
-      marketing_territory: urlParams.get("marketing_territory") || "",
-      marketing_platform: urlParams.get("marketing_platform") || "",
-      marketing_type: urlParams.get("marketing_type") || "",
-      marketing_creative: urlParams.get("marketing_creative") || "",
-      marketing_hook: urlParams.get("marketing_hook") || "",
-    })
-  }, [])
+    "https://script.google.com/macros/s/AKfycbwdFFvLQBIzSdd0wayB51qWeu5du1d8DDYxwgUhEvEuKAj3hCAjt8VhzyhUjWK705dCUg/exec"
 
   const validateField = (field: string, value: string): string => {
     switch (field) {
-      case "address":
-        if (!value.trim()) {
-          return "Please enter your address"
+      case "email":
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+          return "Please enter a valid email address"
         }
         break
       case "contactNumber":
         const cleanNumber = value.replace(/\s/g, "")
         if (!/^0\d{9}$/.test(cleanNumber)) {
-          return "Please enter a valid 9-digit mobile number starting with 0"
+          return "Please enter a valid 10-digit mobile number starting with 0"
         }
         break
       case "firstName":
@@ -125,7 +109,11 @@ export default function AirConPage() {
   const handleMultipleChoice = (value: string) => {
     const currentQuestion = questions[currentStep]
 
-    if (currentQuestion.id === "homeOwnership" && value === "No") {
+    if (
+      (currentQuestion.id === "priorExperience" && value === "No") ||
+      (currentQuestion.id === "solarExperience" && value === "No") ||
+      (currentQuestion.id === "commuteToNerang" && value === "No")
+    ) {
       window.location.href = "/form/rejection"
       return
     }
@@ -139,6 +127,8 @@ export default function AirConPage() {
     setTimeout(() => {
       if (currentStep < questions.length - 1) {
         setCurrentStep((prev) => prev + 1)
+      } else {
+        handleSubmit()
       }
     }, 300)
   }
@@ -216,7 +206,7 @@ export default function AirConPage() {
   const getLocationData = async () => {
     try {
       const controller = new AbortController()
-      const timeoutId = setTimeout(() => controller.abort(), 2000)
+      const timeoutId = setTimeout(() => controller.abort(), 2000) // 2 second timeout
 
       const ipResponse = await fetch("https://ipapi.co/json/", {
         signal: controller.signal,
@@ -255,14 +245,19 @@ export default function AirConPage() {
         ? `+64${formData.contactNumber.slice(1)}`
         : `+64${formData.contactNumber}`
 
+      sessionStorage.setItem("firstName", formData.firstName)
+      sessionStorage.setItem("lastName", formData.lastName)
+      sessionStorage.setItem("email", formData.email)
+      sessionStorage.setItem("contactNumber", formattedContactNumber)
+
       const locationDataPromise = getLocationData()
       const deviceInfo = getDeviceInfo()
 
       const submissionData = {
         ...formData,
         contactNumber: formattedContactNumber,
-        ...marketingData,
         system_time: new Date().toISOString(),
+        form_type: "appointment_setter",
         ...deviceInfo,
       }
 
@@ -280,7 +275,7 @@ export default function AirConPage() {
                 }),
               1000,
             ),
-          ),
+          ), // 1 second timeout
         ])
 
         await fetch(formUrl, {
@@ -333,6 +328,20 @@ export default function AirConPage() {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-transparent">
       <div className="w-full max-w-2xl">
+        <div className="text-center mb-8">
+          <img
+            src="/logorefer.svg"
+            alt="EFS Solar Logo"
+            className="mx-auto w-[200px] h-auto md:w-[250px] gap-0 mb-10"
+          />
+          <h1 className="font-bold text-black font-rajdhani md:text-5xl text-4xl mt-10 mb-[30px]">
+            We're looking for motivated Appointment Setters to join our team!
+          </h1>
+          <p className="text-lg text-gray-700 font-raleway mb-8">
+            Complete the quick form below and we'll be in touch to discuss if this is the right opportunity for you:
+          </p>
+        </div>
+
         {/* Progress Bar */}
         <div className="mb-8">
           <Progress value={progress} className="h-2 [&>div]:bg-[#000000] bg-gray-300" />
@@ -403,7 +412,7 @@ export default function AirConPage() {
                       onChange={(e) => handleTextInput("lastName", e.target.value)}
                       onKeyPress={handleKeyPress}
                       name="lastName"
-                      className="bg-gray-50 border-gray-300 text-lg text-black placeholder:text-gray-500 focus:border-[#000000] focus:ring-[#000000] font-raleway"
+                      className="rounded-l-none bg-gray-50 border-gray-300 text-lg text-black placeholder:text-gray-500 focus:border-[#000000] focus:ring-[#000000] font-raleway"
                     />
                     {errors.lastName && <p className="text-red-500 text-sm mt-1 font-raleway">{errors.lastName}</p>}
                   </div>
@@ -451,7 +460,7 @@ export default function AirConPage() {
               <div className="text-center mt-8">
                 <div className="inline-flex items-center space-x-2 text-[#000000]">
                   <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-[#000000]"></div>
-                  <span className="font-raleway">Submitting your assessment...</span>
+                  <span className="font-raleway">Submitting your application...</span>
                 </div>
               </div>
             )}

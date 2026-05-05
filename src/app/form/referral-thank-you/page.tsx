@@ -1,35 +1,37 @@
+"use client"
+
 import { Card, CardContent } from "@/components/form-ui/card"
 
 export default function ReferralThankYouPage() {
   return (
-    <div className="min-h-screen relative overflow-hidden bg-transparent">
-      <div className="relative z-10 min-h-screen flex flex-col">
-        <div className="flex-1 flex items-center justify-center px-4">
-          <Card className="w-full max-w-2xl bg-white border-0 shadow-md">
-            <CardContent className="p-8 text-center">
-              <div className="mb-6">
-                <div className="w-16 h-16 bg-green-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
+    <div className="min-h-screen flex items-center justify-center p-4 bg-white">
+      <div className="w-full max-w-2xl">
+        <Card className="w-full bg-white border-0">
+          <CardContent className="p-8 text-center py-[32] px-[32]">
+            <h1 className="text-3xl text-black font-rajdhani mb-8 md:text-3xl font-semibold">
+              {"Thank you so much for submitting your referral!"}
+            </h1>
+
+            <div className="text-center space-y-6">
+              <h2 className="text-2xl font-bold text-black font-rajdhani">What happens from here?</h2>
+
+              <div className="space-y-4 font-raleway text-lg text-gray-700 ">
+                <div className="flex items-start space-x-3">
+                  <span className="font-bold text-[#000000] text-xl text-center">1.</span>
+                  <p>We will make contact with your referral to discuss going solar.</p>
                 </div>
-                <h1 className="text-3xl md:text-4xl font-bold font-rajdhani mb-4 text-black">Referral Submitted!</h1>
-                <p className="text-xl text-[#002e6e] font-raleway mb-6">
-                  Thank you for referring someone to EFS Solar
-                </p>
+
+                <div className="flex items-start space-x-3">
+                  <span className="font-bold text-[#000000] text-xl text-center">2.</span>
+                  <p>
+                    Once we have installed solar on your referral's roof, we will contact you to organise delivery of
+                    the $250 gift card.
+                  </p>
+                </div>
               </div>
-              <div className="text-black space-y-4">
-                <p className="text-gray-600 font-raleway">
-                  We've received your referral details. Once your referral's solar system is installed, 
-                  your $250 Visa gift card will be on its way!
-                </p>
-                <p className="text-gray-600 font-raleway">
-                  We'll be in touch to keep you updated on the progress.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </div>
   )
