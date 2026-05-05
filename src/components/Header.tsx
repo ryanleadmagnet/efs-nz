@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolean }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [modalUrl, setModalUrl] = useState('/forms');
+    const [modalUrl, setModalUrl] = useState('/form/solar');
     const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
     const pathname = usePathname();
 
@@ -33,16 +33,11 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                 e.preventDefault();
                 const customUrl = trigger.getAttribute('data-iframe-url');
                 if (customUrl) {
-                    // Map /form/<route> → /forms/<route> (proxied same-origin)
-                    if (customUrl.startsWith('/form/')) {
-                        const route = customUrl.replace('/form/', '');
-                        setModalUrl(`/forms/${route}`);
-                    } else {
-                        setModalUrl(customUrl);
-                    }
+                    // Use /form/* routes directly — they live in this same app
+                    setModalUrl(customUrl);
                 } else {
-                    // Default: root form (SolarLeadForm / survey)
-                    setModalUrl('/forms');
+                    // Default: solar lead form
+                    setModalUrl('/form/solar');
                 }
                 setIsModalOpen(true);
             }
