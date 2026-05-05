@@ -49,7 +49,7 @@ export default function ContactPage() {
                                 support@efssolar.co.nz
                             </a>
                         </p>
-                        <a href="#" className="btn btn-primary quote-trigger">
+                        <a href="#" className="btn btn-primary quote-trigger" data-iframe-url="/form/enquiry">
                             ENQUIRIES <i className="fas fa-chevron-right" style={{ marginLeft: '8px', fontSize: '14px' }}></i>
                         </a>
                     </div>

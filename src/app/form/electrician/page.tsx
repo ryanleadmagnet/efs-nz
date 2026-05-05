@@ -37,7 +37,7 @@ const questions = [
     type: "multiple",
     caption: "Please select the option that best describes your situation:",
     question: "Which location are you wanting to work in?",
-    options: ["Sydney", "Gold Coast", "Brisbane", "Darwin", "Port Macquarie", "Coffs Harbour"],
+    options: ["Hamilton", "Tauranga", "Wellington", "Auckland", "Christchurch", "Queenstown", "Dunedin", "Other"],
   },
   {
     id: "workType",
@@ -108,7 +108,7 @@ const questions = [
     type: "phone",
     caption: "",
     question: "Last question. What's your best contact number?",
-    placeholder: "021 000 0000",
+    placeholder: "0200 000 000",
     validation: "phone",
   },
 ]
@@ -141,7 +141,7 @@ export default function ElectricianPage() {
   const [errors, setErrors] = useState<{ [key: string]: string }>({})
 
   const formUrl =
-    "https://script.google.com/macros/s/AKfycbxsgwvqJ-BkJS6aZsRZlGJpsClqLEtRgDmr99TRnbhj0oitkinSDPwJoLX19_P04BYjDg/exec"
+    "https://script.google.com/macros/s/AKfycbx_YzQ977Zp5QRZQSYPcOCWwntPPSUUd2o2PT3U8IoMcJuTzZ4bcKet5aCTuxmeakI4Sw/exec"
 
   useEffect(() => {
     // Extract marketing parameters from URL

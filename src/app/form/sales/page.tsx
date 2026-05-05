@@ -108,7 +108,7 @@ const questions = [
     type: "phone",
     caption: "",
     question: "Last question. What's your best contact number?",
-    placeholder: "021 000 0000",
+    placeholder: "0200 000 000",
     validation: "phone",
   },
 ]
@@ -141,7 +141,7 @@ export default function SalesApplicationPage() {
   const [errors, setErrors] = useState<{ [key: string]: string }>({})
 
   const formUrl =
-    "https://script.google.com/macros/s/AKfycby-Iw6fYpzVvNhZXb5eFTq9UMfhPbuHHq8F_sYtLXVaxJ4zE7Jf3B9r-nr5-NwN8T8m/exec"
+    "https://script.google.com/macros/s/AKfycbyAK-5TRn9TIMCFs6knDNybtZ0RIvn_KahNPQwcyW0q1rLak88hL9fzL6J3sf7HQixX/exec"
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search)

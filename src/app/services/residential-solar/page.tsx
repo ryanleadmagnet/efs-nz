@@ -180,7 +180,7 @@ export default async function ResidentialSolar({ searchParams }: { searchParams:
                             Help your pocket and the planet.<br />
                             Make the switch to solar, today!
                         </h2>
-                        <a href="#" className="btn btn-primary hover-dark quote-trigger" style={{ backgroundColor: "#000000", padding: "16px 36px", color: "#fff", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", border: "none" }}>
+                        <a href="#" className="btn btn-primary hover-dark quote-trigger" data-iframe-url="/form/enquiry" style={{ backgroundColor: "#000000", padding: "16px 36px", color: "#fff", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "1px", border: "none" }}>
                             <span className="btn-text">Enquire Now</span>
                             <span className="btn-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">

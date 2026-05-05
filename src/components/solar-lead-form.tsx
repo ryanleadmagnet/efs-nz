@@ -133,7 +133,7 @@ export default function LandingPage() {
   const [errors, setErrors] = useState<{ [key: string]: string }>({})
 
   const formUrl =
-    "https://script.google.com/macros/s/AKfycbxbz7tRxYyv40-4SvlZ7hzZTnhNhoG9cc97l-MNT5z0ZyDMon0dX8RTiiTN8BzhjH9UKA/exec"
+    "https://script.google.com/macros/s/AKfycbwVJlBXk8iK1mxrWl9jW2ZIaVNu599ltY4IepM2E5LUi2uNM5oKWx1_pjdii7b3lx6epQ/exec"
 
   useEffect(() => {
     // Extract marketing parameters from URL

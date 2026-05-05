@@ -32,7 +32,7 @@ export default function Footer() {
                             Mon – Fri &nbsp;9 AM – 5 PM
                         </p>
                     </div>
-                    <a href="/contact" className="btn btn-outline-white btn-sm" style={{ marginBottom: '24px' }}>
+                    <a href="#" className="btn btn-outline-white btn-sm quote-trigger" data-iframe-url="/form/enquiry" style={{ marginBottom: '24px' }}>
                         <span className="btn-text">Contact Us</span>
                         <span className="btn-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
