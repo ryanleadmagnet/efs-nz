@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: "EFS Solar | %s",
   },
   description:
-    "EFS Solar — Trusted solar installers across New Zealand. Residential solar, commercial solar, battery storage & Tesla Powerwall. Get a free quote today.",
+    "EFS Solar — Trusted solar installers across New Zealand. Residential solar, commercial solar & battery storage. Get a free quote today.",
   keywords: [
     "solar panels New Zealand",
     "solar installation Auckland",
@@ -40,7 +40,6 @@ export const metadata: Metadata = {
     "residential solar NZ",
     "commercial solar New Zealand",
     "solar battery storage NZ",
-    "Tesla Powerwall New Zealand",
     "Energizer solar battery",
     "solar energy NZ",
     "EFS Solar",

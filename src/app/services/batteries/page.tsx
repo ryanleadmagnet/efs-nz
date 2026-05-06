@@ -7,8 +7,8 @@ import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
 export const metadata: Metadata = {
     title: 'Solar Battery Storage across New Zealand',
-    description: 'Store your solar energy and reduce grid reliance with premium battery storage solutions. EFS Solar installs Tesla Powerwall, Energizer and more across New Zealand.',
-    keywords: ['solar battery storage New Zealand', 'home battery Sydney', 'Tesla Powerwall installer', 'Energizer battery', 'solar battery New Zealand'],
+    description: 'Store your solar energy and reduce grid reliance with premium battery storage solutions. EFS Solar installs Energizer and more across New Zealand.',
+    keywords: ['solar battery storage New Zealand', 'home battery Sydney', 'Energizer battery', 'solar battery New Zealand'],
     alternates: { canonical: 'https://www.efssolar.co.nz/services/batteries' },
     openGraph: { title: 'EFS Solar | Solar Battery Storage across New Zealand', description: 'Premium solar battery storage solutions across New Zealand.', url: 'https://www.efssolar.co.nz/services/batteries' },
 };
@@ -89,7 +89,7 @@ export default function Batteries() {
                                 </div>
                             </div>
                             <div className="section-stop-paying-image animate-on-scroll delay-1">
-                                <img src="/assets/Asset-262x-80-1.webp" alt="Battery brands – Energizer and Tesla" style={{ width: '73%', borderRadius: '12px' }} />
+                                <img src="/assets/Asset-262x-80-1.webp" alt="Battery brands – Energizer" style={{ width: '73%', borderRadius: '12px' }} />
                             </div>
                         </div>
                     </section>

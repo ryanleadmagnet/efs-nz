@@ -114,7 +114,6 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                                 <ul className="dropdown">
                                     <li><Link href="/technology/energizer" className={pathname === '/technology/energizer' ? 'active' : ''}>Energizer</Link></li>
                                     <li><Link href="/technology/goodwe" className={pathname === '/technology/goodwe' ? 'active' : ''}>GoodWe</Link></li>
-                                    <li><Link href="/technology/tesla-powerwall" className={pathname === '/technology/tesla-powerwall' ? 'active' : ''}>Tesla Powerwall</Link></li>
                                 </ul>
                             </li>
 
@@ -152,7 +151,6 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                                 <ul className="dropdown">
                                     <li><Link href="/technology/energizer" className={pathname === '/technology/energizer' ? 'active' : ''}>Energizer</Link></li>
                                     <li><Link href="/technology/goodwe" className={pathname === '/technology/goodwe' ? 'active' : ''}>GoodWe</Link></li>
-                                    <li><Link href="/technology/tesla-powerwall" className={pathname === '/technology/tesla-powerwall' ? 'active' : ''}>Tesla Powerwall</Link></li>
                                 </ul>
                             </li>
 
@@ -200,7 +198,6 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                             <ul className={`mobile-dropdown ${openDropdowns.includes('technology') ? 'open' : ''}`}>
                                 <li><Link href="/technology/energizer" className={pathname === '/technology/energizer' ? 'active' : ''}>Energizer</Link></li>
                                 <li><Link href="/technology/goodwe" className={pathname === '/technology/goodwe' ? 'active' : ''}>GoodWe</Link></li>
-                                <li><Link href="/technology/tesla-powerwall" className={pathname === '/technology/tesla-powerwall' ? 'active' : ''}>Tesla Powerwall</Link></li>
                             </ul>
                         </li>
                         <li><Link href="/about" className={pathname === '/about' ? 'active' : ''}>About</Link></li>

@@ -8,10 +8,10 @@ import HeroVideo from '@/components/HeroVideo';
 
 export const metadata: Metadata = {
     title: 'Solar Panels across New Zealand — 0% Upfront',
-    description: 'EFS Solar — trusted solar installers across New Zealand. Get premium solar panels, battery storage & Tesla Powerwall with 0% upfront. 20,000+ installations. Free quote.',
-    keywords: ['solar panels New Zealand', 'solar installation Auckland', '0% upfront solar NZ', 'solar battery storage NZ', 'Tesla Powerwall NZ', 'residential solar Hamilton', 'solar quote New Zealand'],
+    description: 'EFS Solar — trusted solar installers across New Zealand. Get premium solar panels & battery storage with 0% upfront. 20,000+ installations. Free quote.',
+    keywords: ['solar panels New Zealand', 'solar installation Auckland', '0% upfront solar NZ', 'solar battery storage NZ', 'residential solar Hamilton', 'solar quote New Zealand'],
     alternates: { canonical: 'https://www.efssolar.co.nz' },
-    openGraph: { title: 'EFS Solar | Solar & Batteries 0% Upfront | across New Zealand', description: 'Trusted solar installers with 20,000+ installations. Solar panels, batteries & Tesla Powerwall.', url: 'https://www.efssolar.co.nz' },
+    openGraph: { title: 'EFS Solar | Solar & Batteries 0% Upfront | across New Zealand', description: 'Trusted solar installers with 20,000+ installations. Solar panels & batteries.', url: 'https://www.efssolar.co.nz' },
 };
 
 export default function Home() {
