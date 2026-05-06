@@ -244,6 +244,7 @@ p {
     padding: 26px 15px;
     display: block;
     position: relative;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .desktop-nav>ul>li>a.active,
@@ -765,7 +766,7 @@ p {
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: 88px;
+    font-size: 120px;
     font-weight: 800;
     line-height: 1.1em;
     margin-bottom: 35px;
@@ -827,7 +828,7 @@ p {
 /* Responsive adjustments */
 @media (max-width: 1300px) {
     .hero-title {
-        font-size: 72px;
+        font-size: 99px;
     }
 
     .section-title {
@@ -837,7 +838,7 @@ p {
 
 @media (max-width: 1024px) {
     .hero-title {
-        font-size: 60px;
+        font-size: 80px;
     }
 
     .section-title {
@@ -872,9 +873,9 @@ p {
     }
 
     .hero-title {
-        font-size: 38px;
+        font-size: 58px;
         letter-spacing: -0.5px;
-        margin-bottom: 18px;
+        margin-bottom: 28px;
         line-height: 1.05em;
     }
 
@@ -1285,7 +1286,7 @@ p {
 }
 
 /* Text colours on top of dark photo */
-.section-stop-paying-bg ~ .section-stop-paying-inner .section-subtitle {
+.section-stop-paying-bg~.section-stop-paying-inner .section-subtitle {
     color: var(--white);
 }
 

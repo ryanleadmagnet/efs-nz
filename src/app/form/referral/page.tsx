@@ -98,7 +98,7 @@ export default function ReferralPage() {
   const [currentUrl, setCurrentUrl] = useState("")
 
   const formUrl =
-    "https://script.google.com/macros/s/AKfycby2VQxNqAzXqzpS1f4y7yJKvZcqBfyiDYkm7SvnbORNWiTQC22C2t-Exc20Oej96IjvIg/exec"
+    "https://script.google.com/macros/s/AKfycbxyzhJ5KdoaSyvUr48X6Dov-Vcb4DNE7Oo-liAMWMZYen5CVPfUShKo6cN5rwvck7wH/exec"
 
   useEffect(() => {
     setCurrentUrl(window.location.href)

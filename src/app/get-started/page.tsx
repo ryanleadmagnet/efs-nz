@@ -18,11 +18,6 @@ const faqs = [
             "No you don't and in fact we always encourage people to shop around for the best tariffs possible. Please note that you must wait until after your meter change over has been completed otherwise you will run into some issues.",
     },
     {
-        question: 'How long does it take to receive my EWR / CCEW / PowerWater number?',
-        answer:
-            'After your solar has been installed, we will make contact with the relevant provider for your area and lodge any necessary paperwork required. The turn around time on receiving a reply from any of these providers vary however their standard wait times are 5-10 business days.',
-    },
-    {
         question: 'What monitoring app do I use for my system?',
         answer:
             "The monitoring app for your system will be determined by the brand of inverter you have selected. For Goodwe inverters the app is called 'Sems portal' and for our Sungrow inverters, the app is called 'iSolarCloud'. Both apps are available on Android & Apple and also have a website version that can be accessed from anywhere.",
