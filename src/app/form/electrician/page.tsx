@@ -12,7 +12,7 @@ interface FormData {
   location: string
   workType: string
   position: string
-  cecAccreditation: string
+  Accreditation: string
   driversLicense: string
   workingAtHeights: string
   tools: string
@@ -54,10 +54,10 @@ const questions = [
     options: ["Electrician", "Roofer/Installer", "Both electrician & Installer"],
   },
   {
-    id: "cecAccreditation",
+    id: "Accreditation",
     type: "multiple",
     caption: "Can be obtained on a pay back system through company.",
-    question: "Do you hold a CEC accreditation or be willing to obtain one?",
+    question: "Do you hold a SEANZ accreditation or be willing to obtain one?",
     options: ["Yes", "No"],
   },
   {
@@ -120,7 +120,7 @@ export default function ElectricianPage() {
     location: "",
     workType: "",
     position: "",
-    cecAccreditation: "",
+    Accreditation: "",
     driversLicense: "",
     workingAtHeights: "",
     tools: "",
@@ -141,7 +141,7 @@ export default function ElectricianPage() {
   const [errors, setErrors] = useState<{ [key: string]: string }>({})
 
   const formUrl =
-    "https://script.google.com/macros/s/AKfycbx_YzQ977Zp5QRZQSYPcOCWwntPPSUUd2o2PT3U8IoMcJuTzZ4bcKet5aCTuxmeakI4Sw/exec"
+    "https://script.google.com/macros/s/AKfycbzlEd8M4UZXYh6cXG4EzR4_IOI1ZCcJDbXXxzhJXt1xNqmZ0nzIrkjrjeRABgO1KcTzTQ/exec"
 
   useEffect(() => {
     // Extract marketing parameters from URL
@@ -182,7 +182,7 @@ export default function ElectricianPage() {
     const currentQuestion = questions[currentStep]
 
     if (
-      (currentQuestion.id === "cecAccreditation" && value === "No") ||
+      (currentQuestion.id === "Accreditation" && value === "No") ||
       (currentQuestion.id === "workingAtHeights" && value === "No") ||
       (currentQuestion.id === "tools" && value === "No")
     ) {
