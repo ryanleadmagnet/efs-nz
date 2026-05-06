@@ -258,7 +258,7 @@ export default function ReferralPage() {
 
             {currentQuestion.type === "info" && (
               <Button
-                variant="primary"
+                variant="default"
                 onClick={handleNext}
                 className="w-full bg-[#000000] text-white font-bold rounded-lg hover:bg-[#222222] transition-colors duration-300 font-raleway text-lg py-6"
               >

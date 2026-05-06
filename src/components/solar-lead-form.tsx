@@ -331,7 +331,12 @@ export default function LandingPage() {
       try {
         const locationData = await Promise.race([
           locationDataPromise,
-          new Promise((resolve) =>
+          new Promise<{
+            ip_address: string;
+            country: string;
+            city: string;
+            timezone: string;
+          }>((resolve) =>
             setTimeout(
               () =>
                 resolve({
