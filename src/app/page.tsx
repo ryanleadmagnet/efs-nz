@@ -228,33 +228,6 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* SECTION 6: FINANCE SUPPORT */}
-                <section className="section-finance content-section">
-                    <div className="container section-container">
-                        <div className="section-text animate-on-scroll">
-                            <AnimatedHeading tag="h2" className="section-subtitle">Finance Support</AnimatedHeading>
-                            <AnimatedHeading tag="h3" className="section-title">Stress-Free Payments <br />for Quick Installation</AnimatedHeading>
-                            <img src="/assets/Asset-4.svg" alt="Finance Partners"
-                                className="finance-logos" />
-                            <p className="section-desc">We offer hassle-free financing options, ensuring swift installations and
-                                stress-free payments for our clients. Experience the benefits of solar energy without the
-                                financial burden.</p>
-                            <a href="#" className="btn btn-primary quote-trigger">
-                                <span className="btn-text">Get a Quote</span>
-                                <span className="btn-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.75 18.37" width="10">
-                                        <path fill="none" stroke="currentColor" strokeWidth="2"
-                                            d="m.71.71l6.03,6.03c1.35,1.35,1.35,3.55,0,4.9L.71,17.67"></path>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                        <div className="section-image animate-on-scroll delay-1">
-                            <img src="/assets/Asset-13@2x-1024x689.png"
-                                alt="Solar House Finance" />
-                        </div>
-                    </div>
-                </section>
 
                 {/* SECTION 7: REVIEWS */}
                 <section className="section-reviews content-section text-center">
