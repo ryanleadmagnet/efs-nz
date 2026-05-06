@@ -97,7 +97,7 @@ export default function SurveyPage() {
       console.log("[v0] Submitting survey data:", submissionData)
 
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbxVD4UePRbuRbTUL_it9TOQlg9YhJ7za7rLFxKpBuSGUUKKnxeNivl5RphEOv4nfVb0DQ/exec",
+        "https://script.google.com/macros/s/AKfycbzrKHQ62Mcd3E7De4Kw7lWARkchY8ybg8dmjkhY3Kl3M4J0atN3NmMR7uHtg3s5cc_JRQ/exec",
         {
           method: "POST",
           headers: {
