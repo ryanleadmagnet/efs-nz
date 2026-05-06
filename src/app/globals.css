@@ -358,7 +358,7 @@ p {
 .sticky-nav>ul>li>a {
     color: var(--primary-color);
     padding: 22px 15px;
-    text-shadow: none;
+    text-shadow: none !important;
 }
 
 .sticky-nav>ul>li>a.active,
