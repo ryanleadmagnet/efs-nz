@@ -3279,3 +3279,14 @@ p {
     color: #0f1e3c;
     font-weight: 700;
 }
+
+/* Career Card Responsive Alignment */
+.career-card-content {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .career-card-content {
+        text-align: center;
+    }
+}
