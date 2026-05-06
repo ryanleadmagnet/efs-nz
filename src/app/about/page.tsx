@@ -43,7 +43,7 @@ export default function AboutPage() {
                                     fontFamily: "'Rajdhani', sans-serif",
                                     fontSize: '40px',
                                     fontWeight: 600,
-                                    color: '#47c7ea',
+                                    color: '#000000',
                                     marginBottom: '50px',
                                 }}>EFS Solar</h3>
                                 <p style={{ color: '#000', lineHeight: '22px', marginBottom: '1.15em' }}>
@@ -55,7 +55,7 @@ export default function AboutPage() {
 
                                 <h3 style={{
                                     fontSize: '24px', fontWeight: 600,
-                                    color: '#47c7ea', marginBottom: '20px', marginTop: '60px',
+                                    color: '#000000', marginBottom: '20px', marginTop: '60px',
                                 }}>Managing Director</h3>
                                 <h4 style={{
                                     fontFamily: "'Rajdhani', sans-serif",
@@ -97,7 +97,7 @@ export default function AboutPage() {
                                     fontFamily: "'Rajdhani', sans-serif",
                                     fontSize: 'clamp(18px, 3vw, 26px)',
                                     fontWeight: 600,
-                                    color: '#47c7ea',
+                                    color: '#ffffff',
                                     marginBottom: '30px',
                                 }}>
                                     Service Coverage
@@ -117,7 +117,7 @@ export default function AboutPage() {
                                     fontFamily: "'Rajdhani', sans-serif",
                                     fontSize: 'clamp(18px, 3vw, 26px)',
                                     fontWeight: 600,
-                                    color: '#47c7ea',
+                                    color: '#ffffff',
                                     marginBottom: '30px',
                                 }}>
                                     Offices

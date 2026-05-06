@@ -1002,7 +1002,7 @@ p {
 
 .section-subtitle {
     font-family: var(--font-heading);
-    color: var(--secondary-color);
+    color: #000000;
     font-size: 19px;
     font-weight: 700;
     text-transform: uppercase;
@@ -1285,8 +1285,8 @@ p {
 }
 
 /* Text colours on top of dark photo */
-.section-stop-paying-content .section-subtitle {
-    color: var(--secondary-color);
+.section-stop-paying-bg ~ .section-stop-paying-inner .section-subtitle {
+    color: var(--white);
 }
 
 .section-stop-paying-content .section-title {
@@ -1341,7 +1341,7 @@ p {
 }
 
 .section-switch .section-subtitle {
-    color: var(--secondary-color);
+    color: var(--white);
 }
 
 .section-switch .section-title {
@@ -1751,16 +1751,16 @@ p {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #47c7ea;
-    color: #fff;
+    background-color: #fff;
+    color: #000000;
     font-size: 18px;
     transition: all 0.3s ease;
     text-decoration: none;
 }
 
 .social-icon-circle:hover {
-    background-color: #fff;
-    color: #000000;
+    background-color: #47c7ea;
+    color: #fff;
     transform: translateY(-3px);
 }
 

@@ -28,7 +28,7 @@ export default function ContactPage() {
             <section style={{ padding: '80px 20px', backgroundColor: '#f4f6fa', position: 'relative', zIndex: 10 }}>
                 <div className="container" style={{ maxWidth: '1140px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '60px', justifyContent: 'center' }}>
                     <div className="contact-content-column" style={{ flex: '1 1 480px' }}>
-                        <h3 style={{ color: '#47c7ea', fontFamily: 'var(--font-heading)', fontWeight: 600, fontSize: '18px', textTransform: 'uppercase', marginBottom: '12px' }}>
+                        <h3 style={{ color: '#000000', fontFamily: 'var(--font-heading)', fontWeight: 600, fontSize: '18px', textTransform: 'uppercase', marginBottom: '12px' }}>
                             WE WOULD LOVE TO HEAR FROM YOU!
                         </h3>
                         <h2 className="contact-page-title" style={{ fontSize: '48px', lineHeight: '1.1em', color: '#000000', fontFamily: 'var(--font-heading)', fontWeight: 700, marginBottom: '30px' }}>
