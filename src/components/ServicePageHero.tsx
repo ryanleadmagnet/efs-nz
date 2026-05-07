@@ -67,7 +67,7 @@ const ServicePageHero: React.FC<ServicePageHeroProps> = ({ title, subtitle, bgIm
             </div>
 
             {/* Pattern Bar */}
-            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '20px', backgroundImage: 'url(/assets/Asset-66.svg)', backgroundRepeat: 'repeat-x', backgroundSize: 'contain', zIndex: 20 }}></div>
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '18px', backgroundImage: 'url(/assets/Asset-66.svg)', backgroundRepeat: 'repeat-x', backgroundSize: 'contain', zIndex: 20 }}></div>
         </section>
     );
 };

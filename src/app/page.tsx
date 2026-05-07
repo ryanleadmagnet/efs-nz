@@ -131,6 +131,11 @@ export default function Home() {
                             <img src="/assets/Asset-76.svg" alt="Brand 5" />
                             <img src="/assets/Asset-75.svg" alt="Brand 6" />
                             <img src="/assets/Asset-74.svg" alt="Brand 7" />
+                            <img src="/assets/Asset-73.svg" alt="Brand 8" />
+                            <img src="/assets/Asset-72.svg" alt="Brand 9" />
+                            <img src="/assets/Asset-71.svg" alt="Brand 10" />
+                            <img src="/assets/Asset-70.svg" alt="Brand 11" />
+                            <img src="/assets/Asset-69.svg" alt="Brand 12" />
                             {/* Duplicate for infinite scroll loop */}
                             <img src="/assets/Asset-80.svg" alt="Brand 1" />
                             <img src="/assets/Asset-79.svg" alt="Brand 2" />
@@ -139,6 +144,11 @@ export default function Home() {
                             <img src="/assets/Asset-76.svg" alt="Brand 5" />
                             <img src="/assets/Asset-75.svg" alt="Brand 6" />
                             <img src="/assets/Asset-74.svg" alt="Brand 7" />
+                            <img src="/assets/Asset-73.svg" alt="Brand 8" />
+                            <img src="/assets/Asset-72.svg" alt="Brand 9" />
+                            <img src="/assets/Asset-71.svg" alt="Brand 10" />
+                            <img src="/assets/Asset-70.svg" alt="Brand 11" />
+                            <img src="/assets/Asset-69.svg" alt="Brand 12" />
                         </div>
                     </div>
                 </section>
