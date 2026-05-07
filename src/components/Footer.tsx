@@ -5,7 +5,7 @@ export default function Footer() {
             <div style={{ height: '20px', backgroundImage: 'url(/assets/Asset-66.svg)', backgroundRepeat: 'repeat-x', backgroundSize: 'contain', width: '100%' }}></div>
 
             {/* ── Main grid ── */}
-            <div className="container footer-container" style={{ gridTemplateColumns: 'repeat(5, 1fr)' }}>
+            <div className="container footer-container">
 
                 {/* Col 1 – Logo + contact + CTA + social */}
                 <div className="footer-col">
@@ -133,9 +133,9 @@ export default function Footer() {
                         ** Outcome is not guaranteed and would be dependent upon a variety of factors such as system design, energy production and customer usage patterns.
                     </p>
                     <hr style={{ borderColor: '#2a2a2a', margin: '16px 0' }} />
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+                    <div className="footer-bottom-bar">
                         <div>© Copyright 2026 EFS Solar. All Rights Reserved.</div>
-                        <div style={{ display: 'flex', gap: '16px' }}>
+                        <div className="footer-bottom-links">
                             <a href="/privacy-policy" style={{ color: '#888', textDecoration: 'none' }}>Privacy Policy</a>
                             <span style={{ color: '#444' }}>|</span>
                             <a href="/disclaimer" style={{ color: '#888', textDecoration: 'none' }}>Disclaimer</a>

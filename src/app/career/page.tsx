@@ -37,7 +37,7 @@ export default function CareerPage() {
                                     }}
                                 />
                                 <div className="career-card-content" style={{ padding: '40px 0px' }}>
-                                    <div style={{ color: '#000000', fontFamily: "'Rajdhani', sans-serif", fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '12px' }}>We&apos;re Hiring</div>
+                                    <p style={{ color: '#000000', fontFamily: "'Rajdhani', sans-serif", fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '12px' }}>We&apos;re Hiring</p>
                                     <h3 style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: '28px', fontWeight: 700, color: '#000000', marginBottom: '16px', lineHeight: 1.2 }}>Sales &amp; Appointment Setter</h3>
                                     <p style={{ color: '#3f4f65', lineHeight: 1.7, marginBottom: '28px' }}>
                                         Join our dynamic sales team, focused on client outreach and initial consultations. You&apos;ll be the first point of contact for thousands of New Zealands looking to make the switch to solar. No experience required — full training provided.
@@ -72,7 +72,7 @@ export default function CareerPage() {
                                     style={{ height: 'auto', objectFit: 'contain' }}
                                 />
                                 <div className="career-card-content" style={{ padding: '40px 0px' }}>
-                                    <div style={{ color: '#000000', fontFamily: "'Rajdhani', sans-serif", fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '12px' }}>We&apos;re Hiring</div>
+                                    <p style={{ color: '#000000', fontFamily: "'Rajdhani', sans-serif", fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '12px' }}>We&apos;re Hiring</p>
                                     <h3 style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: '28px', fontWeight: 700, color: '#000000', marginBottom: '16px', lineHeight: 1.2 }}>Electrical &amp; Installation</h3>
                                     <p style={{ color: '#3f4f65', lineHeight: 1.7, marginBottom: '28px' }}>
                                         Be part of our dedicated field team installing solar and battery systems across New Zealand. Our in-house installation team is the backbone of EFS Solar — if you&apos;re a qualified electrician or solar installer, we want to hear from you.
