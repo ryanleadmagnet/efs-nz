@@ -66,20 +66,8 @@ export default function ContactPage() {
                         CONNECT WITH US
                     </h3>
                     <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '16px' }}>
-                        <a href="https://www.facebook.com/EFSSolar/" target="_blank" rel="noreferrer" className="social-icon-circle">
+                        <a href="https://www.facebook.com/efssolarnz/" target="_blank" rel="noreferrer" className="social-icon-circle">
                             <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/efs_solar/" target="_blank" rel="noreferrer" className="social-icon-circle">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/efs-solar/" target="_blank" rel="noreferrer" className="social-icon-circle">
-                            <i className="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@efssolar" target="_blank" rel="noreferrer" className="social-icon-circle">
-                            <i className="fab fa-youtube"></i>
-                        </a>
-                        <a href="https://www.tiktok.com/@efssolar" target="_blank" rel="noreferrer" className="social-icon-circle">
-                            <i className="fab fa-tiktok"></i>
                         </a>
                     </div>
                 </div>

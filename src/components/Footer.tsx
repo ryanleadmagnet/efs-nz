@@ -42,17 +42,8 @@ export default function Footer() {
                         </span>
                     </a>
                     <div className="social-icons">
-                        <a href="https://www.facebook.com/EFSSolar/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/efssolarnz/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/efs_solar/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@efssolar" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-youtube"></i>
-                        </a>
-                        <a href="https://www.tiktok.com/@efssolar" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-tiktok"></i>
                         </a>
                     </div>
                 </div>
