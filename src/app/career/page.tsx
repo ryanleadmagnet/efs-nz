@@ -29,7 +29,7 @@ export default function CareerPage() {
                             {/* Sales Card */}
                             <div className="animate-on-scroll career-card" style={{ transition: 'transform 0.3s, box-shadow 0.3s' }}>
                                 <img
-                                    src="/careers-sales.jpg"
+                                    src="/assets/careers-sales.webp"
                                     alt="Sales and Appointment Setting"
                                     className="career-card-img w-full md:w-[80%] mx-auto block"
                                     style={{
@@ -66,7 +66,7 @@ export default function CareerPage() {
                             {/* Electrical Card */}
                             <div className="animate-on-scroll delay-1 career-card" style={{ transition: 'transform 0.3s, box-shadow 0.3s' }}>
                                 <img
-                                    src="/careers-installer.jpg"
+                                    src="/assets/careers-installer.webp"
                                     alt="Electrical and Installation"
                                     className="career-card-img w-full md:w-[80%] mx-auto block"
                                     style={{ height: 'auto', objectFit: 'contain' }}

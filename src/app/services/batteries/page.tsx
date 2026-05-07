@@ -84,7 +84,7 @@ export default function Batteries() {
                                 <div className="hero-content-center">
                                     <AnimatedHeading tag="h2" className="section-subtitle">TIER 1 PRODUCTS</AnimatedHeading>
                                     <AnimatedHeading tag="h3" className="section-title" style={{ color: "#000000" }}>We Only Use the Best<br />of the Best</AnimatedHeading>
-                                    <p className="section-desc" style={{ color: "#000000" }}>We don&apos;t settle for anything but the best for the Battery products we sell &amp; install. By using the best brands such as Energizer, Jinko and GoodWe, we can offer a 10-year performance warranty and 10-year workmanship warranty. You can rest easy knowing your system will perform long into the future.</p>
+                                    <p className="section-desc" style={{ color: "#000000" }}>We don&apos;t settle for anything but the best for the Battery products we sell &amp; install. By using the best brands such as Energizer and Sigenergy, we can offer a 10-year performance warranty and 10-year workmanship warranty. You can rest easy knowing your system will perform long into the future.</p>
                                     <QuoteBtn />
                                 </div>
                             </div>
