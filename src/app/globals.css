@@ -1550,30 +1550,6 @@ p {
         padding: 0;
     }
 
-    .footer-bottom-bar {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .footer-bottom-links {
-        justify-content: center;
-    }
-}
-
-.footer-bottom-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.footer-bottom-links {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
 }
 
 /* --- Shared BG Wrapper: Tier1 + Battery Sections --- */

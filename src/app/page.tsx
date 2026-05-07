@@ -69,7 +69,7 @@ export default function Home() {
                     </a>
 
                     {/* Pattern Bar */}
-                    <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '20px', backgroundImage: 'url(/assets/Asset-66.svg)', backgroundRepeat: 'repeat-x', backgroundSize: 'contain', zIndex: 30 }}></div>
+                    <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '18px', backgroundImage: 'url(/assets/Asset-66.svg)', backgroundRepeat: 'repeat-x', backgroundSize: 'contain', zIndex: 30 }}></div>
                 </section> {/* SHARED BACKGROUND WRAPPER: Tier1 + Battery */}
                 <div className="sections-bg-wrapper">
                     {/* Circle overlay spanning full height of both sections + 30px */}

@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <footer className="main-footer">
             {/* Pattern Bar */}
-            <div style={{ height: '20px', backgroundImage: 'url(/assets/Asset-66.svg)', backgroundRepeat: 'repeat-x', backgroundSize: 'contain', width: '100%' }}></div>
+            <div style={{ height: '18px', backgroundImage: 'url(/assets/Asset-66.svg)', backgroundRepeat: 'repeat-x', backgroundSize: 'contain', width: '100%' }}></div>
 
             {/* ── Main grid ── */}
             <div className="container footer-container">
@@ -128,14 +128,14 @@ export default function Footer() {
             {/* ── Bottom bar ── */}
             <div style={{ background: '#111', color: '#888', padding: '40px 20px', fontSize: '12px' }}>
                 <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-                    <p style={{ marginBottom: '16px', lineHeight: 1.7, color: '#666' }}>
+                    <p className="text-center md:text-left" style={{ marginBottom: '16px', lineHeight: 1.7, color: '#666' }}>
                         *Solar savings assume full year-round utilisation of generated electricity, and will change based on usage and feed-in tariffs.
                         ** Outcome is not guaranteed and would be dependent upon a variety of factors such as system design, energy production and customer usage patterns.
                     </p>
                     <hr style={{ borderColor: '#2a2a2a', margin: '16px 0' }} />
-                    <div className="footer-bottom-bar">
+                    <div className="flex flex-col md:flex-row justify-center md:justify-between items-center text-center md:text-left gap-4 md:gap-2">
                         <div>© Copyright 2026 EFS Solar. All Rights Reserved.</div>
-                        <div className="footer-bottom-links">
+                        <div className="flex flex-wrap justify-center md:justify-end gap-4">
                             <a href="/privacy-policy" style={{ color: '#888', textDecoration: 'none' }}>Privacy Policy</a>
                             <span style={{ color: '#444' }}>|</span>
                             <a href="/disclaimer" style={{ color: '#888', textDecoration: 'none' }}>Disclaimer</a>
