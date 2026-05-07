@@ -28,6 +28,16 @@ type LogoVariant = {
 
 const logos: LogoVariant[] = [
     {
+        id: 'vertical-black',
+        label: 'Vertical — Black',
+        description: 'Primary full-black vertical lockup for use on white/light backgrounds.',
+        preview: `${BASE}/PNG/vertical-black.png`,
+        bgClass: 'light',
+        png: `${BASE}/PNG/vertical-black.png`,
+        svg: `${BASE}/SVG/vertical-black.svg`,
+        pdf: `${BASE}/PDF/vertical-black.pdf`,
+    },
+    {
         id: 'vertical-color',
         label: 'Vertical — Colour',
         description: 'Full-colour vertical lockup for use on white/light backgrounds.',
@@ -48,6 +58,16 @@ const logos: LogoVariant[] = [
         pdf: `${BASE}/PDF/vertical-white.pdf`,
     },
     {
+        id: 'landscape-black',
+        label: 'Landscape — Black',
+        description: 'Primary full-black horizontal lockup ideal for headers and banners.',
+        preview: `${BASE}/PNG/landscape-black.png`,
+        bgClass: 'light',
+        png: `${BASE}/PNG/landscape-black.png`,
+        svg: `${BASE}/SVG/landscape-black.svg`,
+        pdf: `${BASE}/PDF/landscape-black.pdf`,
+    },
+    {
         id: 'landscape-color',
         label: 'Landscape — Colour',
         description: 'Full-colour horizontal lockup ideal for headers and banners.',
@@ -66,6 +86,16 @@ const logos: LogoVariant[] = [
         png: `${BASE}/PNG/landscape-white.png`,
         svg: `${BASE}/SVG/landscape-white.svg`,
         pdf: `${BASE}/PDF/landscape-white.pdf`,
+    },
+    {
+        id: 'emblem-black',
+        label: 'Emblem — Black',
+        description: 'Primary full-black standalone emblem / icon mark for compact placements.',
+        preview: `${BASE}/PNG/emblem-black.png`,
+        bgClass: 'light',
+        png: `${BASE}/PNG/emblem-black.png`,
+        svg: `${BASE}/SVG/emblem-black.svg`,
+        pdf: `${BASE}/PDF/emblem-black.pdf`,
     },
     {
         id: 'emblem-color',
