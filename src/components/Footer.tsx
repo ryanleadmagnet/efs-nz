@@ -56,7 +56,6 @@ export default function Footer() {
                         <li><a href="/services/residential-solar">Residential Solar</a></li>
                         <li><a href="/services/commercial-solar">Commercial Solar</a></li>
                         <li><a href="/services/batteries">Batteries</a></li>
-                        <li><a href="/solar-monitoring">Solar Monitoring</a></li>
                         <li><a href="/technology/energizer">Technology</a></li>
                         <li><a href="/about">About</a></li>
                         <li><a href="/career">Work with Us</a></li>
