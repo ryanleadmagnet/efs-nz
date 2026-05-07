@@ -270,7 +270,7 @@ export default function BrandMaterialsPage() {
             <style>{`
                 /* ── Tokens ── */
                 :root {
-                    --bm-primary: #002e6e;
+                    --bm-primary: #000000;
                     --bm-accent:  #f59f00;
                     --bm-light:   #f4f6fb;
                     --bm-dark:    #1a2540;
@@ -278,7 +278,7 @@ export default function BrandMaterialsPage() {
                     --bm-text:    #374151;
                     --bm-muted:   #6b7280;
                     --bm-radius:  14px;
-                    --bm-shadow:  0 4px 24px rgba(0,46,110,.08);
+                    --bm-shadow:  0 4px 24px rgba(0,0,0,.08);
                 }
 
                 /* ── Intro ── */
