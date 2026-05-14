@@ -37,7 +37,7 @@ const questions = [
     type: "multiple",
     caption: "Please select the option that best describes your situation:",
     question: "Which location are you wanting to work in?",
-    options: ["Hamilton", "Tauranga", "Wellington", "Auckland", "Christchurch", "Queenstown", "Dunedin", "Other"],
+    options: ["Hamilton", "Tauranga", "Wellington", "Auckland", "Other"],
   },
   {
     id: "workType",

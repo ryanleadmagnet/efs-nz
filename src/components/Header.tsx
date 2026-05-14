@@ -114,6 +114,9 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                                 <ul className="dropdown">
                                     <li><Link href="/technology/energizer" className={pathname === '/technology/energizer' ? 'active' : ''}>Energizer</Link></li>
                                     <li><Link href="/technology/goodwe" className={pathname === '/technology/goodwe' ? 'active' : ''}>GoodWe</Link></li>
+                                    <li><Link href="/technology/jinko" className={pathname === '/technology/jinko' ? 'active' : ''}>Jinko</Link></li>
+                                    <li><Link href="/technology/solis" className={pathname === '/technology/solis' ? 'active' : ''}>Solis</Link></li>
+                                    <li><Link href="/technology/sigenergy" className={pathname === '/technology/sigenergy' ? 'active' : ''}>Sigenergy</Link></li>
                                 </ul>
                             </li>
 
@@ -151,6 +154,9 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                                 <ul className="dropdown">
                                     <li><Link href="/technology/energizer" className={pathname === '/technology/energizer' ? 'active' : ''}>Energizer</Link></li>
                                     <li><Link href="/technology/goodwe" className={pathname === '/technology/goodwe' ? 'active' : ''}>GoodWe</Link></li>
+                                    <li><Link href="/technology/jinko" className={pathname === '/technology/jinko' ? 'active' : ''}>Jinko</Link></li>
+                                    <li><Link href="/technology/solis" className={pathname === '/technology/solis' ? 'active' : ''}>Solis</Link></li>
+                                    <li><Link href="/technology/sigenergy" className={pathname === '/technology/sigenergy' ? 'active' : ''}>Sigenergy</Link></li>
                                 </ul>
                             </li>
 
@@ -198,6 +204,9 @@ export default function Header({ alwaysSticky = false }: { alwaysSticky?: boolea
                             <ul className={`mobile-dropdown ${openDropdowns.includes('technology') ? 'open' : ''}`}>
                                 <li><Link href="/technology/energizer" className={pathname === '/technology/energizer' ? 'active' : ''}>Energizer</Link></li>
                                 <li><Link href="/technology/goodwe" className={pathname === '/technology/goodwe' ? 'active' : ''}>GoodWe</Link></li>
+                                <li><Link href="/technology/jinko" className={pathname === '/technology/jinko' ? 'active' : ''}>Jinko</Link></li>
+                                <li><Link href="/technology/solis" className={pathname === '/technology/solis' ? 'active' : ''}>Solis</Link></li>
+                                <li><Link href="/technology/sigenergy" className={pathname === '/technology/sigenergy' ? 'active' : ''}>Sigenergy</Link></li>
                             </ul>
                         </li>
                         <li><Link href="/about" className={pathname === '/about' ? 'active' : ''}>About</Link></li>

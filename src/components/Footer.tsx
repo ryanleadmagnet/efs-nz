@@ -56,7 +56,11 @@ export default function Footer() {
                         <li><a href="/services/residential-solar">Residential Solar</a></li>
                         <li><a href="/services/commercial-solar">Commercial Solar</a></li>
                         <li><a href="/services/batteries">Batteries</a></li>
-                        <li><a href="/technology/energizer">Technology</a></li>
+                        <li><a href="/technology/energizer">Energizer</a></li>
+                        <li><a href="/technology/goodwe">GoodWe</a></li>
+                        <li><a href="/technology/jinko">Jinko</a></li>
+                        <li><a href="/technology/solis">Solis</a></li>
+                        <li><a href="/technology/sigenergy">Sigenergy</a></li>
                         <li><a href="/about">About</a></li>
                         <li><a href="/career">Work with Us</a></li>
                     </ul>
@@ -74,11 +78,8 @@ export default function Footer() {
                         <li><a href="/services/residential-solar?location=auckland">Auckland</a></li>
                         <li><a href="/services/residential-solar?location=new-plymouth">New Plymouth</a></li>
                         <li><a href="/services/residential-solar?location=wellington">Wellington</a></li>
-                        <li><a href="/services/residential-solar?location=christchurch">Christchurch</a></li>
-                        <li><a href="/services/residential-solar?location=dunedin">Dunedin</a></li>
                         <li><a href="/services/residential-solar?location=tauranga">Tauranga</a></li>
                         <li><a href="/services/residential-solar?location=napier">Napier</a></li>
-                        <li><a href="/services/residential-solar?location=queenstown">Queenstown</a></li>
                     </ul>
                 </div>
 

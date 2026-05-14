@@ -4,61 +4,42 @@ import Footer from '@/components/Footer';
 import GoogleReviewsWidget from '@/components/GoogleReviewsWidget';
 
 export const metadata: Metadata = {
-    title: 'GoodWe Solar Inverters across New Zealand',
-    description: 'EFS Solar supplies and installs GoodWe solar inverters across New Zealand. Reliable, smart, and affordable solar inverter solutions for homes and businesses.',
-    keywords: ['GoodWe inverter QLD', 'GoodWe solar NSW', 'solar inverter installation New Zealand', 'GoodWe installer New Zealand'],
-    alternates: { canonical: 'https://www.efssolar.co.nz/technology/goodwe' },
-    openGraph: { title: 'EFS Solar | GoodWe Solar Inverters across New Zealand', description: 'EFS Solar installs GoodWe inverters across New Zealand.', url: 'https://www.efssolar.co.nz/technology/goodwe' },
+    title: 'Jinko Solar Panels across New Zealand | Tiger Neo III',
+    description: 'EFS Solar supplies and installs Jinko Solar Tiger Neo III N-type TOPCon panels across New Zealand. Industry-leading power density for residential and commercial solar installations.',
+    keywords: ['Jinko Solar New Zealand', 'Tiger Neo III', 'N-type TOPCon solar panels', 'solar panel installation New Zealand'],
+    alternates: { canonical: 'https://www.efssolar.co.nz/technology/jinko' },
+    openGraph: {
+        title: 'EFS Solar | Jinko Solar Panels across New Zealand',
+        description: 'EFS Solar installs Jinko Solar Tiger Neo III panels across New Zealand.',
+        url: 'https://www.efssolar.co.nz/technology/jinko',
+    },
 };
 
-export default function GoodwePage() {
+export default function JinkoPage() {
     const features1 = [
         {
-            title: 'Higher reliability',
-            desc: 'Extended 10-year warranties available with SEMS portal registration.',
+            title: 'Higher Power on Front Side',
+            desc: 'N-type TOPCon platform captures more sunlight for leading power class performance.',
         },
         {
-            title: 'Battery-ready technology',
-            desc: 'Upgradeable hybrid inverters for future energy storage integration.',
+            title: 'Optimized Heat Resistance',
+            desc: 'Advanced patterning and multi-cell technology ensure superior performance in high temperatures.',
         },
         {
-            title: 'Future-proof design',
-            desc: 'Unlock codes enable battery upgrades without inverter replacement.',
+            title: 'Proven Low Light Performance',
+            desc: 'Enhanced cell structures ensure high performance in shaded or low-light conditions.',
         },
         {
-            title: 'Better performance in extreme conditions',
-            desc: 'Operates from -25°C to +60°C with natural cooling for the New Zealand climate.',
+            title: 'Extreme Durability',
+            desc: 'Advanced encapsulation provides superior resistance to degradation from PID, LID, and UV.',
         },
         {
-            title: 'Lower power loss',
-            desc: 'Up to 98.6% conversion efficiency maximizes solar energy harvest.',
+            title: 'Mechanical Load Enhanced',
+            desc: 'Certified to withstand 5400 Pa front and 2400 Pa rear static test loads.',
         },
         {
-            title: 'Smart monitoring included',
-            desc: 'SEMS portal provides real-time performance tracking and system management.',
-        },
-        {
-            title: 'Built to last',
-            desc: "Engineered and designed to withstand New Zealand's harsh outdoor conditions.",
-        },
-    ];
-
-    const features2 = [
-        {
-            title: 'Optimized Performance',
-            desc: '1C charge/discharge for rapid energy cycling. Fanless design for quiet operation, noise <30dB. 20A per string & 200% PV oversizing.',
-        },
-        {
-            title: 'Flexible & Adaptable Applications',
-            desc: 'Dual output ports for simplified installation & off-grid capability. Flexible battery mixing with different capacity or old & new batteries. Support full backup load with 63A×5 output.',
-        },
-        {
-            title: 'Superb Safety & Reliability',
-            desc: 'Advanced 6-layer safety protection. Heating mode ensures reliable performance even in -20ºC. AI-driven AFCI 3.0 for safety.',
-        },
-        {
-            title: 'Smart Control & Monitoring',
-            desc: 'Seamless switching to backup <4ms. One-click upgrade & one-click configuration.',
+            title: 'Dual Glass Technology',
+            desc: '1.6mm heat-strengthened front and back glass increases structural integrity.',
         },
     ];
 
@@ -66,7 +47,7 @@ export default function GoodwePage() {
         <>
             <style>{`
                 .cs-feature-title {
-                    color: #e60012 !important;
+                    color: #1ea84a !important;
                 }
             `}</style>
             <Header />
@@ -79,8 +60,8 @@ export default function GoodwePage() {
                     <div className="cs-hero-overlay" />
                     <div className="cs-hero-content">
                         <span className="cs-hero-breadcrumb animate-on-scroll">Technology &gt;</span>
-                        <p className="cs-hero-sub animate-on-scroll">BATTERY-READY SOLAR PARTNER</p>
-                        <h1 className="cs-hero-title animate-on-scroll">Goodwe</h1>
+                        <p className="cs-hero-sub animate-on-scroll">N-TYPE SOLAR LEADER</p>
+                        <h1 className="cs-hero-title animate-on-scroll">Jinko Solar</h1>
                     </div>
                 </section>
 
@@ -92,45 +73,45 @@ export default function GoodwePage() {
                         <div className="cs-logo-row animate-on-scroll">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="/assets/Asset-22logo.svg"
-                                alt="GoodWe logo"
+                                src="/assets/jinkox.svg"
+                                alt="Jinko logo"
                                 className="cs-brand-logo"
                             />
                         </div>
 
-                        {/* Product spotlight 1 ── 2 cols: img | text */}
+                        {/* Product spotlight 1 */}
                         <div className="cs-spotlight">
                             <div
                                 className="cs-spotlight-bg"
-                                style={{ backgroundImage: "url('/assets/Asset-14sungrow.webp')" }}
+                                style={{ backgroundImage: "url('/assets/Asset-14jin.webp')" }}
                             >
                                 <div className="cs-spotlight-inner">
                                     <div className="cs-spotlight-img animate-on-scroll">
                                         {/* eslint-disable-next-line @next/next/no-img-element */}
                                         <img
-                                            src="/assets/13-33-copy.webp"
-                                            alt="GoodWe DNS/MS Series Inverter"
+                                            src="/assets/panels.webp"
+                                            alt="Jinko Solar Tiger Neo III Solar Panel"
                                         />
                                     </div>
                                     <div className="cs-spotlight-text animate-on-scroll delay-1">
-                                        <h2 style={{ color: '#ffffff' }}>DNS/MS Series</h2>
-                                        <h3 style={{ color: '#ffffff' }}>Solar Inverters</h3>
+                                        <h2 style={{ color: '#ffffff' }}>Tiger Neo III Series</h2>
+                                        <h3 style={{ color: '#ffffff' }}>Solar Modules</h3>
                                         <p>
-                                            GoodWe Solar Inverters are manufactured with battery-ready hybrid technology and quality tested to ensure only premium inverters are used for installation.
+                                            Jinko Solar modules utilize N-type TOPCon technology to provide industry-leading power density for residential and commercial installations.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Feature grid 1 */}
+                        {/* Feature grid */}
                         <div className="cs-features-grid">
                             {features1.map((f, i) => (
                                 <div key={i} className="cs-feature-item animate-on-scroll" style={{ animationDelay: `${i * 0.05}s` }}>
                                     <div className="cs-feature-icon">
                                         {/* eslint-disable-next-line @next/next/no-img-element */}
                                         <img
-                                            src="/assets/Asset-19tick.svg"
+                                            src="/assets/Asset-jintick.svg"
                                             alt="tick"
                                             width={36}
                                             height={36}
@@ -144,52 +125,30 @@ export default function GoodwePage() {
                             ))}
                         </div>
 
-                        {/* Product spotlight 2 ── 2 cols: img | text */}
+                        {/* Product spotlight 2 */}
                         <div className="cs-spotlight" style={{ marginTop: '60px' }}>
                             <div
                                 className="cs-spotlight-bg"
-                                style={{ backgroundImage: "url('/assets/Asset-10sungrow.webp')" }}
+                                style={{ backgroundImage: "url('/assets/Asset-10jin.webp')" }}
                             >
                                 <div className="cs-spotlight-inner cs-spotlight-reverse">
                                     <div className="cs-spotlight-img animate-on-scroll">
                                         {/* eslint-disable-next-line @next/next/no-img-element */}
                                         <img
-                                            src="/assets/ESA3-10KAll-in-oneSystem-32-198-copy.webp"
-                                            alt="GoodWe ESA Series Battery"
+                                            src="/assets/tige2 copy.webp"
+                                            alt="Jinko Tiger Neo III 48QL6-DV Module"
                                         />
                                     </div>
                                     <div className="cs-spotlight-text animate-on-scroll delay-1">
-                                        <h2 style={{ color: '#ffffff' }}>ESA Series</h2>
-                                        <h3 style={{ color: '#ffffff' }}>Solar Battery</h3>
+                                        <h2 style={{ color: '#ffffff' }}>Tiger Neo III 48QL6-DV</h2>
+                                        <h3 style={{ color: '#ffffff' }}>High-Efficiency Module</h3>
                                         <p>
-                                            The GoodWe ESA Series is a fully integrated all-in-one solar and storage solution that combines inverter and battery in a pre-wired, modular design—making installation significantly faster and easier. Engineered for flexibility, the ESA system allows seamless expansion to meet evolving energy needs.
+                                            The Tiger Neo III 48QL6-DV is a dual-glass mono-facial module reaching up to 475 Watts with 23.77% efficiency. Engineered with 192 cells, it maximizes energy extraction in a compact footprint.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        {/* Feature grid 2 */}
-                        <div className="cs-features-grid">
-                            {features2.map((f, i) => (
-                                <div key={i} className="cs-feature-item animate-on-scroll" style={{ animationDelay: `${i * 0.05}s` }}>
-                                    <div className="cs-feature-icon">
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img
-                                            src="/assets/Asset-19tick.svg"
-                                            alt="tick"
-                                            width={36}
-                                            height={36}
-                                        />
-                                    </div>
-                                    <div className="cs-feature-text">
-                                        <h5 className="cs-feature-title">{f.title}</h5>
-                                        <p className="cs-feature-desc">{f.desc}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-
 
                     </div>
                 </section>

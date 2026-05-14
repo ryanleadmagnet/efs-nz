@@ -57,7 +57,7 @@ const questions = [
     id: "eligibleToWork",
     type: "multiple",
     caption: "",
-    question: "Are you eligible to work full time in Australia?",
+    question: "Are you eligible to work full time in New Zealand?",
     options: ["Yes", "No"],
   },
   {
