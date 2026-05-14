@@ -1232,6 +1232,10 @@ p {
     .section-peace-content {
         padding: 60px 20px;
     }
+
+    .section-peace-content img {
+        margin: auto;
+    }
 }
 
 /* --- Stop Paying For Power --- */
