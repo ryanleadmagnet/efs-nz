@@ -925,14 +925,13 @@ p {
     }
 
     .stat-number {
-        font-size: 28px;
+        font-size: 36px;
         line-height: 1.1;
     }
 
     .stat-text {
-        font-size: 11px;
+        font-size: 14px;
         line-height: 1.3em;
-        opacity: 0.85;
     }
 
     /* Hero mobile: swap video for static image */
@@ -2238,12 +2237,12 @@ p {
     }
 
     .cs-spotlight-img img {
-        width: 50%;
-        margin-bottom: -80px;
+        width: 70%;
+        margin-bottom: -50px;
     }
 
     .cs-spotlight-text {
-        padding: 30px 0;
+        padding: 30px 0 0;
     }
 
     .cs-features-grid {
