@@ -131,18 +131,15 @@ export default function SurveyPage() {
   return (
     <div className="min-h-screen bg-white flex items-center justify-center p-4 font-raleway">
       <div className="w-full max-w-2xl">
-        <div className="mb-8 text-center">
-          <img src="/logorefer.svg" alt="EFS Solar" className="w-[200px] md:w-[250px] h-auto mx-auto mb-8" />
-        </div>
 
         {/* Progress Bar */}
-        <div className="mb-8">
+        <div className="mb-8 mt-4">
           <Progress value={progress} className="h-2 [&>div]:bg-[#000000] bg-gray-300" />
         </div>
 
         {/* Question Content */}
         <div className="text-center">
-          <h1 className="text-3xl md:text-4xl font-rajdhani text-black mb-8 text-balance font-semibold">
+          <h1 className="text-2xl md:text-2xl font-rajdhani text-black mb-8 text-balance font-bold">
             {currentQuestion.question}
           </h1>
 

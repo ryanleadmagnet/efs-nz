@@ -154,7 +154,7 @@ export default function GetStarted() {
                 </section>
 
                 {/* ── Section 2: FAQs ── */}
-                <section className="section-stop-paying" style={{ minHeight: 'auto' }}>
+                <section id="faq" className="section-stop-paying" style={{ minHeight: 'auto' }}>
                     <div className="section-stop-paying-inner" style={{ alignItems: 'flex-start', padding: '40px 20px 80px', gap: '60px' }}>
                         {/* Left: support illustration */}
                         <div className="gs-faq-image animate-on-scroll" style={{ flex: '1' }}>
@@ -188,7 +188,7 @@ export default function GetStarted() {
                 </section>
 
                 {/* ── Section 3: Video Tutorials ── */}
-                <section className="gs-videos-section">
+                <section id="video" className="gs-videos-section">
                     <div className="container">
                         <div className="section-text animate-on-scroll" style={{ textAlign: 'center', marginBottom: '50px' }}>
                             <AnimatedHeading tag="h2" className="section-subtitle">

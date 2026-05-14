@@ -1,14 +1,11 @@
 'use client';
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import AnimatedHeading from '@/components/AnimatedHeading';
-
 export default function ReferralPage() {
     return (
         <>
-            <Header alwaysSticky />
-
+            <Header />
             <main>
                 {/* ── Hero ── */}
                 <section className="referral-hero">
@@ -16,16 +13,22 @@ export default function ReferralPage() {
                     <div className="referral-hero-overlay" />
                     <div className="container referral-hero-content">
                         <span className="referral-hero-eyebrow">Refer a Friend &gt;</span>
-                        <h1 className="referral-hero-title">Referral<br />Program</h1>
+                        <h1 className="referral-hero-title">Referral</h1>
                     </div>
                 </section>
-
                 {/* ── Main Section ── */}
                 <section className="referral-main-section">
                     <div className="container referral-main-inner">
-
-                        {/* Left: Copy + SVG + Copy */}
+                        {/* Left: SVG + Copy */}
                         <div className="referral-left animate-on-scroll">
+                            {/* SVG Illustration — above text */}
+                            <div className="referral-svg-wrap">
+                                <img
+                                    src="/assets/Asset-81refer.svg"
+                                    alt="Refer a friend illustration"
+                                    className="referral-svg-img"
+                                />
+                            </div>
                             <AnimatedHeading tag="h2" className="section-subtitle">
                                 REFER A FRIEND
                             </AnimatedHeading>
@@ -35,16 +38,6 @@ export default function ReferralPage() {
                             >
                                 Unlock More Savings
                             </AnimatedHeading>
-
-                            {/* SVG Illustration — between heading and paragraphs */}
-                            <div className="referral-svg-wrap">
-                                <img
-                                    src="/assets/Asset-81refer.svg"
-                                    alt="Refer a friend illustration"
-                                    className="referral-svg-img"
-                                />
-                            </div>
-
                             <p className="referral-body-text">
                                 Now you can unlock even more savings from your solar system through
                                 our amazing <strong>Refer a Friend</strong> program!
@@ -55,7 +48,6 @@ export default function ReferralPage() {
                                 <strong>$250 gift voucher</strong> as our token of appreciation.
                             </p>
                         </div>
-
                         {/* Right: Embedded referral form */}
                         <div className="referral-right animate-on-scroll delay-1">
                             <div className="referral-form-card">
@@ -68,12 +60,9 @@ export default function ReferralPage() {
                                 />
                             </div>
                         </div>
-
                     </div>
                 </section>
-
             </main>
-
             <Footer />
         </>
     );

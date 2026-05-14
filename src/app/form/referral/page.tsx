@@ -249,7 +249,7 @@ export default function ReferralPage() {
         {/* Question Content */}
         <Card className="w-full bg-white border-1 border-gray-100">
           <CardContent className="p-8 text-center">
-            <h2 className="text-2xl md:text-3xl text-black font-rajdhani h-auto mb-12 font-semibold">
+            <h2 className="text-2xl md:text-3xl text-black font-rajdhani h-auto font-semibold" style={{ marginBottom: '48px' }}>
               {currentQuestion.question}
             </h2>
             {currentQuestion.caption && (
