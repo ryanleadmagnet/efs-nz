@@ -57,7 +57,7 @@ const questions = [
     id: "Accreditation",
     type: "multiple",
     caption: "Can be obtained on a pay back system through company.",
-    question: "Do you hold a SEANZ accreditation or be willing to obtain one?",
+    question: "Do you hold a electrical workers registration board number or be willing to obtain one?",
     options: ["Yes", "No"],
   },
   {
