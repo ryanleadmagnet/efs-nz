@@ -14,6 +14,10 @@ export const metadata: Metadata = {
     openGraph: { title: 'EFS Solar | Solar & Batteries 0% Upfront | across New Zealand', description: 'Trusted solar installers with 20,000+ installations. Solar panels & batteries.', url: 'https://www.efssolar.co.nz' },
 };
 
+export const viewport = {
+    themeColor: '#000000',
+};
+
 export default function Home() {
     return (
         <>
@@ -163,7 +167,7 @@ export default function Home() {
                             <AnimatedHeading tag="h2" className="section-subtitle">PEACE OF MIND</AnimatedHeading>
                             <AnimatedHeading tag="h3" className="section-title">All of our installers <br />are fully licenced</AnimatedHeading>
                             <div className="peace-desc">
-                                <img src="/assets/asset-59.webp" alt="Certification Logo" className="mb-10 h-auto w-auto mx-auto md:mx-0 block" style={{ marginBottom: '40px' }} />
+                                <img src="/assets/asset-59.webp" alt="Certification Logo" className="mb-10 h-[70px] w-auto mx-auto md:mx-0 block" style={{ marginBottom: '40px' }} />
                                 <p>Unlike many of our competitors we do not take chances when it comes to our installers. When you
                                     deal with EFS Solar, you know you are dealing with qualified technicians whose interest is to
                                     deliver the best solar installation for your home or business.</p>
