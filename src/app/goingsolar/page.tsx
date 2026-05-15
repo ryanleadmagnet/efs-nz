@@ -94,6 +94,7 @@ export default function GoingSolarPage() {
                         <div className="goingsolar-footer-links">
                             <Link href="/terms-of-use">Terms &amp; Conditions</Link>
                             <Link href="/privacy-policy">Privacy Policy</Link>
+                            <Link href="/disclaimer">Disclaimer</Link>
                         </div>
                     </div>
                 </footer>
